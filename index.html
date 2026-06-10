@@ -5,10 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sedjahe - Minuman Kesehatan Herbal Alami</title>
     
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Sedjahe adalah produk UMKM minuman kesehatan herbal. Tersedia Jahe Merah, Beras Kencur, dan Kunyit Asam yang dibuat dari bahan alami pilihan untuk imunitas Anda.">
+    <!-- SEO Meta Tags Dasar -->
+    <meta name="description" content="Sedjahe menghadirkan warisan leluhur. Minuman herbal tradisional yang praktis, sehat, dan diracik tanpa pengawet buatan untuk imunitas Anda.">
     <meta name="keywords" content="minuman herbal, sedjahe, jahe merah, beras kencur, kunyit asam, UMKM herbal, minuman kesehatan">
     <meta name="author" content="Sedjahe">
+
+    <!-- Google Search Console Verification -->
+    <!-- Ganti tulisan MASUKKAN_KODE_VERIFIKASI_GOOGLE_DISINI dengan kode HTML Tag dari Google Search Console -->
+    <meta name="google-site-verification" content="MASUKKAN_KODE_VERIFIKASI_GOOGLE_DISINI" />
+
+    <!-- Favicon (Ikon di tab browser) -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <!-- Open Graph (SEO untuk preview di WhatsApp, Facebook, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://[username-anda].github.io/sedjahe/">
+    <meta property="og:title" content="Sedjahe - Minuman Kesehatan Herbal Alami">
+    <meta property="og:description" content="Sedjahe menghadirkan warisan leluhur. Minuman herbal tradisional yang praktis, sehat, dan diracik tanpa pengawet buatan untuk imunitas Anda.">
+    <meta property="og:image" content="https://[username-anda].github.io/sedjahe/assets/logo.png">
+
+    <!-- Twitter Card (SEO untuk preview di Twitter/X) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://[username-anda].github.io/sedjahe/">
+    <meta name="twitter:title" content="Sedjahe - Minuman Kesehatan Herbal Alami">
+    <meta name="twitter:description" content="Sedjahe menghadirkan warisan leluhur. Minuman herbal tradisional yang praktis, sehat, dan diracik tanpa pengawet buatan untuk imunitas Anda.">
+    <meta name="twitter:image" content="https://[username-anda].github.io/sedjahe/assets/logo.png">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -34,7 +55,7 @@
                             700: '#15803d',
                         },
                         accent: {
-                            500: '#f97316', // Oranye jahe/kunyit
+                            500: '#f97316', // Oranye jahe
                             600: '#ea580c',
                         }
                     }
@@ -49,12 +70,11 @@
     <header class="bg-white/80 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <!-- Logo -->
-                <a href="index.html" class="flex-shrink-0 flex items-center gap-2 group">
-                    <div class="bg-primary-50 text-primary-600 p-2 rounded-xl group-hover:bg-primary-100 transition-colors">
-                        <i class="fa-solid fa-leaf text-xl"></i>
-                    </div>
-                    <span class="font-bold text-2xl tracking-tight text-slate-900">Sedjahe<span class="text-accent-500">.</span></span>
+                <!-- Logo Image + Text -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3 group">
+                    <!-- Menggunakan logo yang diupload, mix-blend-multiply agar background krem logo menyatu dengan header putih -->
+                    <img src="assets/logo.png" alt="Logo Sedjahe" class="h-12 w-12 object-cover rounded-full mix-blend-multiply border border-slate-100 shadow-sm">
+                    <span class="font-bold text-2xl tracking-tight text-slate-900 hidden sm:block">Sedjahe<span class="text-accent-500">.</span></span>
                 </a>
                 
                 <!-- Desktop Menu -->
@@ -67,21 +87,21 @@
 
                 <!-- CTA Button -->
                 <div class="hidden md:flex items-center">
-                    <a href="https://wa.me/62895383156946" target="_blank" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-sm hover:shadow-md flex items-center gap-2">
+                    <a href="https://wa.me/62895383156946" target="_blank" rel="noopener noreferrer" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-sm hover:shadow-md flex items-center gap-2">
                         <i class="fa-brands fa-whatsapp text-lg"></i> Hubungi Kami
                     </a>
                 </div>
 
                 <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-slate-500 hover:text-primary-600 focus:outline-none p-2">
+                    <button id="mobile-menu-btn" class="text-slate-500 hover:text-primary-600 focus:outline-none p-2" aria-label="Buka Menu">
                         <i class="fa-solid fa-bars text-2xl"></i>
                     </button>
                 </div>
             </div>
         </div>
 
-        <!-- Mobile Menu (Hidden by default) -->
+        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full shadow-lg">
             <div class="px-4 pt-2 pb-6 space-y-2">
                 <a href="index.html" class="block px-3 py-3 rounded-lg text-base font-semibold text-primary-600 bg-primary-50">Beranda</a>
@@ -128,7 +148,7 @@
             </div>
         </section>
 
-        <!-- Features -->
+        <!-- Features / Value Proposition -->
         <section class="py-24 bg-slate-50 border-t border-slate-100">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
@@ -137,6 +157,7 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <!-- Feature 1 -->
                     <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
                         <div class="w-14 h-14 bg-primary-50 text-primary-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
                             <i class="fa-solid fa-leaf"></i>
@@ -145,6 +166,7 @@
                         <p class="text-slate-500 leading-relaxed">Kami hanya menggunakan rimpang segar pilihan dari petani lokal, tanpa tambahan perasa atau pewarna buatan.</p>
                     </div>
 
+                    <!-- Feature 2 -->
                     <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
                         <div class="w-14 h-14 bg-accent-50 text-accent-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
                             <i class="fa-solid fa-mug-hot"></i>
@@ -153,6 +175,7 @@
                         <p class="text-slate-500 leading-relaxed">Dibuat menggunakan metode warisan turun-temurun untuk memastikan khasiat herbal tetap terjaga optimal.</p>
                     </div>
 
+                    <!-- Feature 3 -->
                     <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
                         <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
                             <i class="fa-solid fa-shield-heart"></i>
@@ -164,7 +187,7 @@
             </div>
         </section>
 
-        <!-- Call to Action -->
+        <!-- Call to Action Section -->
         <section class="py-24 bg-white">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="bg-slate-900 rounded-[2.5rem] p-10 md:p-16 text-center relative overflow-hidden">
@@ -173,8 +196,8 @@
                     
                     <div class="relative z-10">
                         <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Mulai Gaya Hidup Sehat Hari Ini</h2>
-                        <p class="text-slate-300 mb-10 max-w-2xl mx-auto text-lg">Pesan Sedjahe sekarang dan nikmati minuman herbal alami untuk menemani aktivitas harian Anda.</p>
-                        <a href="https://wa.me/62895383156946" target="_blank" class="inline-flex items-center gap-2 px-8 py-4 bg-primary-500 hover:bg-primary-400 text-white rounded-full font-bold text-lg transition-colors">
+                        <p class="text-slate-300 mb-10 max-w-2xl mx-auto text-lg">Pesan Sedjahe sekarang dan nikmati promo gratis ongkir khusus untuk pelanggan baru di area tertentu.</p>
+                        <a href="https://wa.me/62895383156946" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-4 bg-primary-500 hover:bg-primary-400 text-white rounded-full font-bold text-lg transition-colors">
                             <i class="fa-brands fa-whatsapp text-xl"></i> Pesan via WhatsApp
                         </a>
                     </div>
@@ -189,8 +212,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                 <div class="col-span-1 md:col-span-2">
-                    <a href="index.html" class="flex items-center gap-2 mb-4">
-                        <i class="fa-solid fa-leaf text-primary-600 text-2xl"></i>
+                    <a href="index.html" class="flex items-center gap-3 mb-4">
+                        <img src="assets/logo.png" alt="Logo Sedjahe" class="h-10 w-10 object-cover rounded-full mix-blend-multiply border border-slate-200">
                         <span class="font-bold text-2xl tracking-tight text-slate-900">Sedjahe<span class="text-accent-500">.</span></span>
                     </a>
                     <p class="text-slate-500 mb-6 max-w-sm leading-relaxed">
@@ -227,7 +250,7 @@
                             <span>Jl. Herbal Alami No. 123<br>Jakarta Selatan</span>
                         </li>
                         <li class="flex items-center text-slate-500">
-                            <a href="https://wa.me/62895383156946" target="_blank" class="flex items-center hover:text-primary-600 transition-colors">
+                            <a href="https://wa.me/62895383156946" target="_blank" rel="noopener noreferrer" class="flex items-center hover:text-primary-600 transition-colors">
                                 <i class="fa-brands fa-whatsapp w-6 text-primary-600"></i> 
                                 <span>+62 895-3831-56946</span>
                             </a>
