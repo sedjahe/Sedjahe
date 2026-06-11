@@ -1,10 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+    <!-- Halaman Utama (Beranda) -->
     <url>
         <loc>https://sedjahe.github.io/Sedjahe/</loc>
+        <lastmod>2026-06-11</lastmod>
         <priority>1.0</priority>
+    </url>
+
+    <!-- Halaman Produk -->
+    <url>
+        <loc>https://sedjahe.github.io/Sedjahe/produk.html</loc>
+        <lastmod>2026-06-11</lastmod>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Halaman Tentang Kami -->
+    <url>
+        <loc>https://sedjahe.github.io/Sedjahe/tentang.html</loc>
+        <lastmod>2026-06-11</lastmod>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Artikel Blog 1: Manfaat Jahe Merah -->
+    <url>
+        <loc>https://sedjahe.github.io/Sedjahe/blog/manfaat-jahe.html</loc>
+        <lastmod>2026-06-11</lastmod>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Artikel Blog 2: Kenapa Harus Minuman Herbal -->
+    <url>
+        <loc>https://sedjahe.github.io/Sedjahe/blog/kenapa-herbal.html</loc>
+        <lastmod>2026-06-11</lastmod>
+        <priority>0.7</priority>
     </url>
 
 </urlset>
