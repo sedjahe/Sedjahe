@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>7 Manfaat Ajaib Jahe Merah untuk Daya Tahan Tubuh | Blog Sedjahe</title>
+    <!-- ========================================== -->
+    <!-- BAGIAN 1: SEO (YANG HARUS ANDA UBAH)       -->
+    <!-- ========================================== -->
     
-    <meta name="description" content="Ketahui 7 khasiat ajaib jahe merah untuk menjaga imunitas tubuh. Sedjahe mengupas tuntas manfaat rimpang tradisional alami penambah stamina asli nusantara.">
+    <!-- 1A. GANTI JUDUL TAB BROWSER (Tampil besar di Google) -->
+    <title>TULIS JUDUL ARTIKEL DI SINI | Blog Sedjahe</title>
     
-    <meta name="keywords" content="manfaat jahe merah, khasiat jahe untuk imun, jamu masuk angin alami, jahe merah instan, minuman rempah nusantara, sedjahe">
+    <!-- 1B. GANTI META DESCRIPTION (Tampil teks abu-abu kecil di Google) -->
+    <!-- Tips: Maksimal 150 huruf. Masukkan kata kunci yang sering dicari orang -->
+    <meta name="description" content="GANTI TEKS INI. Contoh: Sering masuk angin? Temukan rahasia resep tradisional jahe merah untuk kembalikan stamina Anda dengan cepat dan alami.">
+    
+    <!-- 1C. GANTI KATA KUNCI (Opsional) -->
+    <meta name="keywords" content="kata kunci 1, kata kunci 2, kata kunci 3">
+    
     <meta name="author" content="Tim Sedjahe">
 
+    <!-- ========================================== -->
+    <!-- (Kode pengaturan sistem - Jangan diubah)   -->
+    <!-- ========================================== -->
     <link rel="icon" type="image/png" href="../assets/logo.png">
-
+    <!-- Pengaturan Open Graph agar pas di-share di WA/FB ada gambarnya -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://sedjahe.github.io/Sedjahe/blog/manfaat-jahe.html">
-    <meta property="og:title" content="7 Manfaat Ajaib Jahe Merah untuk Daya Tahan Tubuh">
-    <meta property="og:description" content="Ketahui khasiat luar biasa jahe merah bagi kesehatan tubuh Anda. Baca selengkapnya di artikel Blog Sedjahe.">
+    <meta property="og:url" content="https://sedjahe.github.io/Sedjahe/blog/NAMA-FILE-ANDA-NANTI.html">
+    <meta property="og:title" content="TULIS JUDUL ARTIKEL DI SINI (Samakan dengan 1A)">
+    <meta property="og:description" content="TULIS DESKRIPSI DI SINI (Samakan dengan 1B)">
     <meta property="og:image" content="https://sedjahe.github.io/Sedjahe/assets/logo.png">
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -38,6 +50,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen selection:bg-primary-100 selection:text-primary-700">
 
+    <!-- Header / Navigasi (Sama di semua halaman, jangan diubah) -->
     <header class="bg-white/80 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
@@ -76,6 +89,7 @@
         </div>
     </header>
 
+    <!-- Main Content (Artikel Blog) -->
     <main class="flex-grow bg-white">
         <article class="max-w-3xl mx-auto px-4 sm:px-6 py-12 md:py-20">
             
@@ -83,12 +97,19 @@
                 <a href="../index.html" class="text-primary-600 hover:underline text-sm font-medium"><i class="fa-solid fa-arrow-left mr-2"></i>Kembali ke Beranda</a>
                 <div class="mt-6 flex items-center gap-3">
                     <span class="bg-accent-50 text-accent-600 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Edukasi Herbal</span>
-                    <span class="text-slate-400 text-sm"><i class="fa-regular fa-calendar mr-2"></i> 10 Juni 2026</span>
+                    
+                    <!-- 2A. GANTI TANGGAL DI SINI -->
+                    <span class="text-slate-400 text-sm"><i class="fa-regular fa-calendar mr-2"></i> 15 Juni 2026</span>
                 </div>
             </div>
 
+            <!-- ========================================== -->
+            <!-- BAGIAN 2: ISI ARTIKEL (YANG HARUS ANDA UBAH)-->
+            <!-- ========================================== -->
+
+            <!-- 2B. GANTI JUDUL BESAR ARTIKEL (H1) -->
             <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
-                7 Manfaat Ajaib Jahe Merah untuk Daya Tahan Tubuh
+                TULIS JUDUL ARTIKEL BESAR DI SINI
             </h1>
 
             <div class="flex items-center gap-3 mb-10 pb-10 border-b border-slate-100">
@@ -101,69 +122,46 @@
 
             <div class="prose prose-lg prose-slate max-w-none prose-headings:text-slate-900 prose-a:text-primary-600 hover:prose-a:text-primary-700">
                 
+                <!-- 2C. GANTI PARAGRAF PEMBUKA (Gunakan tag <p>...</p>) -->
                 <p class="lead text-xl text-slate-600 mb-8">
-                    Jahe merah (<em>Zingiber officinale var. rubrum</em>) bukan sekadar rempah bumbu dapur biasa. Di balik warna kulitnya yang kemerahan, varietas jahe yang satu ini menyimpan konsentrasi senyawa bioaktif tinggi yang sangat ampuh melindungi tubuh dari berbagai penyakit.
+                    Tulis paragraf pembuka artikel Anda di sini. Buat semenarik mungkin agar pembaca mau lanjut membaca.
                 </p>
 
+                <!-- 2D. GANTI SUB-JUDUL (Gunakan tag <h2>...</h2> atau <h3>...</h3>) -->
+                <h2 class="text-2xl font-bold mt-10 mb-4">Sub Judul Bagian 1</h2>
+                
+                <!-- 2E. GANTI PARAGRAF ISI -->
                 <p class="mb-6 text-slate-600">
-                    Masyarakat Indonesia telah memercayai khasiat jahe merah secara turun-temurun. Berdasarkan penelitian medis modern, jahe merah terbukti memiliki kandungan minyak atsiri dan senyawa pedas <strong>gingerol</strong> yang jauh lebih tinggi dibandingkan jenis jahe lainnya. Yuk, simak 7 manfaat utamanya berikut ini!
+                    Tulis isi paragraf Anda di sini. Anda bisa membuat banyak paragraf dengan meng-copy kode &lt;p&gt;...&lt;/p&gt; ini ke bawah.
                 </p>
 
-                <h3 class="text-xl font-bold mt-8 mb-3">1. Dongkrak Sistem Imunitas Tubuh</h3>
+                <!-- Contoh membuat tulisan bercetak tebal: gunakan <strong>kata tebal</strong> -->
                 <p class="mb-6 text-slate-600">
-                    Kandungan antioksidan kuat dalam jahe merah berfungsi sebagai tameng radikal bebas. Mengonsumsinya secara rutin membantu mengaktifkan sel-sel darah putih yang bertugas melawan infeksi virus dan bakteri jahat.
+                    Ini adalah contoh kalimat dengan <strong>kata bercetak tebal</strong> dan <em>kata bercetak miring</em>.
                 </p>
 
-                <h3 class="text-xl font-bold mt-8 mb-3">2. Pereda Nyeri Otot & Pegal Linu Alami</h3>
+                <h3 class="text-xl font-bold mt-8 mb-3">Sub Judul Bagian 2 (Lebih Kecil)</h3>
                 <p class="mb-6 text-slate-600">
-                    Senyawa anti-inflamasi (anti-radang) pada jahe merah bekerja layaknya obat pereda nyeri alami. Minuman ini sangat cocok dikonsumsi oleh para pekerja keras setelah seharian lelah beraktivitas untuk meredakan kaku otot dan nyeri sendi.
-                </p>
-
-                <div class="my-10 bg-primary-50 p-6 rounded-2xl border-l-4 border-primary-500">
-                    <p class="text-primary-700 font-medium italic m-0">
-                        "Berbeda dengan obat pereda nyeri kimiawi, kehangatan alami jahe merah bekerja secara bertahap dan sangat aman serta ramah bagi kesehatan lambung Anda."
-                    </p>
-                </div>
-
-                <h3 class="text-xl font-bold mt-8 mb-3">3. Ampuh Meredakan Masuk Angin & Perut Kembung</h3>
-                <p class="mb-6 text-slate-600">
-                    Efek hangat yang dihasilkan oleoresin dalam jahe merah mampu melebarkan pembuluh darah dan melancarkan pencernaan. Rasa mual, pusing, dan begah akibat masuk angin dapat diredakan dengan cepat setelah meminum secangkir seduhan hangatnya.
-                </p>
-
-                <h3 class="text-xl font-bold mt-8 mb-3">4. Menjaga Kesehatan Jantung & Menurunkan Kolesterol</h3>
-                <p class="mb-6 text-slate-600">
-                    Rutin mengonsumsi jahe merah membantu mengencerkan darah secara alami, mencegah penyumbatan pembuluh darah, dan membantu mengontrol kadar kolesterol jahat (LDL) dalam darah Anda.
-                </p>
-
-                <h3 class="text-xl font-bold mt-8 mb-3">5. Meredakan Batuk & Melegakan Tenggorokan</h3>
-                <p class="mb-6 text-slate-600">
-                    Sifat antibakteri dan antivirus pada jahe merah membantu membunuh patogen penyebab radang tenggorokan. Rasa pedas hangatnya mengencerkan dahak yang menyumbat saluran pernapasan.
-                </p>
-
-                <h3 class="text-xl font-bold mt-8 mb-3">6. Menurunkan Kadar Gula Darah</h3>
-                <p class="mb-6 text-slate-600">
-                    Penelitian menunjukkan bahwa konsumsi jahe merah dalam dosis yang tepat dapat meningkatkan sensitivitas insulin, yang sangat krusial dalam membantu menjaga kestabilan kadar gula darah harian Anda.
-                </p>
-
-                <h3 class="text-xl font-bold mt-8 mb-3">7. Meringankan Gejala Kram Menstruasi (PMS) bagi Wanita</h3>
-                <p class="mb-6 text-slate-600">
-                    Bagi kaum hawa, khasiat jahe merah tidak kalah luar biasa. Sifat relaksasi otot dari kandungan rimpang ini mampu menenangkan otot rahim yang menegang saat siklus bulanan, sehingga mengurangi rasa nyeri haid secara signifikan.
+                    Lanjutkan menulis isi artikel Anda.
                 </p>
 
             </div>
 
+            <!-- CTA Produk di dalam Artikel (Jangan diubah strukturnya, hanya teks WA-nya saja jika perlu) -->
             <div class="mt-16 bg-slate-900 rounded-[2rem] p-8 md:p-12 text-center relative overflow-hidden">
                 <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-accent-500 to-primary-500"></div>
-                <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Rasakan Khasiat Murni Jahe Merah Pilihan</h3>
+                <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Ingin merasakan khasiat alami tanpa repot?</h3>
                 <p class="text-slate-300 mb-8 max-w-lg mx-auto">
-                    Kini Anda tidak perlu repot mengupas dan menumbuk lagi. <strong>Sedjahe Original (Jahe Merah Instan)</strong> hadir membawa kepraktisan dengan racikan gula aren alami murni tanpa pengawet.
+                    <strong>Produk Sedjahe</strong> diformulasikan khusus dari rimpang pilihan. Praktis, 100% alami, dan siap menemani hari Anda!
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
                     <a href="../produk.html" class="px-8 py-3 bg-white text-slate-900 hover:bg-slate-100 rounded-full font-bold transition-colors">
                         Lihat Produk
                     </a>
-                    <a href="https://wa.me/62895383156946?text=Halo%20Sedjahe,%20saya%20tertarik%20membeli%20Jahe%20Merah%20Instan%20setelah%20membaca%20artikel%20manfaatnya." target="_blank" class="px-8 py-3 bg-primary-500 text-white hover:bg-primary-600 rounded-full font-bold transition-colors flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-whatsapp"></i> Pesan Sekarang
+                    
+                    <!-- 2F. ANDA BISA UBAH TEKS PESAN WHATSAPP DI SINI (Ganti yang ada tanda %20 sebagai spasi) -->
+                    <a href="https://wa.me/62895383156946?text=Halo%20Sedjahe,%20saya%20habis%20baca%20artikel%20di%20blog%20dan%20tertarik%20pesan." target="_blank" class="px-8 py-3 bg-primary-500 text-white hover:bg-primary-600 rounded-full font-bold transition-colors flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp"></i> Pesan Langsung
                     </a>
                 </div>
             </div>
@@ -171,6 +169,7 @@
         </article>
     </main>
 
+    <!-- Footer (Sama di semua halaman, jangan diubah) -->
     <footer class="bg-slate-50 border-t border-slate-200 pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
@@ -199,7 +198,7 @@
                     <ul class="space-y-3">
                         <li class="flex items-start text-slate-500">
                             <i class="fa-solid fa-location-dot mt-1 w-6 text-primary-600"></i> 
-                            <span>Jl. Kebayoran Baru<br>Jakarta Selatan</span>
+                            <span>Jl. Herbal Alami No. 123<br>Jakarta Selatan</span>
                         </li>
                         <li class="flex items-center text-slate-500">
                             <a href="https://wa.me/62895383156946" target="_blank" class="flex items-center hover:text-primary-600 transition-colors">
