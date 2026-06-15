@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sedjahe.github.io/Sedjahe/sitemap.xml
+Sitemap: https://sedjahe.vercel.app/sitemap.xml
