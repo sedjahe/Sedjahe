@@ -3,167 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE JOURNAL ⚡ Artikel & Hacks Kesehatan | Sedjahe</title>
     
-    <meta name="description" content="Kumpulan hacks kesehatan, fakta rempah nusantara, dan tips hindari sugar crash. Edukasi gaya hidup sehat buat Gen Z persembahan Sedjahe.">
-    <meta name="keywords" content="blog kesehatan gen z, artikel herbal kekinian, manfaat jamu, gaya hidup sehat, anti tipes club, sedjahe">
-    <meta name="author" content="Sedjahe">
+    <!-- ========================================== -->
+    <!-- BAGIAN 1: SEO (YANG HARUS ANDA UBAH)       -->
+    <!-- ========================================== -->
+    
+    <!-- 1A. GANTI JUDUL TAB BROWSER (Tampil besar di Google) -->
+    <title>TULIS JUDUL ARTIKEL DI SINI | Blog Sedjahe</title>
+    
+    <!-- 1B. GANTI META DESCRIPTION (Tampil teks abu-abu kecil di Google) -->
+    <!-- Tips: Maksimal 150 huruf. Masukkan kata kunci yang sering dicari orang -->
+    <meta name="description" content="GANTI TEKS INI. Contoh: Sering masuk angin? Temukan rahasia resep tradisional jahe merah untuk kembalikan stamina Anda dengan cepat dan alami.">
+    
+    <!-- 1C. GANTI KATA KUNCI (Opsional) -->
+    <meta name="keywords" content="kata kunci 1, kata kunci 2, kata kunci 3">
+    
+    <meta name="author" content="Tim Sedjahe">
 
-    <link rel="icon" type="image/png" href="assets/logo.png">
-
-    <!-- Open Graph (Vercel) -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sedjahe.vercel.app/blog.html">
-    <meta property="og:title" content="THE JOURNAL ⚡ Artikel & Hacks Kesehatan Sedjahe">
-    <meta property="og:description" content="Kumpulan hacks kesehatan, fakta rempah nusantara, dan tips hindari sugar crash buat lo.">
-    <meta property="og:image" content="https://sedjahe.vercel.app/assets/logo.png">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://sedjahe.vercel.app/blog.html">
-    <meta name="twitter:title" content="THE JOURNAL ⚡ Artikel & Hacks Kesehatan Sedjahe">
-    <meta name="twitter:description" content="Kumpulan hacks kesehatan, fakta rempah nusantara, dan tips hindari sugar crash buat lo.">
-    <meta name="twitter:image" content="https://sedjahe.vercel.app/assets/logo.png">
+    <!-- ========================================== -->
+    <!-- (Kode pengaturan sistem - Jangan diubah)   -->
+    <!-- ========================================== -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <!-- Pengaturan Open Graph agar pas di-share di WA/FB ada gambarnya -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sedjahe.github.io/Sedjahe/blog/NAMA-FILE-ANDA-NANTI.html">
+    <meta property="og:title" content="TULIS JUDUL ARTIKEL DI SINI (Samakan dengan 1A)">
+    <meta property="og:description" content="TULIS DESKRIPSI DI SINI (Samakan dengan 1B)">
+    <meta property="og:image" content="https://sedjahe.github.io/Sedjahe/assets/logo.png">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: { sans: ['Space Grotesk', 'sans-serif'], mono: ['Space Mono', 'monospace'] },
-                    colors: { acid: '#c4fc21', hyper: '#ff4d00', cyber: '#000000', paper: '#f4f4f0', },
-                    animation: { 'marquee': 'marquee 15s linear infinite', },
-                    keyframes: { marquee: { '0%': { transform: 'translateX(0%)' }, '100%': { transform: 'translateX(-100%)' }, } }
+                    fontFamily: { sans: ['Inter', 'sans-serif'], },
+                    colors: {
+                        primary: { 50: '#f0fdf4', 100: '#dcfce7', 500: '#22c55e', 600: '#16a34a', 700: '#15803d', },
+                        accent: { 500: '#f97316', 600: '#ea580c', }
+                    }
                 }
             }
         }
     </script>
-
-    <style>
-        body { background-color: #f4f4f0; background-image: radial-gradient(#000 1px, transparent 1px); background-size: 24px 24px; }
-        .neo-border { border: 3px solid #000; }
-        .neo-shadow { box-shadow: 6px 6px 0px #000; transition: all 0.2s ease; }
-        .neo-shadow:hover { box-shadow: 2px 2px 0px #000; transform: translate(4px, 4px); }
-        .neo-shadow-static { box-shadow: 8px 8px 0px #000; }
-    </style>
 </head>
-<body class="text-cyber flex flex-col min-h-screen selection:bg-acid selection:text-cyber">
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen selection:bg-primary-100 selection:text-primary-700">
 
-    <!-- Header / Navigasi -->
-    <header class="bg-acid neo-border border-x-0 sticky top-0 z-40">
+    <!-- Header / Navigasi (Sama di semua halaman, jangan diubah) -->
+    <header class="bg-white/80 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <a href="index.html" class="flex-shrink-0 flex items-center gap-3 group">
-                    <img src="assets/logo.png" alt="Logo" class="h-12 w-12 object-cover rounded-full neo-border bg-white neo-shadow">
-                    <span class="font-black text-3xl tracking-tighter uppercase italic">Sedjahe<span class="text-hyper">.</span></span>
+                <a href="/" class="flex-shrink-0 flex items-center gap-3 group">
+                    <img src="../assets/logo.png" alt="Logo Sedjahe" class="h-12 w-12 object-cover rounded-full mix-blend-multiply border border-slate-100 shadow-sm">
+                    <span class="font-bold text-2xl tracking-tight text-slate-900 hidden sm:block">Sedjahe<span class="text-accent-500">.</span></span>
                 </a>
-                <nav class="hidden md:flex space-x-8 font-bold text-lg uppercase tracking-wide">
-                    <a href="index.html" class="hover:text-hyper hover:-translate-y-1 transition-transform">Beranda</a>
-                    <a href="produk.html" class="hover:text-hyper hover:-translate-y-1 transition-transform">Katalog</a>
-                    <a href="tentang.html" class="hover:text-hyper hover:-translate-y-1 transition-transform">Our Story</a>
-                    <a href="blog.html" class="border-b-4 border-cyber pb-1">Journal</a>
+                
+                <nav class="hidden md:flex space-x-10">
+                    <a href="/" class="text-slate-500 hover:text-primary-600 font-medium transition-colors">Beranda</a>
+                    <a href="../produk.html" class="text-slate-500 hover:text-primary-600 font-medium transition-colors">Produk</a>
+                    <a href="../tentang.html" class="text-slate-500 hover:text-primary-600 font-medium transition-colors">Tentang Kami</a>
+                    <a href="#" class="text-primary-600 font-semibold">Blog</a>
                 </nav>
+
                 <div class="hidden md:flex items-center">
-                    <a href="https://wa.me/62895383156946" target="_blank" class="bg-white text-cyber neo-border neo-shadow px-6 py-2.5 font-black uppercase text-sm flex items-center gap-2 hover:bg-hyper hover:text-white transition-colors"><i class="fa-solid fa-bolt"></i> Order Now</a>
+                    <a href="https://wa.me/62895383156946" target="_blank" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-sm hover:shadow-md flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Hubungi Kami
+                    </a>
                 </div>
-                <div class="md:hidden flex items-center"><button id="mobile-menu-btn" class="bg-white p-2 neo-border neo-shadow text-cyber"><i class="fa-solid fa-bars text-xl"></i></button></div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-500 hover:text-primary-600 focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
             </div>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-paper neo-border border-x-0 border-t-0 absolute w-full z-40">
-            <div class="p-6 flex flex-col space-y-4 font-black text-xl uppercase">
-                <a href="index.html" class="bg-white neo-border p-3 text-center hover:bg-acid">Beranda</a>
-                <a href="produk.html" class="bg-white neo-border p-3 text-center hover:bg-acid">Katalog</a>
-                <a href="tentang.html" class="bg-white neo-border p-3 text-center hover:bg-acid">Our Story</a>
-                <a href="blog.html" class="bg-acid neo-border neo-shadow p-3 text-center">Journal</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full shadow-lg z-40">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="/" class="block px-3 py-3 rounded-lg text-base font-medium text-slate-600 hover:text-primary-600 hover:bg-slate-50">Beranda</a>
+                <a href="../produk.html" class="block px-3 py-3 rounded-lg text-base font-medium text-slate-600 hover:text-primary-600 hover:bg-slate-50">Produk</a>
+                <a href="../tentang.html" class="block px-3 py-3 rounded-lg text-base font-medium text-slate-600 hover:text-primary-600 hover:bg-slate-50">Tentang Kami</a>
+                <a href="#" class="block px-3 py-3 rounded-lg text-base font-semibold text-primary-600 bg-primary-50">Blog</a>
             </div>
         </div>
     </header>
 
-    <main class="flex-grow">
-        <section class="bg-paper py-16 lg:py-24 border-b-4 border-black overflow-hidden relative">
-            <div class="absolute -top-10 -right-10 text-[15rem] opacity-5"><i class="fa-solid fa-book-skull"></i></div>
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-                <div class="inline-block bg-hyper text-white font-mono text-sm font-bold px-4 py-1 neo-border mb-6 transform rotate-2">
-                    [ DATA_BANK_ACCESSED ]
-                </div>
-                <h1 class="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-4" style="-webkit-text-stroke: 2px black; color: white;">
-                    The <span class="text-acid" style="-webkit-text-stroke: 0;">Journal</span>
-                </h1>
-                <p class="font-mono text-lg max-w-2xl mx-auto bg-white p-4 neo-border neo-shadow-static font-bold">
-                    Hacks kesehatan, mitos vs fakta herbal, dan panduan *survive* dari hustle culture tanpa ngorbanin ginjal lo.
-                </p>
-            </div>
-        </section>
-
-        <section class="py-20 bg-cyber">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Main Content (Artikel Blog) -->
+    <main class="flex-grow bg-white">
+        <article class="max-w-3xl mx-auto px-4 sm:px-6 py-12 md:py-20">
+            
+            <div class="mb-8">
+                <a href="/" class="text-primary-600 hover:underline text-sm font-medium"><i class="fa-solid fa-arrow-left mr-2"></i>Kembali ke Beranda</a>
+                <div class="mt-6 flex items-center gap-3">
+                    <span class="bg-accent-50 text-accent-600 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Edukasi Herbal</span>
                     
-                    <!-- Artikel 1 -->
-                    <article class="bg-white neo-border neo-shadow p-6 flex flex-col cursor-pointer group hover:-translate-y-2 transition-transform" onclick="window.location.href='blog/manfaat-jahe.html'">
-                        <div class="h-48 bg-hyper neo-border mb-6 flex items-center justify-center relative overflow-hidden">
-                            <span class="absolute top-3 left-3 bg-cyber text-acid text-xs font-mono font-bold px-3 py-1 neo-border uppercase">Body Hacks</span>
-                            <i class="fa-solid fa-fire-flame-curved text-6xl text-white group-hover:scale-125 transition-transform duration-300"></i>
-                        </div>
-                        <div class="text-xs font-mono font-bold text-gray-500 mb-3 uppercase">> Log: 10_JUN_2026</div>
-                        <h3 class="text-2xl font-black uppercase mb-3 leading-tight group-hover:text-hyper transition-colors"><a href="blog/manfaat-jahe.html">7 Manfaat Ajaib Jahe Merah Buat Daily Buff (Anti Tipes)</a></h3>
-                        <p class="font-mono text-sm text-gray-600 mb-6 flex-grow">Gampang capek? Cek 7 rahasia jahe merah asli buat nge-boost imunitas tubuh lo. Investasi kesehatan dari sekarang.</p>
-                        <div class="w-full bg-cyber text-white text-center py-3 font-black uppercase neo-border group-hover:bg-acid group-hover:text-cyber transition-colors">Read Data <i class="fa-solid fa-arrow-right ml-2"></i></div>
-                    </article>
-
-                    <!-- Artikel 2 -->
-                    <article class="bg-white neo-border neo-shadow p-6 flex flex-col cursor-pointer group hover:-translate-y-2 transition-transform" onclick="window.location.href='blog/kenapa-herbal.html'">
-                        <div class="h-48 bg-acid neo-border mb-6 flex items-center justify-center relative overflow-hidden">
-                            <span class="absolute top-3 left-3 bg-cyber text-white text-xs font-mono font-bold px-3 py-1 neo-border uppercase">Mindset Check</span>
-                            <i class="fa-solid fa-skull-crossbones text-6xl text-cyber group-hover:scale-125 transition-transform duration-300"></i>
-                        </div>
-                        <div class="text-xs font-mono font-bold text-gray-500 mb-3 uppercase">> Log: 11_JUN_2026</div>
-                        <h3 class="text-2xl font-black uppercase mb-3 leading-tight group-hover:text-hyper transition-colors"><a href="blog/kenapa-herbal.html">Stop Minum Gula Berlebih! Kenapa Lo Harus Switch ke Herbal</a></h3>
-                        <p class="font-mono text-sm text-gray-600 mb-6 flex-grow">Sering sugar crash abis minum boba? Udah saatnya switch ke daily potion alami. Baca fakta pahit soal gula di sini.</p>
-                        <div class="w-full bg-cyber text-white text-center py-3 font-black uppercase neo-border group-hover:bg-hyper transition-colors">Read Data <i class="fa-solid fa-arrow-right ml-2"></i></div>
-                    </article>
-
+                    <!-- 2A. GANTI TANGGAL DI SINI -->
+                    <span class="text-slate-400 text-sm"><i class="fa-regular fa-calendar mr-2"></i> 15 Juni 2026</span>
                 </div>
             </div>
-        </section>
+
+            <!-- ========================================== -->
+            <!-- BAGIAN 2: ISI ARTIKEL (YANG HARUS ANDA UBAH)-->
+            <!-- ========================================== -->
+
+            <!-- 2B. GANTI JUDUL BESAR ARTIKEL (H1) -->
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+                TULIS JUDUL ARTIKEL BESAR DI SINI
+            </h1>
+
+            <div class="flex items-center gap-3 mb-10 pb-10 border-b border-slate-100">
+                <img src="../assets/logo.png" alt="Tim Sedjahe" class="w-10 h-10 rounded-full border border-slate-200">
+                <div>
+                    <p class="text-sm font-bold text-slate-900">Ditulis oleh Tim Sedjahe</p>
+                    <p class="text-xs text-slate-500">Pakar Rempah & Herbal Nusantara</p>
+                </div>
+            </div>
+
+            <div class="prose prose-lg prose-slate max-w-none prose-headings:text-slate-900 prose-a:text-primary-600 hover:prose-a:text-primary-700">
+                
+                <!-- 2C. GANTI PARAGRAF PEMBUKA (Gunakan tag <p>...</p>) -->
+                <p class="lead text-xl text-slate-600 mb-8">
+                    Tulis paragraf pembuka artikel Anda di sini. Buat semenarik mungkin agar pembaca mau lanjut membaca.
+                </p>
+
+                <!-- 2D. GANTI SUB-JUDUL (Gunakan tag <h2>...</h2> atau <h3>...</h3>) -->
+                <h2 class="text-2xl font-bold mt-10 mb-4">Sub Judul Bagian 1</h2>
+                
+                <!-- 2E. GANTI PARAGRAF ISI -->
+                <p class="mb-6 text-slate-600">
+                    Tulis isi paragraf Anda di sini. Anda bisa membuat banyak paragraf dengan meng-copy kode &lt;p&gt;...&lt;/p&gt; ini ke bawah.
+                </p>
+
+                <!-- Contoh membuat tulisan bercetak tebal: gunakan <strong>kata tebal</strong> -->
+                <p class="mb-6 text-slate-600">
+                    Ini adalah contoh kalimat dengan <strong>kata bercetak tebal</strong> dan <em>kata bercetak miring</em>.
+                </p>
+
+                <h3 class="text-xl font-bold mt-8 mb-3">Sub Judul Bagian 2 (Lebih Kecil)</h3>
+                <p class="mb-6 text-slate-600">
+                    Lanjutkan menulis isi artikel Anda.
+                </p>
+
+            </div>
+
+            <!-- CTA Produk di dalam Artikel (Jangan diubah strukturnya, hanya teks WA-nya saja jika perlu) -->
+            <div class="mt-16 bg-slate-900 rounded-[2rem] p-8 md:p-12 text-center relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-accent-500 to-primary-500"></div>
+                <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Ingin merasakan khasiat alami tanpa repot?</h3>
+                <p class="text-slate-300 mb-8 max-w-lg mx-auto">
+                    <strong>Produk Sedjahe</strong> diformulasikan khusus dari rimpang pilihan. Praktis, 100% alami, dan siap menemani hari Anda!
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="../produk.html" class="px-8 py-3 bg-white text-slate-900 hover:bg-slate-100 rounded-full font-bold transition-colors">
+                        Lihat Produk
+                    </a>
+                    
+                    <!-- 2F. ANDA BISA UBAH TEKS PESAN WHATSAPP DI SINI (Ganti yang ada tanda %20 sebagai spasi) -->
+                    <a href="https://wa.me/62895383156946?text=Halo%20Sedjahe,%20saya%20habis%20baca%20artikel%20di%20blog%20dan%20tertarik%20pesan." target="_blank" class="px-8 py-3 bg-primary-500 text-white hover:bg-primary-600 rounded-full font-bold transition-colors flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp"></i> Pesan Langsung
+                    </a>
+                </div>
+            </div>
+
+        </article>
     </main>
 
-    <footer class="bg-cyber text-white border-t-4 border-black pt-16 pb-8">
+    <!-- Footer (Sama di semua halaman, jangan diubah) -->
+    <footer class="bg-slate-50 border-t border-slate-200 pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12 border-b-2 border-gray-800 pb-12">
-                <div class="col-span-1 md:col-span-5">
-                    <h2 class="text-6xl font-black uppercase italic tracking-tighter mb-4 text-acid">SEDJAHE.</h2>
-                    <p class="font-mono text-gray-400 mb-6 max-w-sm">Jamu 2.0. Minuman herbal tradisional dengan attitude. 100% lokal, 100% natural.</p>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="/" class="flex items-center gap-3 mb-4">
+                        <img src="../assets/logo.png" alt="Logo Sedjahe" class="h-10 w-10 object-cover rounded-full mix-blend-multiply border border-slate-200">
+                        <span class="font-bold text-2xl tracking-tight text-slate-900">Sedjahe<span class="text-accent-500">.</span></span>
+                    </a>
+                    <p class="text-slate-500 mb-6 max-w-sm leading-relaxed">
+                        Menghadirkan kebaikan alam nusantara ke dalam setiap tegukan. Produk lokal berkualitas untuk kesehatan Anda.
+                    </p>
                 </div>
-                <div class="col-span-1 md:col-span-3">
-                    <h4 class="font-black text-xl uppercase mb-6 border-b-2 border-hyper inline-block pb-1">Menu</h4>
-                    <ul class="space-y-4 font-mono font-bold">
-                        <li><a href="index.html" class="hover:text-acid transition-colors">> Beranda</a></li>
-                        <li><a href="produk.html" class="hover:text-acid transition-colors">> Katalog Produk</a></li>
-                        <li><a href="tentang.html" class="hover:text-acid transition-colors">> Our Story</a></li>
-                        <li><a href="blog.html" class="hover:text-acid transition-colors">> Journal</a></li>
+                
+                <div>
+                    <h4 class="text-slate-900 font-bold mb-6">Tautan Cepat</h4>
+                    <ul class="space-y-3">
+                        <li><a href="/" class="text-slate-500 hover:text-primary-600 transition-colors">Beranda</a></li>
+                        <li><a href="../produk.html" class="text-slate-500 hover:text-primary-600 transition-colors">Katalog Produk</a></li>
+                        <li><a href="../tentang.html" class="text-slate-500 hover:text-primary-600 transition-colors">Tentang Kami</a></li>
+                        <li><a href="#" class="text-slate-500 hover:text-primary-600 transition-colors">Artikel Kesehatan</a></li>
                     </ul>
                 </div>
-                <div class="col-span-1 md:col-span-4">
-                    <h4 class="font-black text-xl uppercase mb-6 border-b-2 border-acid inline-block pb-1">Hit Us Up</h4>
-                    <ul class="space-y-4 font-mono">
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot mt-1 text-acid"></i> <span>HQ:<br>Jl. Kebayoran Baru, Jakarta Selatan</span></li>
-                        <li class="flex items-center gap-3"><i class="fa-brands fa-whatsapp text-hyper"></i> <a href="https://wa.me/62895383156946" target="_blank" class="hover:text-acid transition-colors font-bold">+62 895-3831-56946</a></li>
+
+                <div>
+                    <h4 class="text-slate-900 font-bold mb-6">Kontak</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start text-slate-500">
+                            <i class="fa-solid fa-location-dot mt-1 w-6 text-primary-600"></i> 
+                            <span>Jl. Herbal Alami No. 123<br>Jakarta Selatan</span>
+                        </li>
+                        <li class="flex items-center text-slate-500">
+                            <a href="https://wa.me/62895383156946" target="_blank" class="flex items-center hover:text-primary-600 transition-colors">
+                                <i class="fa-brands fa-whatsapp w-6 text-primary-600"></i> 
+                                <span>+62 895-3831-56946</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="flex flex-col md:flex-row justify-between items-center gap-4 font-mono text-xs text-gray-500 uppercase font-bold">
-                <p>&copy; 2026 SEDJAHE. NO FAKES ALLOWED.</p>
+            
+            <div class="border-t border-slate-200 pt-8 flex text-sm text-slate-500 justify-between">
+                <p>&copy; 2026 UMKM Sedjahe. Hak Cipta Dilindungi.</p>
             </div>
         </div>
     </footer>
 
     <script>
         document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
         });
     </script>
 </body>
