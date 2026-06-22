@@ -96,6 +96,13 @@
             overflow-x: hidden;
         }
         
+        /* Hilangkan kursor bawaan (Hanya aktif di desktop/laptop) */
+        @media (pointer: fine) {
+            * {
+                cursor: none !important;
+            }
+        }
+
         /* Brutalist Shadows & Borders */
         .neo-border {
             border: 3px solid #000;
@@ -120,9 +127,29 @@
         /* Hide scrollbar for marquee */
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* Kustom Kursor Style */
+        .cursor-hovering {
+            background-color: #ff4d00 !important; /* Warna berubah jadi Hyper Orange */
+            width: 56px !important;
+            height: 56px !important;
+            border-radius: 12px !important; /* Berubah bentuk agak kotak */
+            transform: translate(-50%, -50%) rotate(15deg) !important;
+        }
+        .cursor-clicking {
+            transform: translate(-50%, -50%) scale(0.6) !important;
+        }
     </style>
 </head>
 <body class="text-cyber flex flex-col min-h-screen selection:bg-acid selection:text-cyber">
+
+    <!-- ELEMEN KURSOR CUSTOM LUCU (Hanya muncul di Desktop) -->
+    <div id="cute-cursor" class="hidden md:flex flex-col items-center justify-center fixed pointer-events-none z-[99999] bg-acid neo-border rounded-full w-10 h-10 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-200 ease-out shadow-[4px_4px_0_#000]">
+        <span class="text-sm font-black text-cyber">✨</span>
+    </div>
+    <!-- Buntut Kursor (Trail) -->
+    <div id="cute-cursor-trail" class="hidden md:block fixed pointer-events-none z-[99998] bg-white neo-border rounded-full w-4 h-4 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-75 ease-out shadow-[2px_2px_0_#000]"></div>
+
 
     <!-- Y2K Top Bar Marquee -->
     <div class="bg-hyper text-white neo-border border-x-0 border-t-0 py-1 overflow-hidden relative z-50 flex whitespace-nowrap">
@@ -136,7 +163,6 @@
             <span class="mx-4">⚡ BOOST YOUR IMMUNITY</span>
             <span class="mx-4">⚡ LOCAL PRIDE</span>
         </div>
-        <!-- Duplicate for seamless loop -->
         <div class="animate-marquee font-mono text-sm font-bold tracking-widest uppercase flex items-center absolute top-1 left-full">
             <span class="mx-4">⚡ 100% NATURAL POTION</span>
             <span class="mx-4">⚡ NO FAKE SUGAR</span>
@@ -199,40 +225,37 @@
         <!-- Y2K Parallax Hero Section (Revising the UI) -->
         <section class="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-paper pt-16 pb-24 lg:pt-24 lg:pb-32">
             
-            <!-- Parallax Background Images (Edge Focus Variant) -->
+            <!-- 4 PARALLAX CARTOON STICKERS -->
             <div id="parallax-container" class="pointer-events-none absolute inset-0 overflow-hidden z-0">
-                <!-- Image 1: Top Left (Ginger) -->
-                <div class="parallax-wrapper absolute" style="top: 8%; left: 4%; z-index: 8;" data-depth="0.85">
-                    <img src="https://images.unsplash.com/photo-1606041008023-472dfb5e530f?q=80&w=500&auto=format&fit=crop" alt="Ginger" class="parallax-img opacity-0 blur-xl scale-90 aspect-[4/3] h-20 w-32 sm:h-40 sm:w-56 md:h-52 md:w-80 rounded-lg object-cover neo-border neo-shadow-static transition-all duration-1000 ease-out" style="transition-delay: 0ms;">
+                
+                <!-- Sticker 1: Daun Herbal -->
+                <div class="parallax-wrapper absolute" style="top: 15%; left: 8%; z-index: 8;" data-depth="0.85">
+                    <div class="parallax-img opacity-0 scale-90 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 bg-white rounded-2xl flex items-center justify-center text-5xl sm:text-7xl neo-border neo-shadow-static transition-all duration-1000 ease-out" style="transition-delay: 0ms; transform: rotate(-10deg);">
+                        🌿
+                    </div>
                 </div>
-                <!-- Image 2: Top Right (Turmeric) -->
-                <div class="parallax-wrapper absolute" style="top: 8%; right: 4%; z-index: 9;" data-depth="0.9">
-                    <img src="https://images.unsplash.com/photo-1615486171448-4df270725227?q=80&w=500&auto=format&fit=crop" alt="Turmeric" class="parallax-img opacity-0 blur-xl scale-90 aspect-[4/3] h-20 w-32 sm:h-40 sm:w-56 md:h-52 md:w-80 rounded-lg object-cover neo-border neo-shadow-static transition-all duration-1000 ease-out" style="transition-delay: 120ms;">
+                
+                <!-- Sticker 2: Tunas / Kecambah -->
+                <div class="parallax-wrapper absolute" style="top: 12%; right: 10%; z-index: 9;" data-depth="0.9">
+                    <div class="parallax-img opacity-0 scale-90 w-20 h-20 sm:w-28 sm:h-28 md:w-36 md:h-36 bg-acid rounded-full flex items-center justify-center text-4xl sm:text-6xl neo-border neo-shadow-static transition-all duration-1000 ease-out" style="transition-delay: 200ms; transform: rotate(15deg);">
+                        🌱
+                    </div>
                 </div>
-                <!-- Image 3: Mid Left (Mint Leaves) -->
-                <div class="parallax-wrapper absolute" style="top: 38%; left: 6%; z-index: 3;" data-depth="0.3">
-                    <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=500&auto=format&fit=crop" alt="Mint Leaves" class="parallax-img opacity-0 blur-xl scale-90 aspect-[4/3] h-20 w-32 sm:h-40 sm:w-56 md:h-52 md:w-80 rounded-lg object-cover neo-border neo-shadow-static transition-all duration-1000 ease-out" style="transition-delay: 240ms;">
+                
+                <!-- Sticker 3: Bunga Rempah -->
+                <div class="parallax-wrapper absolute" style="top: 65%; left: 12%; z-index: 3;" data-depth="0.4">
+                    <div class="parallax-img opacity-0 scale-90 w-28 h-28 sm:w-36 sm:h-36 md:w-48 md:h-48 bg-hyper rounded-[2rem] flex items-center justify-center text-6xl sm:text-8xl neo-border neo-shadow-static transition-all duration-1000 ease-out" style="transition-delay: 400ms; transform: rotate(-5deg);">
+                        🌼
+                    </div>
                 </div>
-                <!-- Image 4: Mid Right (Cinnamon / Anise) -->
-                <div class="parallax-wrapper absolute" style="top: 38%; right: 6%; z-index: 3;" data-depth="0.35">
-                    <img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?q=80&w=500&auto=format&fit=crop" alt="Cinnamon Spices" class="parallax-img opacity-0 blur-xl scale-90 aspect-[4/3] h-20 w-32 sm:h-40 sm:w-56 md:h-52 md:w-80 rounded-lg object-cover neo-border neo-shadow-static transition-all duration-1000 ease-out" style="transition-delay: 360ms;">
+                
+                <!-- Sticker 4: Ramuan Panas -->
+                <div class="parallax-wrapper absolute" style="top: 60%; right: 12%; z-index: 8;" data-depth="0.8">
+                    <div class="parallax-img opacity-0 scale-90 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 bg-white rounded-3xl flex items-center justify-center text-5xl sm:text-7xl neo-border neo-shadow-static transition-all duration-1000 ease-out" style="transition-delay: 600ms; transform: rotate(10deg);">
+                        🍵
+                    </div>
                 </div>
-                <!-- Image 5: Bottom Left (Assorted Spices) -->
-                <div class="parallax-wrapper absolute" style="top: 68%; left: 4%; z-index: 8;" data-depth="0.8">
-                    <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=500&auto=format&fit=crop" alt="Assorted Spices" class="parallax-img opacity-0 blur-xl scale-90 aspect-[4/3] h-20 w-32 sm:h-40 sm:w-56 md:h-52 md:w-80 rounded-lg object-cover neo-border neo-shadow-static transition-all duration-1000 ease-out" style="transition-delay: 480ms;">
-                </div>
-                <!-- Image 6: Bottom Right (Dried Herbs) -->
-                <div class="parallax-wrapper absolute" style="top: 68%; right: 4%; z-index: 8;" data-depth="0.85">
-                    <img src="https://images.unsplash.com/photo-1564834724105-918b73d1b9e0?q=80&w=500&auto=format&fit=crop" alt="Dried Herbs" class="parallax-img opacity-0 blur-xl scale-90 aspect-[4/3] h-20 w-32 sm:h-40 sm:w-56 md:h-52 md:w-80 rounded-lg object-cover neo-border neo-shadow-static transition-all duration-1000 ease-out" style="transition-delay: 600ms;">
-                </div>
-                <!-- Image 7: Far Left (Spice Bowls) -->
-                <div class="parallax-wrapper absolute" style="top: 52%; left: 2%; z-index: 4;" data-depth="0.4">
-                    <img src="https://images.unsplash.com/photo-1628157588553-5eeea00af15c?q=80&w=500&auto=format&fit=crop" alt="Spice Bowls" class="parallax-img opacity-0 blur-xl scale-90 aspect-[4/3] h-20 w-32 sm:h-40 sm:w-56 md:h-52 md:w-80 rounded-lg object-cover neo-border neo-shadow-static transition-all duration-1000 ease-out" style="transition-delay: 720ms;">
-                </div>
-                <!-- Image 8: Far Right (Green Leaves) -->
-                <div class="parallax-wrapper absolute" style="top: 52%; right: 2%; z-index: 4;" data-depth="0.45">
-                    <img src="https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?q=80&w=500&auto=format&fit=crop" alt="Green Leaves" class="parallax-img opacity-0 blur-xl scale-90 aspect-[4/3] h-20 w-32 sm:h-40 sm:w-56 md:h-52 md:w-80 rounded-lg object-cover neo-border neo-shadow-static transition-all duration-1000 ease-out" style="transition-delay: 840ms;">
-                </div>
+
             </div>
 
             <!-- Central Content -->
@@ -285,7 +308,7 @@
                         </div>
                         <h4 class="text-2xl font-black uppercase mb-2">Jahe Merah Instan</h4>
                         <p class="font-mono text-sm text-gray-600 mb-6 flex-grow">Rimpang murni + Gula Aren. Meredakan masuk angin seketika. Instant warmth, instant buff.</p>
-                        <a href="https://wa.me/62895383156946" target="_blank" class="w-full bg-cyber text-white text-center py-3 font-black uppercase neo-border hover:bg-hyper transition-colors">minum ini kalo lagi masuk angin bro, buruan 😤 <i class="fa-solid fa-cart-shopping ml-2"></i></a>
+                        <a href="https://wa.me/62895383156946" target="_blank" class="w-full bg-cyber text-white text-center py-3 font-black uppercase neo-border hover:bg-hyper transition-colors">Cop This <i class="fa-solid fa-cart-shopping ml-2"></i></a>
                     </div>
 
                     <!-- Item 2: Beras Kencur -->
@@ -299,7 +322,7 @@
                         </div>
                         <h4 class="text-2xl font-black uppercase mb-2">Beras Kencur Segar</h4>
                         <p class="font-mono text-sm text-gray-600 mb-6 flex-grow">Stamina potion. Hilangkan pegal linu abis nongkrong atau push rank semalaman.</p>
-                        <a href="https://wa.me/62895383156946" target="_blank" class="w-full bg-cyber text-white text-center py-3 font-black uppercase neo-border hover:bg-acid hover:text-cyber transition-colors">cobain ini kalo lagi batuk & FLU 😓 <i class="fa-solid fa-cart-shopping ml-2"></i></a>
+                        <a href="https://wa.me/62895383156946" target="_blank" class="w-full bg-cyber text-white text-center py-3 font-black uppercase neo-border hover:bg-acid hover:text-cyber transition-colors">Cop This <i class="fa-solid fa-cart-shopping ml-2"></i></a>
                     </div>
 
                     <!-- Item 3: Wedang Uwuh -->
@@ -313,7 +336,7 @@
                         </div>
                         <h4 class="text-2xl font-black uppercase mb-2">Wedang Uwuh</h4>
                         <p class="font-mono text-sm text-gray-600 mb-6 flex-grow">Ramuan tradisional keraton dari rempah utuh Nusantara. Solusi jitu usir flu dan hangatkan badan.</p>
-                        <a href="https://wa.me/62895383156946" target="_blank" class="w-full bg-cyber text-white text-center py-3 font-black uppercase neo-border hover:bg-white hover:text-cyber transition-colors">radang tenggorokan, imunitas tubuh, kolestrol, mending lu minum ini <i class="fa-solid fa-cart-shopping ml-2"></i></a>
+                        <a href="https://wa.me/62895383156946" target="_blank" class="w-full bg-cyber text-white text-center py-3 font-black uppercase neo-border hover:bg-white hover:text-cyber transition-colors">Cop This <i class="fa-solid fa-cart-shopping ml-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -438,39 +461,86 @@
             document.getElementById('mobile-menu').classList.toggle('hidden');
         });
 
-        // Parallax Hero Effect Logic
+        // ----------------------------------------------------
+        // KUSTOM KURSOR & ANIMASI PARALLAX
+        // ----------------------------------------------------
         document.addEventListener('DOMContentLoaded', () => {
+            const cursor = document.getElementById('cute-cursor');
+            const trail = document.getElementById('cute-cursor-trail');
+            
+            // 1. Logika Kursor Interaktif (Hanya jalan di PC/Laptop)
+            if (window.matchMedia("(pointer: fine)").matches) {
+                let mouseX = 0, mouseY = 0;
+                let trailX = 0, trailY = 0;
+
+                window.addEventListener('mousemove', (e) => {
+                    mouseX = e.clientX;
+                    mouseY = e.clientY;
+                    
+                    // Main cursor mengikuti instan
+                    cursor.style.left = `${mouseX}px`;
+                    cursor.style.top = `${mouseY}px`;
+                });
+
+                // Efek "Karet/Trail" lambat untuk buntut kursor
+                function animateTrail() {
+                    trailX += (mouseX - trailX) * 0.2;
+                    trailY += (mouseY - trailY) * 0.2;
+                    trail.style.left = `${trailX}px`;
+                    trail.style.top = `${trailY}px`;
+                    requestAnimationFrame(animateTrail);
+                }
+                animateTrail();
+
+                // Animasi saat kursor menyorot tombol (Hover State)
+                const interactables = document.querySelectorAll('a, button, .parallax-wrapper');
+                interactables.forEach(el => {
+                    el.addEventListener('mouseenter', () => {
+                        cursor.classList.add('cursor-hovering');
+                        cursor.innerHTML = '<span class="text-2xl font-black text-white">⚡</span>';
+                        trail.style.opacity = '0'; // Sembunyikan buntut saat hover
+                    });
+                    el.addEventListener('mouseleave', () => {
+                        cursor.classList.remove('cursor-hovering');
+                        cursor.innerHTML = '<span class="text-sm font-black text-cyber">✨</span>';
+                        trail.style.opacity = '1';
+                    });
+                });
+
+                // Animasi saat kursor diklik (Click State)
+                window.addEventListener('mousedown', () => cursor.classList.add('cursor-clicking'));
+                window.addEventListener('mouseup', () => cursor.classList.remove('cursor-clicking'));
+            }
+
+            // 2. Animasi Parallax Stiker
             const wrappers = document.querySelectorAll('.parallax-wrapper');
             const images = document.querySelectorAll('.parallax-img');
             
-            // Trigger entry animation
+            // Masuk dengan efek "pop up"
             setTimeout(() => {
                 images.forEach(img => {
-                    img.classList.remove('opacity-0', 'blur-xl', 'scale-90');
-                    img.classList.add('opacity-100', 'blur-none', 'scale-100');
+                    img.classList.remove('opacity-0', 'scale-90');
+                    img.classList.add('opacity-100', 'scale-100');
                 });
             }, 100);
 
-            // Parallax movement variables
-            let targetX = 0, targetY = 0;
-            let currentX = 0, currentY = 0;
-            const maxOffset = 40; 
+            let pTargetX = 0, pTargetY = 0;
+            let pCurrentX = 0, pCurrentY = 0;
+            const maxOffset = 50; 
 
-            // Track mouse movement
             window.addEventListener('mousemove', (e) => {
-                targetX = (e.clientX / window.innerWidth) * 2 - 1;
-                targetY = (e.clientY / window.innerHeight) * 2 - 1;
+                pTargetX = (e.clientX / window.innerWidth) * 2 - 1;
+                pTargetY = (e.clientY / window.innerHeight) * 2 - 1;
             });
 
-            // Smooth spring-like animation loop (Linear Interpolation)
             function animateParallax() {
-                currentX += (targetX - currentX) * 0.1;
-                currentY += (targetY - currentY) * 0.1;
+                pCurrentX += (pTargetX - pCurrentX) * 0.1;
+                pCurrentY += (pTargetY - pCurrentY) * 0.1;
 
                 wrappers.forEach(wrapper => {
                     const depth = parseFloat(wrapper.getAttribute('data-depth'));
-                    const translateX = currentX * maxOffset * depth;
-                    const translateY = currentY * maxOffset * depth;
+                    const translateX = pCurrentX * maxOffset * depth;
+                    const translateY = pCurrentY * maxOffset * depth;
                     
                     wrapper.style.transform = `translate(${translateX}px, ${translateY}px)`;
                 });
@@ -479,46 +549,6 @@
             }
 
             animateParallax();
-        });
-
-        // Cute Mouse Trail Effect (Herbal + Y2K Sparkles)
-        const cursorEmojis = ['✨', '🍃', '🌿', '⚡', '💊'];
-        let lastSpawnTime = 0;
-        
-        window.addEventListener('mousemove', (e) => {
-            const now = Date.now();
-            // Batasi kemunculan emoji agar web tidak lag (setiap 50 milidetik)
-            if (now - lastSpawnTime > 50) {
-                lastSpawnTime = now;
-                
-                // Ada probabilitas 50% untuk memunculkan partikel setiap mouse digerakkan
-                if (Math.random() > 0.5) { 
-                    const particle = document.createElement('div');
-                    particle.innerText = cursorEmojis[Math.floor(Math.random() * cursorEmojis.length)];
-                    particle.className = 'pointer-events-none fixed z-[9999] text-xl lg:text-2xl drop-shadow-md';
-                    particle.style.left = `${e.clientX}px`;
-                    particle.style.top = `${e.clientY}px`;
-                    
-                    // Transisi animasi (muncul lalu melayang dan menghilang)
-                    particle.style.transition = 'transform 1s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.8s ease-out';
-                    particle.style.transform = 'translate(-50%, -50%) scale(1) rotate(0deg)';
-                    particle.style.opacity = '1';
-                    document.body.appendChild(particle);
-
-                    // Jalankan efek melayang menggunakan requestAnimationFrame
-                    requestAnimationFrame(() => {
-                        const randomX = (Math.random() - 0.5) * 100; // Bergerak acak ke kiri/kanan
-                        const randomY = -50 - Math.random() * 100;   // Melayang ke atas
-                        const randomRotate = (Math.random() - 0.5) * 180; // Berputar sedikit
-                        
-                        particle.style.transform = `translate(calc(-50% + ${randomX}px), calc(-50% + ${randomY}px)) scale(0.5) rotate(${randomRotate}deg)`;
-                        particle.style.opacity = '0'; // Memudar
-                    });
-
-                    // Hapus elemen dari memori setelah animasi selesai (1 detik)
-                    setTimeout(() => particle.remove(), 1000);
-                }
-            }
         });
     </script>
 </body>
