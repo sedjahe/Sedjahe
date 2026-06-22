@@ -3,340 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WTF is Sedjahe? ⚡ OUR STORY</title>
+    <title>WTF is Sedjahe? 🌸 OUR STORY</title>
     
-    <meta name="description" content="Kisah Sedjahe: Reboot jamu tradisional buat Gen Z. Investasi kesehatan dari sekarang biar masa depan lo future-proof. No fake sugar, 100% real.">
-    <meta name="keywords" content="cerita sedjahe, tentang sedjahe, jamu gen z, kesehatan jangka panjang, minuman herbal y2k, jamu kekinian, investasi kesehatan">
+    <meta name="description" content="Kisah Sedjahe: Reboot jamu tradisional buat Gen Z. Investasi kesehatan dari sekarang biar masa depan lo future-proof. 🐱">
+    <meta name="keywords" content="cerita sedjahe, tentang sedjahe, jamu gen z, minuman herbal">
     <meta name="author" content="Sedjahe">
 
     <link rel="icon" type="image/png" href="assets/logo.png">
-
-    <!-- Open Graph (Vercel) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sedjahe.vercel.app/tentang.html">
-    <meta property="og:title" content="WTF is Sedjahe? ⚡ OUR STORY">
-    <meta property="og:description" content="Kisah Sedjahe: Reboot jamu tradisional buat Gen Z. Investasi kesehatan dari sekarang biar masa depan lo future-proof.">
+    <meta property="og:title" content="WTF is Sedjahe? 🌸 OUR STORY">
+    <meta property="og:description" content="Kisah Sedjahe: Reboot jamu tradisional buat Gen Z. 🐱">
     <meta property="og:image" content="https://sedjahe.vercel.app/assets/logo.png">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://sedjahe.vercel.app/tentang.html">
-    <meta name="twitter:title" content="WTF is Sedjahe? ⚡ OUR STORY">
-    <meta name="twitter:description" content="Kisah Sedjahe: Reboot jamu tradisional buat Gen Z. Investasi kesehatan dari sekarang biar masa depan lo future-proof.">
+    <meta name="twitter:title" content="WTF is Sedjahe? 🌸 OUR STORY">
+    <meta name="twitter:description" content="Kisah Sedjahe: Reboot jamu tradisional buat Gen Z. 🐱">
     <meta name="twitter:image" content="https://sedjahe.vercel.app/assets/logo.png">
-
-    <!-- Canonical URL -->
     <link rel="canonical" href="https://sedjahe.vercel.app/tentang.html">
 
-    <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
-        {
-          "@type": "BreadcrumbList",
-          "itemListElement": [{
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Beranda",
-            "item": "https://sedjahe.vercel.app/"
-          },{
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Tentang Kami"
-          }]
-        },
-        {
-          "@type": "AboutPage",
-          "name": "Tentang Sedjahe",
-          "url": "https://sedjahe.vercel.app/tentang.html",
-          "description": "Kisah perjalanan Sedjahe, UMKM lokal yang berdedikasi melestarikan minuman herbal tradisional Indonesia."
-        }
+        { "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Beranda", "item": "https://sedjahe.vercel.app/" },{ "@type": "ListItem", "position": 2, "name": "Tentang Kami" }] },
+        { "@type": "AboutPage", "name": "Tentang Sedjahe", "url": "https://sedjahe.vercel.app/tentang.html", "description": "Kisah perjalanan Sedjahe, UMKM lokal yang gaul." }
       ]
     }
     </script>
 
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- FontAwesome & Google Fonts (Space Grotesk & Space Mono) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;900&family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
 
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: { 
-                        sans: ['Space Grotesk', 'sans-serif'], 
-                        mono: ['Space Mono', 'monospace'] 
-                    },
-                    colors: {
-                        acid: '#c4fc21',    
-                        hyper: '#ff4d00',   
-                        cyber: '#000000',   
-                        paper: '#f4f4f0',   
-                    },
-                    animation: {
-                        'marquee': 'marquee 15s linear infinite',
-                        'bounce-slow': 'bounce 3s infinite',
-                    },
-                    keyframes: {
-                        marquee: {
-                            '0%': { transform: 'translateX(0%)' },
-                            '100%': { transform: 'translateX(-100%)' },
-                        }
-                    }
+                    fontFamily: { sans: ['Space Grotesk', 'sans-serif'], cute: ['Nunito', 'sans-serif'] },
+                    colors: { sakura: '#ffb7b2', matcha: '#c1e1c1', taro: '#cdb4db', melon: '#ffdac1', cream: '#fffaf0', choco: '#4a3b32' },
+                    animation: { 'marquee': 'marquee 20s linear infinite', 'bounce-slow': 'bounce 3s infinite', 'spin-slow': 'spin 12s linear infinite' },
+                    keyframes: { marquee: { '0%': { transform: 'translateX(0%)' }, '100%': { transform: 'translateX(-100%)' } } }
                 }
             }
         }
     </script>
 
-    <!-- Custom CSS for Neo-Brutalism -->
     <style>
-        body {
-            background-color: #f4f4f0;
-            background-image: radial-gradient(#000000 1px, transparent 1px);
-            background-size: 24px 24px;
-        }
-        
-        .neo-border { border: 3px solid #000; }
-        .neo-border-b { border-bottom: 3px solid #000; }
-        .neo-shadow {
-            box-shadow: 6px 6px 0px #000;
-            transition: all 0.2s ease;
-        }
-        .neo-shadow:hover {
-            box-shadow: 2px 2px 0px #000;
-            transform: translate(4px, 4px);
-        }
-        .neo-shadow-static { box-shadow: 8px 8px 0px #000; }
-        
-        /* Custom Sticker Shapes */
-        .starburst {
-            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-        }
+        body { background-color: #fffaf0; background-image: radial-gradient(#ffb7b2 2px, transparent 2px); background-size: 32px 32px; overflow-x: hidden; color: #4a3b32; }
+        @media (pointer: fine) { * { cursor: none !important; } }
+        .neo-border { border: 4px solid #4a3b32; border-radius: 24px; }
+        .neo-shadow { box-shadow: 6px 6px 0px #ffb7b2; transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .neo-shadow:hover { box-shadow: 0px 0px 0px #ffb7b2; transform: translate(6px, 6px); }
+        .neo-shadow-static { box-shadow: 8px 8px 0px #ffb7b2; }
+        .cursor-hovering { background-color: #ffb7b2 !important; width: 70px !important; height: 70px !important; border-radius: 24px !important; transform: translate(-50%, -50%) rotate(-15deg) scale(1.1) !important; }
+        .cursor-clicking { transform: translate(-50%, -50%) scale(0.7) !important; }
     </style>
 </head>
-<body class="text-cyber flex flex-col min-h-screen selection:bg-hyper selection:text-white">
+<body class="font-cute flex flex-col min-h-screen selection:bg-sakura selection:text-choco">
 
-    <!-- Y2K Top Bar Marquee -->
-    <div class="bg-cyber text-acid neo-border border-x-0 border-t-0 py-1 overflow-hidden relative z-50 flex whitespace-nowrap">
-        <div class="animate-marquee font-mono text-sm font-bold tracking-widest uppercase flex items-center">
-            <span class="mx-4">⚡ INVEST IN YOUR BODY</span>
-            <span class="mx-4">⚡ HEALTH IS THE REAL FLEX</span>
-            <span class="mx-4">⚡ STAY FUTURE PROOF</span>
-            <span class="mx-4">⚡ INVEST IN YOUR BODY</span>
-            <span class="mx-4">⚡ HEALTH IS THE REAL FLEX</span>
-            <span class="mx-4">⚡ STAY FUTURE PROOF</span>
+    <div id="cute-cursor" class="hidden md:flex flex-col items-center justify-center fixed pointer-events-none z-[99999] bg-cream border-4 border-choco rounded-full w-14 h-14 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-200 ease-out shadow-[4px_4px_0_#4a3b32]"><span class="text-2xl font-black text-choco" id="cursor-emoji">🐱</span></div>
+    <div id="cute-cursor-trail" class="hidden md:block fixed pointer-events-none z-[99998] bg-sakura border-2 border-choco rounded-full w-4 h-4 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-100 ease-out shadow-[2px_2px_0_#4a3b32]"></div>
+
+    <div class="bg-sakura text-choco border-b-4 border-choco py-1.5 overflow-hidden relative z-50 flex whitespace-nowrap">
+        <div class="animate-marquee font-sans text-sm font-black tracking-widest uppercase flex items-center">
+            <span class="mx-4">⚡ INVEST IN YOUR BODY</span><span class="mx-4">🐱 HEALTH IS THE REAL FLEX</span><span class="mx-4">🌸 STAY FUTURE PROOF</span>
+            <span class="mx-4">⚡ INVEST IN YOUR BODY</span><span class="mx-4">🐱 HEALTH IS THE REAL FLEX</span><span class="mx-4">🌸 STAY FUTURE PROOF</span>
         </div>
-        <div class="animate-marquee font-mono text-sm font-bold tracking-widest uppercase flex items-center absolute top-1 left-full">
-            <span class="mx-4">⚡ INVEST IN YOUR BODY</span>
-            <span class="mx-4">⚡ HEALTH IS THE REAL FLEX</span>
-            <span class="mx-4">⚡ STAY FUTURE PROOF</span>
-            <span class="mx-4">⚡ INVEST IN YOUR BODY</span>
-            <span class="mx-4">⚡ HEALTH IS THE REAL FLEX</span>
-            <span class="mx-4">⚡ STAY FUTURE PROOF</span>
+        <div class="animate-marquee font-sans text-sm font-black tracking-widest uppercase flex items-center absolute top-1.5 left-full">
+            <span class="mx-4">⚡ INVEST IN YOUR BODY</span><span class="mx-4">🐱 HEALTH IS THE REAL FLEX</span><span class="mx-4">🌸 STAY FUTURE PROOF</span>
+            <span class="mx-4">⚡ INVEST IN YOUR BODY</span><span class="mx-4">🐱 HEALTH IS THE REAL FLEX</span><span class="mx-4">🌸 STAY FUTURE PROOF</span>
         </div>
     </div>
 
-    <!-- Header / Navigasi -->
-    <header class="bg-acid neo-border border-x-0 sticky top-0 z-40">
+    <header class="bg-matcha border-b-4 border-choco sticky top-0 z-40">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <a href="/" class="flex-shrink-0 flex items-center gap-3 group">
-                    <img src="assets/logo.png" alt="Logo" class="h-12 w-12 object-cover rounded-full neo-border bg-white neo-shadow">
-                    <span class="font-black text-3xl tracking-tighter uppercase italic">Sedjahe<span class="text-hyper">.</span></span>
+                    <img src="assets/logo.png" alt="Logo" class="h-12 w-12 object-cover rounded-full border-2 border-choco bg-white neo-shadow">
+                    <span class="font-sans font-black text-3xl tracking-tighter uppercase text-choco">Sedjahe<span class="text-white">🌸</span></span>
                 </a>
-                
-                <nav class="hidden md:flex space-x-8 font-bold text-lg uppercase tracking-wide">
-                    <a href="/" class="hover:text-hyper hover:-translate-y-1 transition-transform">Beranda</a>
-                    <a href="produk.html" class="hover:text-hyper hover:-translate-y-1 transition-transform">Katalog</a>
-                    <a href="tentang.html" class="border-b-4 border-cyber pb-1">Our Story</a>
-                    <a href="blog.html" class="hover:text-hyper hover:-translate-y-1 transition-transform">Journal</a>
+                <nav class="hidden md:flex space-x-8 font-black text-lg uppercase tracking-wide font-sans">
+                    <a href="/" class="hover:text-white hover:-translate-y-1 transition-transform">Beranda</a>
+                    <a href="produk.html" class="hover:text-white hover:-translate-y-1 transition-transform">Katalog</a>
+                    <a href="tentang.html" class="border-b-4 border-choco pb-1">Our Story</a>
+                    <a href="blog.html" class="hover:text-white hover:-translate-y-1 transition-transform">Journal</a>
                 </nav>
-
                 <div class="hidden md:flex items-center">
-                    <a href="https://wa.me/62895383156946" target="_blank" class="bg-white text-cyber neo-border neo-shadow px-6 py-2.5 font-black uppercase text-sm flex items-center gap-2 hover:bg-hyper hover:text-white transition-colors">
-                        <i class="fa-solid fa-bolt"></i> Collab?
-                    </a>
+                    <a href="https://wa.me/62895383156946" target="_blank" class="bg-cream text-choco neo-border neo-shadow px-6 py-2.5 font-black uppercase text-sm flex items-center gap-2 hover:bg-sakura transition-colors font-sans"><i class="fa-solid fa-paw"></i> Collab?</a>
                 </div>
-
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="bg-white p-2 neo-border neo-shadow text-cyber">
-                        <i class="fa-solid fa-bars text-xl"></i>
-                    </button>
+                    <button id="mobile-menu-btn" aria-label="Buka menu" aria-controls="mobile-menu" aria-expanded="false" class="bg-cream p-2 neo-border neo-shadow text-choco"><i class="fa-solid fa-bars text-xl"></i></button>
                 </div>
             </div>
         </div>
-
-        <div id="mobile-menu" class="hidden md:hidden bg-paper neo-border border-x-0 border-t-0 absolute w-full z-40">
-            <div class="p-6 flex flex-col space-y-4 font-black text-xl uppercase">
-                <a href="/" class="bg-white neo-border p-3 text-center hover:bg-acid">Beranda</a>
-                <a href="produk.html" class="bg-white neo-border p-3 text-center hover:bg-acid">Katalog</a>
-                <a href="tentang.html" class="bg-acid neo-border neo-shadow p-3 text-center">Our Story</a>
-                <a href="blog.html" class="bg-white neo-border p-3 text-center hover:bg-acid">Journal</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-cream neo-border border-x-0 border-t-0 absolute w-full z-40">
+            <div class="p-6 flex flex-col space-y-4 font-black text-xl uppercase font-sans">
+                <a href="/" class="bg-white neo-border p-3 text-center hover:bg-sakura">Beranda</a>
+                <a href="produk.html" class="bg-white neo-border p-3 text-center hover:bg-sakura">Katalog</a>
+                <a href="tentang.html" class="bg-sakura neo-border neo-shadow p-3 text-center">Our Story</a>
+                <a href="blog.html" class="bg-white neo-border p-3 text-center hover:bg-sakura">Journal</a>
             </div>
         </div>
     </header>
 
     <main class="flex-grow">
-        
-        <!-- ORIGIN STORY HERO -->
         <section class="py-16 lg:py-24 overflow-hidden relative">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                
-                <!-- Brutalist Container -->
                 <div class="bg-white neo-border neo-shadow-static p-8 md:p-16 relative">
-                    
-                    <!-- Decorative Elements -->
-                    <div class="absolute -top-8 -right-8 w-24 h-24 bg-hyper starburst animate-spin-slow neo-border z-10 hidden md:block"></div>
-                    <div class="absolute -bottom-6 -left-6 bg-acid px-4 py-2 font-mono font-bold uppercase neo-border transform -rotate-6 z-10 text-xl">
-                        Wake up call ⏰
-                    </div>
+                    <div class="absolute -top-8 -right-8 w-24 h-24 bg-sakura rounded-full animate-spin-slow neo-border z-10 hidden md:flex items-center justify-center text-4xl">🌸</div>
+                    <div class="absolute -bottom-6 -left-6 bg-matcha px-5 py-2 font-bold uppercase neo-border transform -rotate-6 z-10 text-xl text-choco">Wake up call ⏰</div>
 
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                        
-                        <!-- Story Copy -->
                         <div class="lg:col-span-7">
-                            <span class="bg-cyber text-white px-3 py-1 font-mono text-xs font-bold uppercase neo-border mb-6 inline-block">
-                                > sys.origin_story
-                            </span>
-                            <h1 class="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-8 leading-[0.9]">
-                                Health is The <br>
-                                <span class="text-hyper">Real Flex.</span>
+                            <span class="bg-cream text-choco px-4 py-1 font-sans text-sm font-black uppercase neo-border mb-6 inline-block">> sys.origin_story 🐱</span>
+                            <h1 class="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-8 leading-[0.9] font-sans text-choco">
+                                Health is The <br><span class="text-sakura" style="-webkit-text-stroke: 2px #4a3b32;">Real Flex.</span>
                             </h1>
-                            
-                            <div class="space-y-6 font-mono text-base md:text-lg text-cyber leading-relaxed">
-                                <p class="bg-paper p-4 neo-border">
-                                    Jujurly, kita capek liat temen-temen seumuran gampang banget tumbang gara-gara <em>hustle culture</em>. Tiap hari gempur boba, es kopi susu manis bergelas-gelas, ujung-ujungnya kena <strong>sugar crash</strong> dan <em>burnout</em>.
-                                </p>
-                                <p>
-                                    Sedjahe lahir dari *wake-up call* itu. Kita me-<em>reboot</em> resep jamu warisan keluarga jadi <em>daily potion</em> yang relevan buat gaya hidup lo sekarang. Karena kita sadar, ngejar mimpi itu penting, tapi punya badan yang kuat itu jauh lebih penting.
-                                </p>
-                                <p class="font-bold bg-acid p-2 px-4 neo-border inline-block transform rotate-1">
-                                    Investasi leher ke bawah dari sekarang. No cap. 🧢
-                                </p>
+                            <div class="space-y-6 font-bold text-base md:text-lg text-choco leading-relaxed">
+                                <p class="bg-cream p-5 neo-border">Jujurly, kita capek liat temen-temen seumuran gampang banget tumbang gara-gara <em>hustle culture</em>. Tiap hari gempur boba manis, ujung-ujungnya kena <strong>sugar crash</strong> dan <em>burnout</em>. 😿</p>
+                                <p>Sedjahe lahir dari *wake-up call* itu. Kita me-<em>reboot</em> resep jamu warisan jadi <em>daily potion</em> yang relevan, imut, tapi khasiatnya nendang. Karena ngejar mimpi itu penting, tapi punya badan sehat itu jauh lebih penting.</p>
+                                <p class="font-black bg-melon p-3 px-5 neo-border inline-block transform rotate-1">Investasi leher ke bawah dari sekarang. Nya~ ✨</p>
                             </div>
                         </div>
-
-                        <!-- Visual/Graphic -->
                         <div class="lg:col-span-5 relative flex justify-center">
-                            <div class="w-full max-w-sm aspect-[4/5] bg-paper neo-border relative overflow-hidden group">
-                                <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9IiMwMDAwMDAiIG9wYWNpdHk9IjAuMSIvPjwvc3ZnPg==')] z-0"></div>
-                                
+                            <div class="w-full max-w-sm aspect-[4/5] bg-cream neo-border relative overflow-hidden group">
+                                <div class="absolute inset-0 z-0" style="background-image: radial-gradient(#cdb4db 3px, transparent 3px); background-size: 20px 20px;"></div>
                                 <div class="relative z-10 w-full h-full flex flex-col items-center justify-center p-8 text-center">
-                                    <i class="fa-solid fa-heart-pulse text-8xl text-cyber mb-6 animate-bounce-slow"></i>
-                                    <h3 class="text-3xl font-black uppercase mb-2 bg-white px-4 neo-border">Future</h3>
-                                    <h3 class="text-3xl font-black uppercase bg-hyper text-white px-4 neo-border transform -rotate-2">Proof.</h3>
+                                    <div class="text-8xl mb-6 animate-bounce-slow">💖</div>
+                                    <h3 class="text-3xl font-black uppercase mb-2 bg-white px-4 py-1 neo-border font-sans">Future</h3>
+                                    <h3 class="text-3xl font-black uppercase bg-sakura text-choco px-4 py-1 neo-border transform -rotate-2 font-sans">Proof.</h3>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <!-- CORE VALUES / RULES -->
-        <section class="py-20 bg-cyber text-paper border-y-4 border-black">
+        <section class="py-20 bg-taro border-y-4 border-choco">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
-                    <h2 class="text-acid font-mono text-xl font-bold uppercase tracking-widest mb-2">> core_protocols</h2>
-                    <h3 class="text-5xl md:text-6xl font-black uppercase" style="-webkit-text-stroke: 1px #c4fc21; color: transparent;">The Ground Rules</h3>
+                    <h2 class="text-white font-sans text-xl font-black uppercase tracking-widest mb-2 bg-choco inline-block px-4 py-1 neo-border">> ground_rules 🐾</h2>
+                    <h3 class="text-5xl md:text-6xl font-black uppercase text-white font-sans mt-4" style="-webkit-text-stroke: 2px #4a3b32;">Core Protocols</h3>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Rule 1 -->
-                    <div class="bg-paper text-cyber neo-border neo-shadow p-8 hover:bg-hyper hover:text-white transition-colors group">
-                        <div class="w-16 h-16 bg-cyber text-acid neo-border rounded-full flex items-center justify-center text-3xl mb-6 font-black group-hover:bg-white group-hover:text-cyber">1</div>
-                        <h4 class="text-2xl font-black uppercase mb-4">Zero Fake Sh*t</h4>
-                        <p class="font-mono text-sm font-bold">Menolak kompromi. Kita cuma pake rimpang asli. Gak ada pengawet, pemanis buatan, atau bahan kimia yang namanya aja susah dibaca.</p>
+                    <div class="bg-cream text-choco neo-border neo-shadow p-8 hover:bg-sakura transition-colors group">
+                        <div class="w-16 h-16 bg-white text-choco neo-border rounded-full flex items-center justify-center text-3xl mb-6 font-black font-sans group-hover:bg-cream">1</div>
+                        <h4 class="text-2xl font-black uppercase mb-4 font-sans">Zero Fake Sh*t</h4>
+                        <p class="font-bold text-lg">Gak ada kompromi. Cuma rimpang asli. Gak ada pengawet atau bahan kimia yang namanya aja susah dibaca. 🚫</p>
                     </div>
-
-                    <!-- Rule 2 -->
-                    <div class="bg-paper text-cyber neo-border neo-shadow p-8 hover:bg-acid transition-colors group">
-                        <div class="w-16 h-16 bg-cyber text-white neo-border rounded-full flex items-center justify-center text-3xl mb-6 font-black group-hover:bg-white group-hover:text-cyber">2</div>
-                        <h4 class="text-2xl font-black uppercase mb-4">Sugar Smart</h4>
-                        <p class="font-mono text-sm font-bold">Gula pasir? *Pass*. Kita pake Gula Aren murni yang indeks glikemiknya rendah. Gak bikin ngantuk abis minum, tenaga lo tetep stabil seharian.</p>
+                    <div class="bg-cream text-choco neo-border neo-shadow p-8 hover:bg-matcha transition-colors group">
+                        <div class="w-16 h-16 bg-white text-choco neo-border rounded-full flex items-center justify-center text-3xl mb-6 font-black font-sans group-hover:bg-cream">2</div>
+                        <h4 class="text-2xl font-black uppercase mb-4 font-sans">Sugar Smart</h4>
+                        <p class="font-bold text-lg">Pake Gula Aren murni yang IG-nya rendah. Gak bikin ngantuk abis minum, tenaga lo tetep stabil seharian. 🍯</p>
                     </div>
-
-                    <!-- Rule 3 -->
-                    <div class="bg-paper text-cyber neo-border neo-shadow p-8 hover:bg-white transition-colors group">
-                        <div class="w-16 h-16 bg-cyber text-hyper neo-border rounded-full flex items-center justify-center text-3xl mb-6 font-black group-hover:bg-acid group-hover:text-cyber">3</div>
-                        <h4 class="text-2xl font-black uppercase mb-4">Local Pride</h4>
-                        <p class="font-mono text-sm font-bold">Keren gak harus import. Kita kolab langsung sama petani lokal nusantara. Lo beli produk kita, lo <em>support</em> ekosistem lokal.</p>
+                    <div class="bg-cream text-choco neo-border neo-shadow p-8 hover:bg-melon transition-colors group">
+                        <div class="w-16 h-16 bg-white text-choco neo-border rounded-full flex items-center justify-center text-3xl mb-6 font-black font-sans group-hover:bg-cream">3</div>
+                        <h4 class="text-2xl font-black uppercase mb-4 font-sans">Local Pride</h4>
+                        <p class="font-bold text-lg">Kolab langsung sama petani lokal Nusantara. Lo beli produk kita, lo <em>support</em> ekosistem lokal. 🌿</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CTA SECTION -->
-        <section class="py-24 bg-white relative overflow-hidden">
-            <!-- Background Text -->
-            <div class="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none overflow-hidden">
-                <span class="text-[15rem] font-black uppercase whitespace-nowrap">SEDJAHE</span>
-            </div>
-
+        <section class="py-24 bg-cream relative overflow-hidden">
             <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-                <div class="inline-block bg-acid p-2 neo-border mb-8 transform rotate-2">
-                    <i class="fa-solid fa-handshake text-4xl"></i>
+                <div class="inline-block bg-sakura p-4 rounded-full neo-border mb-8 transform rotate-6 animate-bounce">
+                    <i class="fa-solid fa-handshake text-5xl text-choco"></i>
                 </div>
-                <h2 class="text-4xl md:text-5xl font-black uppercase mb-6 leading-tight">Wanna Build Something Dope?</h2>
-                <p class="font-mono text-lg font-bold mb-10 max-w-2xl mx-auto bg-paper p-4 neo-border shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                    Kita selalu *open* buat kolaborasi keren. Mau jadi reseller, dropshipper, atau sekadar *supply* buat event kantor lo biar pada gak gampang tipes?
+                <h2 class="text-4xl md:text-5xl font-black uppercase mb-6 leading-tight font-sans text-choco">Mau kolaborasi? 🌸</h2>
+                <p class="font-bold text-xl mb-10 max-w-2xl mx-auto bg-white p-6 neo-border neo-shadow-static text-choco">
+                    Kita selalu *open* buat kolaborasi keren. Mau jadi reseller atau *supply* buat event lo biar temen-temen pada sehat gemas? Let's talk!
                 </p>
-                <a href="https://wa.me/62895383156946?text=Halo%20Sedjahe,%20gue%20mau%20ngobrolin%20soal%20collab/reseller%20nih." target="_blank" class="inline-flex items-center gap-3 bg-cyber text-white text-xl font-black uppercase px-8 py-4 neo-border neo-shadow hover:bg-hyper transition-colors">
+                <a href="https://wa.me/62895383156946?text=Halo%20Sedjahe,%20gue%20mau%20ngobrolin%20soal%20collab/reseller%20nih." target="_blank" class="inline-flex items-center gap-3 bg-choco text-white text-xl font-black uppercase px-8 py-4 neo-border neo-shadow hover:bg-sakura hover:text-choco transition-colors font-sans">
                     HIT OUR DM <i class="fa-brands fa-whatsapp text-2xl"></i>
                 </a>
             </div>
         </section>
-
     </main>
 
-    <!-- Footer Brutalist -->
-    <footer class="bg-cyber text-white border-t-4 border-black pt-16 pb-8">
+    <footer class="bg-choco text-cream border-t-4 border-choco pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12 border-b-2 border-gray-800 pb-12">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12 border-b-4 border-cream/20 pb-12">
                 <div class="col-span-1 md:col-span-5">
-                    <h2 class="text-6xl font-black uppercase italic tracking-tighter mb-4 text-acid">SEDJAHE.</h2>
-                    <p class="font-mono text-gray-400 mb-6 max-w-sm">Jamu 2.0. Minuman herbal tradisional dengan attitude. 100% lokal, 100% natural.</p>
-                    <div class="flex gap-4">
-                        <a href="#" class="w-12 h-12 bg-white text-cyber flex items-center justify-center text-xl neo-border hover:bg-hyper hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="w-12 h-12 bg-white text-cyber flex items-center justify-center text-xl neo-border hover:bg-acid transition-colors"><i class="fa-brands fa-tiktok"></i></a>
-                    </div>
+                    <h2 class="text-6xl font-black uppercase italic tracking-tighter mb-4 text-sakura font-sans">SEDJAHE🌸</h2>
+                    <p class="font-bold text-cream/80 mb-6 max-w-sm text-lg">Jamu 2.0. Minuman herbal tradisional dengan attitude sopan, #IZINNN 🙏. 100% lokal, 100% natural.</p>
                 </div>
-                
                 <div class="col-span-1 md:col-span-3">
-                    <h4 class="font-black text-xl uppercase mb-6 border-b-2 border-hyper inline-block pb-1">Menu</h4>
-                    <ul class="space-y-4 font-mono font-bold">
-                        <li><a href="/" class="hover:text-acid transition-colors">> Beranda</a></li>
-                        <li><a href="produk.html" class="hover:text-acid transition-colors">> Katalog Produk</a></li>
-                        <li><a href="tentang.html" class="hover:text-acid transition-colors">> Our Story</a></li>
-                        <li><a href="blog.html" class="hover:text-acid transition-colors">> Journal</a></li>
+                    <h4 class="font-black text-2xl uppercase mb-6 border-b-4 border-sakura inline-block pb-2 font-sans">Menu</h4>
+                    <ul class="space-y-4 font-bold text-lg">
+                        <li><a href="/" class="hover:text-sakura transition-colors">🌸 Beranda</a></li>
+                        <li><a href="produk.html" class="hover:text-sakura transition-colors">🍡 Katalog Produk</a></li>
+                        <li><a href="tentang.html" class="hover:text-sakura transition-colors">🐱 Our Story</a></li>
+                        <li><a href="blog.html" class="hover:text-sakura transition-colors">📓 Journal</a></li>
                     </ul>
                 </div>
-                
                 <div class="col-span-1 md:col-span-4">
-                    <h4 class="font-black text-xl uppercase mb-6 border-b-2 border-acid inline-block pb-1">Hit Us Up</h4>
-                    <ul class="space-y-4 font-mono">
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot mt-1 text-acid"></i> <span>HQ:<br>Jl. Kebayoran Baru, Jakarta Selatan</span></li>
-                        <li class="flex items-center gap-3"><i class="fa-brands fa-whatsapp text-hyper"></i> <a href="https://wa.me/62895383156946" target="_blank" class="hover:text-acid transition-colors font-bold">+62 895-3831-56946</a></li>
+                    <h4 class="font-black text-2xl uppercase mb-6 border-b-4 border-matcha inline-block pb-2 font-sans">Hit Us Up</h4>
+                    <ul class="space-y-4 font-bold text-lg">
+                        <li class="flex items-start gap-4"><i class="fa-solid fa-location-dot mt-1 text-sakura text-xl"></i> <span>HQ:<br>Jl. Kebayoran Baru, Jakarta Selatan</span></li>
+                        <li class="flex items-center gap-4"><i class="fa-brands fa-whatsapp text-matcha text-xl"></i> <a href="https://wa.me/62895383156946" target="_blank" class="hover:text-sakura transition-colors font-black">+62 895-3831-56946</a></li>
                     </ul>
                 </div>
             </div>
-            
-            <div class="flex flex-col md:flex-row justify-between items-center gap-4 font-mono text-xs text-gray-500 uppercase font-bold">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 font-bold text-sm text-cream/60 uppercase">
                 <p>&copy; 2026 SEDJAHE. NO FAKES ALLOWED.</p>
-                <p>CRAFTED WITH <i class="fa-solid fa-fire text-hyper mx-1"></i> IN INDONESIA</p>
             </div>
         </div>
     </footer>
 
     <script>
         document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+            const isExpanded = !menu.classList.contains('hidden');
+            this.setAttribute('aria-expanded', isExpanded);
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const cursor = document.getElementById('cute-cursor');
+            const cursorEmoji = document.getElementById('cursor-emoji');
+            const trail = document.getElementById('cute-cursor-trail');
+            if (window.matchMedia("(pointer: fine)").matches) {
+                let mouseX = 0, mouseY = 0; let trailX = 0, trailY = 0;
+                window.addEventListener('mousemove', (e) => { mouseX = e.clientX; mouseY = e.clientY; cursor.style.left = `${mouseX}px`; cursor.style.top = `${mouseY}px`; });
+                function animateTrail() { trailX += (mouseX - trailX) * 0.2; trailY += (mouseY - trailY) * 0.2; trail.style.left = `${trailX}px`; trail.style.top = `${trailY}px`; requestAnimationFrame(animateTrail); }
+                animateTrail();
+                document.querySelectorAll('a, button, .group').forEach(el => {
+                    el.addEventListener('mouseenter', () => { cursor.classList.add('cursor-hovering'); cursorEmoji.innerText = '🐾'; trail.style.opacity = '0'; });
+                    el.addEventListener('mouseleave', () => { cursor.classList.remove('cursor-hovering'); cursorEmoji.innerText = '🐱'; trail.style.opacity = '1'; });
+                });
+                window.addEventListener('mousedown', () => cursor.classList.add('cursor-clicking'));
+                window.addEventListener('mouseup', () => cursor.classList.remove('cursor-clicking'));
+            }
         });
     </script>
 </body>
