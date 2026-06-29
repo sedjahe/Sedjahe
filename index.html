@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEDJAHE 🌿 Digital Apothecary</title>
+    <title>SEDJAHE</title>
     
     <meta name="description" content="Sedjahe: Modern botanical potion. 100% rimpang alami, no fake sugar, full energy. Daily potion buat lo yang punya lifestyle aktif.">
-    <meta name="keywords" content="sedjahe, jamu gen z, minuman herbal modern, jahe merah, beras kencur, solarpunk herbal, aceternity ui, magic ui">
+    <meta name="keywords" content="sedjahe, jamu gen z, minuman herbal modern, jahe merah, beras kencur, aceternity ui, jamu kekinian">
     <meta name="author" content="Sedjahe">
 
     <link rel="icon" type="image/png" href="assets/logo.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sedjahe.vercel.app/">
-    <meta property="og:title" content="SEDJAHE 🌿 Digital Apothecary">
+    <meta property="og:title" content="SEDJAHE">
     <meta property="og:description" content="Modern botanical potion. 100% rimpang alami, no fake sugar, full energy.">
     <meta property="og:image" content="https://sedjahe.vercel.app/assets/logo.png">
 
@@ -23,15 +23,15 @@
     {
       "@context": "https://schema.org",
       "@graph": [
-        { "@type": "WebSite", "name": "Sedjahe", "url": "https://sedjahe.vercel.app/", "description": "Jamu 2.0. Minuman herbal tradisional dengan sentuhan eco-futurism." },
-        { "@type": "LocalBusiness", "name": "Sedjahe Herbal", "image": "https://sedjahe.vercel.app/assets/logo.png", "url": "https://sedjahe.vercel.app/", "telephone": "+62895383156946", "address": { "@type": "PostalAddress", "streetAddress": "Jl. Kebayoran Baru", "addressLocality": "Jakarta Selatan", "addressRegion": "Jakarta", "addressCountry": "ID" } }
+        { "@type": "WebSite", "name": "Sedjahe", "url": "https://sedjahe.vercel.app/", "description": "Minuman herbal tradisional dengan sentuhan modern." },
+        { "@type": "LocalBusiness", "name": "Sedjahe", "image": "https://sedjahe.vercel.app/assets/logo.png", "url": "https://sedjahe.vercel.app/", "telephone": "+62895383156946", "address": { "@type": "PostalAddress", "streetAddress": "Jl. Kebayoran Baru", "addressLocality": "Jakarta Selatan", "addressRegion": "Jakarta", "addressCountry": "ID" } }
       ]
     }
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Menggunakan font modern grotesque dan sans-serif yang rapi -->
+    <!-- Font modern dan rapi -->
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <script>
@@ -51,7 +51,6 @@
                     },
                     animation: {
                         'blob': 'blob 8s infinite ease-in-out',
-                        'float': 'float 6s ease-in-out infinite',
                         'spin-slow': 'spin 15s linear infinite',
                     },
                     keyframes: {
@@ -60,10 +59,6 @@
                             '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
                             '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
                             '100%': { transform: 'translate(0px, 0px) scale(1)' },
-                        },
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-15px)' },
                         }
                     }
                 }
@@ -77,19 +72,18 @@
             color: #454040;
             overflow-x: hidden;
             scroll-behavior: smooth;
-            /* Pola dot matrix sangat tipis */
             background-image: radial-gradient(rgba(69, 64, 64, 0.08) 1px, transparent 1px);
             background-size: 30px 30px;
         }
         
         @media (pointer: fine) { * { cursor: none !important; } }
 
-        /* Solarpunk Glassmorphism */
+        /* Modern Glassmorphism */
         .glass-panel {
             background: rgba(252, 252, 252, 0.6);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(187, 224, 239, 0.4); /* Sky blue border */
+            border: 1px solid rgba(255, 255, 255, 0.8); 
             box-shadow: 0 10px 40px -10px rgba(69, 64, 64, 0.08);
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
@@ -100,9 +94,9 @@
         }
         
         .glass-badge {
-            background: rgba(187, 224, 239, 0.3); /* Sky blue tint */
+            background: rgba(252, 252, 252, 0.8);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(187, 224, 239, 0.6);
+            border: 1px solid rgba(69, 64, 64, 0.1);
             color: #454040;
         }
 
@@ -140,7 +134,7 @@
 
         /* Abstract Gradient Text */
         .text-sage-gradient {
-            background: linear-gradient(135deg, #A5AF79 0%, #454040 100%);
+            background: linear-gradient(135deg, #A5AF79 0%, #BBE0EF 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -154,20 +148,20 @@
     <div id="trail-1" class="trail-dot hidden md:block"></div>
     <div id="trail-2" class="trail-dot hidden md:block" style="width: 5px; height: 5px; opacity: 0.4; background-color: #BBE0EF;"></div>
 
-    <!-- Eco-Glass Header -->
-    <header class="sticky top-0 z-40 bg-paper/60 backdrop-blur-2xl border-b border-sky/30 transition-all">
-        <!-- Pengganti Marquee: Ticker Statis Elegan -->
-        <div class="bg-sage text-paper py-1.5 flex justify-center items-center text-xs font-bold tracking-[0.2em] uppercase">
-            <span class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-butter rounded-full animate-pulse"></div> 100% ORGANIC ROOTS EST. 2023</span>
+    <!-- Header -->
+    <header class="sticky top-0 z-40 bg-paper/70 backdrop-blur-2xl border-b border-charcoal/5 transition-all">
+        <!-- Minimalist Ticker -->
+        <div class="bg-charcoal text-paper py-2 flex justify-center items-center text-xs font-bold tracking-[0.2em] uppercase">
+            <span class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-butter rounded-full animate-pulse"></div> 100% ORGANIC ROOTS 🌿 NO FAKE SUGAR</span>
         </div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <a href="/" class="flex-shrink-0 flex items-center gap-4 group">
-                    <div class="w-12 h-12 rounded-2xl bg-butter/30 flex items-center justify-center border border-butter/50 group-hover:bg-butter/50 transition-all overflow-hidden shadow-sm">
+                    <div class="w-12 h-12 rounded-2xl bg-paper flex items-center justify-center border border-charcoal/10 group-hover:bg-butter transition-all overflow-hidden shadow-sm">
                         <img src="assets/logo.png" alt="Logo" class="w-full h-full object-cover mix-blend-multiply p-1">
                     </div>
-                    <span class="font-display font-black text-2xl tracking-tighter uppercase text-charcoal">Sedjahe<span class="text-sage">.</span></span>
+                    <span class="font-display font-black text-2xl tracking-tighter uppercase text-charcoal">Sedjahe</span>
                 </a>
                 
                 <nav class="hidden md:flex space-x-10 font-body font-bold text-sm tracking-widest uppercase text-charcoal/60">
@@ -179,20 +173,20 @@
                 </nav>
 
                 <div class="hidden md:flex items-center">
-                    <a href="https://wa.me/62895383156946" target="_blank" class="bg-charcoal text-butter px-7 py-3 rounded-2xl font-display font-bold text-sm uppercase tracking-wide flex items-center gap-2 hover:bg-sage hover:text-paper shadow-lg hover:shadow-sage/40 transition-all">
+                    <a href="https://wa.me/62895383156946" target="_blank" class="bg-sage text-paper px-7 py-3 rounded-2xl font-display font-bold text-sm uppercase tracking-wide flex items-center gap-2 hover:bg-charcoal shadow-lg hover:shadow-sage/40 transition-all">
                         Get Potion <i class="fa-solid fa-flask"></i>
                     </a>
                 </div>
 
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="bg-sky/20 p-2 rounded-xl border border-sky/40 text-charcoal">
+                    <button id="mobile-menu-btn" class="bg-paper p-2 rounded-xl border border-charcoal/10 text-charcoal">
                         <i class="fa-solid fa-bars text-xl"></i>
                     </button>
                 </div>
             </div>
         </div>
 
-        <div id="mobile-menu" class="hidden md:hidden bg-paper/95 backdrop-blur-3xl border-b border-sky/30 absolute w-full z-40 shadow-2xl">
+        <div id="mobile-menu" class="hidden md:hidden bg-paper/95 backdrop-blur-3xl border-b border-charcoal/10 absolute w-full z-40 shadow-2xl">
             <div class="p-6 flex flex-col space-y-4 font-display font-bold text-lg uppercase text-center">
                 <a href="/" class="text-sage">Beranda</a>
                 <a href="produk.html" class="text-charcoal/70 hover:text-sage">Katalog</a>
@@ -208,19 +202,17 @@
         <!-- MODERN BOTANICAL PARALLAX HERO -->
         <section class="relative flex min-h-[90vh] w-full items-center justify-center overflow-hidden pt-12 pb-24">
             
-            <!-- Aceternity Soft Glowing Blobs -->
-            <div class="absolute top-1/4 -left-10 w-[500px] h-[500px] bg-sky rounded-full mix-blend-multiply filter blur-[100px] opacity-40 animate-blob z-0"></div>
-            <div class="absolute bottom-1/4 -right-10 w-[600px] h-[600px] bg-butter rounded-full mix-blend-multiply filter blur-[120px] opacity-50 animate-blob animation-delay-2000 z-0"></div>
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-sage rounded-full mix-blend-multiply filter blur-[120px] opacity-30 animate-blob animation-delay-4000 z-0"></div>
+            <!-- Sleek Glowing Blobs (Sage, Sky, Butter) -->
+            <div class="absolute top-1/4 -left-10 w-[500px] h-[500px] bg-sky rounded-full mix-blend-multiply filter blur-[100px] opacity-50 animate-blob z-0"></div>
+            <div class="absolute bottom-1/4 -right-10 w-[600px] h-[600px] bg-butter rounded-full mix-blend-multiply filter blur-[120px] opacity-60 animate-blob animation-delay-2000 z-0"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-sage rounded-full mix-blend-multiply filter blur-[120px] opacity-40 animate-blob animation-delay-4000 z-0"></div>
             
-            <!-- 4 PARALLAX BOTANICAL SPECIMENS (Lab Vibe) -->
+            <!-- 4 PARALLAX BOTANICAL SPECIMENS (Glass Panels) -->
             <div id="parallax-container" class="pointer-events-none absolute inset-0 overflow-hidden z-10">
-                
                 <!-- Specimen 1: Daun -->
                 <div class="parallax-wrapper absolute" style="top: 15%; left: 15%;" data-depth="0.7">
                     <div class="parallax-img opacity-0 scale-90 w-24 h-24 sm:w-32 sm:h-32 glass-panel rounded-[2rem] flex flex-col items-center justify-center transition-all duration-1000 ease-out transform rotate-[-8deg]" style="transition-delay: 100ms;">
                         <span class="text-5xl drop-shadow-md">🌿</span>
-                        <span class="font-mono text-[8px] text-charcoal/50 mt-2 uppercase font-bold tracking-widest">Botanic_01</span>
                     </div>
                 </div>
                 
@@ -233,16 +225,15 @@
                 
                 <!-- Specimen 3: Tunas Kencur -->
                 <div class="parallax-wrapper absolute" style="top: 60%; left: 20%;" data-depth="0.4">
-                    <div class="parallax-img opacity-0 scale-90 w-28 h-28 sm:w-36 sm:h-36 glass-panel rounded-full flex flex-col items-center justify-center transition-all duration-1000 ease-out transform rotate-[-5deg]" style="transition-delay: 400ms;">
+                    <div class="parallax-img opacity-0 scale-90 w-28 h-28 sm:w-36 sm:h-36 glass-panel rounded-[2.5rem] flex flex-col items-center justify-center transition-all duration-1000 ease-out transform rotate-[-5deg]" style="transition-delay: 400ms;">
                         <span class="text-6xl drop-shadow-md">🌱</span>
                     </div>
                 </div>
                 
                 <!-- Specimen 4: Potion -->
                 <div class="parallax-wrapper absolute" style="top: 55%; right: 15%;" data-depth="0.8">
-                    <div class="parallax-img opacity-0 scale-90 w-32 h-32 sm:w-40 sm:h-40 glass-panel rounded-[2rem] flex flex-col items-center justify-center transition-all duration-1000 ease-out transform rotate-[10deg]" style="transition-delay: 550ms;">
+                    <div class="parallax-img opacity-0 scale-90 w-32 h-32 sm:w-40 sm:h-40 glass-panel rounded-[2.5rem] flex flex-col items-center justify-center transition-all duration-1000 ease-out transform rotate-[10deg]" style="transition-delay: 550ms;">
                         <span class="text-6xl drop-shadow-md">🍵</span>
-                        <span class="font-mono text-[8px] text-charcoal/50 mt-2 uppercase font-bold tracking-widest">Elixir_XX</span>
                     </div>
                 </div>
             </div>
@@ -250,7 +241,7 @@
             <!-- Central Hero Content -->
             <div class="relative z-20 mx-auto flex max-w-4xl flex-col items-center gap-6 px-4 text-center">
                 <div class="glass-badge font-body text-xs font-black px-6 py-2.5 rounded-full uppercase tracking-[0.2em] flex items-center gap-3">
-                    <i class="fa-solid fa-flask text-sage"></i> Digital Apothecary
+                    Daily Rituals
                 </div>
                 
                 <h1 class="text-6xl sm:text-7xl md:text-8xl lg:text-[7rem] font-black uppercase leading-[0.9] tracking-tighter text-charcoal font-display relative">
@@ -260,36 +251,36 @@
                     Potion.
                 </h1>
                 
-                <p class="max-w-xl text-charcoal/70 font-body font-medium text-lg leading-relaxed mt-4 glass-panel p-5 rounded-3xl">
-                    Tinggalin <em>sugar crash</em> lo. Ini adalah <span class="text-sage font-bold">daily potion 100% herbal modern</span> buat <em>lifestyle</em> lo yang butuh energi murni dari alam.
+                <p class="max-w-xl text-charcoal/80 font-body font-medium text-lg leading-relaxed mt-4 glass-panel p-5 rounded-3xl">
+                    Tinggalin <em>sugar crash</em> lo. Ini adalah <span class="text-sage font-bold">minuman herbal modern</span> buat <em>lifestyle</em> aktif lo. 100% rimpang murni.
                 </p>
 
                 <div class="flex gap-4 mt-6">
-                    <a href="produk.html" class="bg-sage text-paper rounded-2xl px-10 py-5 font-display font-black uppercase text-sm tracking-widest hover:bg-charcoal hover:shadow-[0_10px_30px_rgba(165,175,121,0.4)] transition-all transform hover:-translate-y-1">
+                    <a href="produk.html" class="bg-charcoal text-paper rounded-2xl px-10 py-5 font-display font-black uppercase text-sm tracking-widest hover:bg-sage hover:shadow-[0_10px_30px_rgba(165,175,121,0.4)] transition-all transform hover:-translate-y-1">
                         Explore Lab <i class="fa-solid fa-arrow-right ml-2"></i>
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- "THE STASH" - Bento Grid Layout -->
-        <section class="py-24 relative overflow-hidden bg-white/50 border-t border-sky/20">
+        <!-- "THE STASH" - Bento Grid Layout (Sky Background Base) -->
+        <section class="py-24 relative overflow-hidden bg-sky/10 border-t border-sky/20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
                     <div>
-                        <h2 class="text-sage font-display text-sm font-bold uppercase tracking-[0.3em] mb-3">> inventory_select</h2>
+                        <h2 class="text-sage font-display text-sm font-bold uppercase tracking-[0.3em] mb-3">> inventory</h2>
                         <h3 class="text-4xl md:text-6xl font-black text-charcoal uppercase font-display tracking-tighter">The Stash.</h3>
                     </div>
-                    <a href="produk.html" class="text-charcoal/80 font-body font-bold uppercase text-sm border-b-2 border-sage/40 hover:border-sage hover:text-sage transition-colors pb-1">
+                    <a href="produk.html" class="text-charcoal/80 font-body font-bold uppercase text-sm border-b-2 border-charcoal/20 hover:border-sage hover:text-sage transition-colors pb-1">
                         View Full Database <i class="fa-solid fa-database ml-2"></i>
                     </a>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Item 1: Jahe Merah -->
-                    <div class="glass-panel rounded-[2.5rem] p-6 flex flex-col group cursor-pointer" onclick="window.location.href='produk.html'">
+                    <div class="glass-panel rounded-[2.5rem] p-6 flex flex-col group cursor-pointer bg-paper/80" onclick="window.location.href='produk.html'">
                         <div class="flex justify-between items-center mb-6">
-                            <span class="bg-butter/50 text-charcoal px-4 py-1.5 rounded-full font-body text-xs font-bold uppercase tracking-widest">Buff 🔥</span>
+                            <span class="bg-butter text-charcoal px-4 py-1.5 rounded-full font-body text-xs font-bold uppercase tracking-widest">Buff 🔥</span>
                             <span class="font-black font-display text-2xl text-charcoal">Rp25k</span>
                         </div>
                         <div class="h-64 w-full rounded-3xl bg-paper relative overflow-hidden mb-6 flex items-center justify-center border border-charcoal/5 shadow-inner">
@@ -297,41 +288,41 @@
                             <img src="assets/jahe-merah.png" alt="Jahe Merah Original" class="w-full h-full object-cover relative z-10 group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-500 mix-blend-multiply p-4">
                         </div>
                         <h4 class="text-2xl font-black uppercase mb-2 font-display text-charcoal tracking-tight group-hover:text-sage transition-colors">Jahe Merah</h4>
-                        <p class="text-charcoal/60 mb-6 flex-grow font-body text-sm leading-relaxed">Rimpang jahe murni + Gula Aren asli. Meredakan masuk angin seketika. Instant warmth, instant buff.</p>
+                        <p class="text-charcoal/70 mb-6 flex-grow font-body text-sm leading-relaxed">Rimpang jahe murni + Gula Aren asli. Meredakan masuk angin seketika. Instant warmth, instant buff.</p>
                         <a href="https://wa.me/62895383156946" target="_blank" class="w-full bg-paper border-2 border-sage/20 text-charcoal text-center py-4 rounded-2xl font-display font-black uppercase text-sm group-hover:bg-sage group-hover:text-paper transition-colors shadow-sm">
                             Add to Cart
                         </a>
                     </div>
 
                     <!-- Item 2: Beras Kencur -->
-                    <div class="glass-panel rounded-[2.5rem] p-6 flex flex-col group cursor-pointer" onclick="window.location.href='produk.html'">
+                    <div class="glass-panel rounded-[2.5rem] p-6 flex flex-col group cursor-pointer bg-paper/80" onclick="window.location.href='produk.html'">
                         <div class="flex justify-between items-center mb-6">
-                            <span class="bg-sky/50 text-charcoal px-4 py-1.5 rounded-full font-body text-xs font-bold uppercase tracking-widest">Energy ⚡</span>
+                            <span class="bg-sky text-charcoal px-4 py-1.5 rounded-full font-body text-xs font-bold uppercase tracking-widest">Energy ⚡</span>
                             <span class="font-black font-display text-2xl text-charcoal">Rp20k</span>
                         </div>
                         <div class="h-64 w-full rounded-3xl bg-paper relative overflow-hidden mb-6 flex items-center justify-center border border-charcoal/5 shadow-inner">
-                            <div class="absolute inset-0 bg-sky/30 blur-2xl rounded-full scale-50 group-hover:scale-100 transition-transform duration-700"></div>
+                            <div class="absolute inset-0 bg-sky/40 blur-2xl rounded-full scale-50 group-hover:scale-100 transition-transform duration-700"></div>
                             <img src="assets/beras-kencur.png" alt="Beras Kencur" class="w-full h-full object-cover relative z-10 group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-500 mix-blend-multiply p-4">
                         </div>
                         <h4 class="text-2xl font-black uppercase mb-2 font-display text-charcoal tracking-tight group-hover:text-sky transition-colors">Beras Kencur</h4>
-                        <p class="text-charcoal/60 mb-6 flex-grow font-body text-sm leading-relaxed">Stamina potion herbal. Hilangkan pegal linu abis nongkrong, ngantor, atau *push rank* semalaman.</p>
+                        <p class="text-charcoal/70 mb-6 flex-grow font-body text-sm leading-relaxed">Stamina potion herbal. Hilangkan pegal linu abis nongkrong, ngantor, atau *push rank* semalaman.</p>
                         <a href="https://wa.me/62895383156946" target="_blank" class="w-full bg-paper border-2 border-sky/30 text-charcoal text-center py-4 rounded-2xl font-display font-black uppercase text-sm group-hover:bg-sky group-hover:text-charcoal transition-colors shadow-sm">
                             Add to Cart
                         </a>
                     </div>
 
                     <!-- Item 3: Wedang Uwuh -->
-                    <div class="glass-panel rounded-[2.5rem] p-6 flex flex-col group cursor-pointer" onclick="window.location.href='produk.html'">
+                    <div class="glass-panel rounded-[2.5rem] p-6 flex flex-col group cursor-pointer bg-paper/80" onclick="window.location.href='produk.html'">
                         <div class="flex justify-between items-center mb-6">
-                            <span class="bg-sage/40 text-charcoal px-4 py-1.5 rounded-full font-body text-xs font-bold uppercase tracking-widest">Shield 🌿</span>
+                            <span class="bg-sage text-paper px-4 py-1.5 rounded-full font-body text-xs font-bold uppercase tracking-widest">Shield 🌿</span>
                             <span class="font-black font-display text-2xl text-charcoal">Rp25k</span>
                         </div>
                         <div class="h-64 w-full rounded-3xl bg-paper relative overflow-hidden mb-6 flex items-center justify-center border border-charcoal/5 shadow-inner">
-                            <div class="absolute inset-0 bg-sage/30 blur-2xl rounded-full scale-50 group-hover:scale-100 transition-transform duration-700"></div>
+                            <div class="absolute inset-0 bg-sage/40 blur-2xl rounded-full scale-50 group-hover:scale-100 transition-transform duration-700"></div>
                             <img src="assets/wedang-uwuh.png" alt="Wedang Uwuh" class="w-full h-full object-cover relative z-10 group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-500 mix-blend-multiply p-4">
                         </div>
                         <h4 class="text-2xl font-black uppercase mb-2 font-display text-charcoal tracking-tight group-hover:text-sage transition-colors">Wedang Uwuh</h4>
-                        <p class="text-charcoal/60 mb-6 flex-grow font-body text-sm leading-relaxed">Ramuan tradisional keraton dari rempah utuh Nusantara. Solusi jitu usir flu dan hangatkan badan total.</p>
+                        <p class="text-charcoal/70 mb-6 flex-grow font-body text-sm leading-relaxed">Ramuan tradisional keraton dari rempah utuh Nusantara. Solusi jitu usir flu dan hangatkan badan total.</p>
                         <a href="https://wa.me/62895383156946" target="_blank" class="w-full bg-paper border-2 border-sage/40 text-charcoal text-center py-4 rounded-2xl font-display font-black uppercase text-sm group-hover:bg-sage group-hover:text-paper transition-colors shadow-sm">
                             Add to Cart
                         </a>
@@ -385,54 +376,116 @@
 
                     <!-- Diagram Image (Kanan) -->
                     <div class="lg:col-span-6 flex justify-center relative">
-                        <!-- Glow behind diagram -->
                         <div class="absolute inset-0 bg-sage/30 filter blur-3xl rounded-full scale-75 animate-pulse z-0"></div>
-                        <!-- Glass container for diagram -->
                         <div class="relative z-10 w-full max-w-md bg-paper/10 backdrop-blur-xl rounded-[2.5rem] p-6 border border-white/10 shadow-2xl transform rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-500">
                             <img src="assets/actv-diagram.png" alt="Activity Diagram Flow Pemesanan" class="w-full h-auto object-contain mix-blend-screen opacity-90" style="filter: invert(1) sepia(1) hue-rotate(50deg) saturate(2) brightness(1.2);">
-                            <!-- Filter css makes the diagram look sage-tinted in dark mode -->
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- WHY US / VIBE CHECK (Sleek Minimalist) -->
-        <section class="py-24 relative border-t border-sky/20 bg-white/30">
+        <!-- TESTIMONI SECTION (Sage Green Background) -->
+        <section class="py-24 relative overflow-hidden bg-sage border-y border-charcoal/10">
+            <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9IiM0NTQwNDAiIG9wYWNpdHk9IjAuNSIvPjwvc3ZnPg==')] z-0"></div>
+            
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="text-center mb-16">
-                    <h2 class="text-sky font-display text-sm font-bold uppercase tracking-[0.3em] mb-3">> sys.diagnostic</h2>
-                    <h3 class="text-4xl md:text-5xl font-black text-charcoal uppercase font-display tracking-tighter">Why Sedjahe.</h3>
+                    <h2 class="text-paper font-display text-sm font-bold uppercase tracking-[0.3em] mb-3">> sys.feedback</h2>
+                    <h3 class="text-4xl md:text-5xl font-black text-charcoal uppercase font-display tracking-tighter">Word on the Street.</h3>
                 </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="glass-panel p-10 rounded-[2.5rem] hover:-translate-y-3 transition-transform duration-300">
-                        <div class="w-16 h-16 bg-sage/20 text-sage rounded-2xl flex items-center justify-center text-3xl mb-8 border border-sage/30"><i class="fa-solid fa-leaf"></i></div>
-                        <h4 class="text-2xl font-black uppercase mb-4 font-display text-charcoal tracking-tight">100% Real Roots</h4>
-                        <p class="text-charcoal/60 font-body text-sm leading-relaxed">Cuma rimpang segar dari petani lokal nusantara. Gak ada perasa buatan, pewarna, atau omong kosong kimia lainnya.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Testimoni 1 -->
+                    <div class="bg-paper p-8 rounded-[2rem] shadow-lg border border-paper hover:-translate-y-2 transition-transform duration-300">
+                        <div class="flex items-center gap-4 mb-6">
+                            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Jaka" alt="Avatar" class="w-14 h-14 rounded-full bg-butter border border-charcoal/10">
+                            <div>
+                                <p class="font-black uppercase text-lg leading-none font-display text-charcoal">@anak.kuliah</p>
+                                <p class="text-xs font-bold text-sage mt-1">Deadliner</p>
+                            </div>
+                        </div>
+                        <p class="font-body text-sm leading-relaxed text-charcoal/80">
+                            "Tiap malem nugas bikin badan rontok. Untung nyetok jahe merah Sedjahe, badan langsung anget dan besoknya fit lagi. Fix langganan!"
+                        </p>
                     </div>
-                    <div class="glass-panel p-10 rounded-[2.5rem] hover:-translate-y-3 transition-transform duration-300 lg:mt-10">
-                        <div class="w-16 h-16 bg-butter/40 text-charcoal rounded-2xl flex items-center justify-center text-3xl mb-8 border border-butter/60"><i class="fa-solid fa-droplet"></i></div>
-                        <h4 class="text-2xl font-black uppercase mb-4 font-display text-charcoal tracking-tight">Sugar Smart</h4>
-                        <p class="text-charcoal/60 font-body text-sm leading-relaxed">Kita pake Gula Aren asli yang IG-nya rendah. Manisnya pas, tapi gak bikin gula darah lu meledak dan ngantuk (no sugar crash).</p>
+
+                    <!-- Testimoni 2 -->
+                    <div class="bg-paper p-8 rounded-[2rem] shadow-lg border border-paper hover:-translate-y-2 transition-transform duration-300 md:mt-8">
+                        <div class="flex items-center gap-4 mb-6">
+                            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Budi" alt="Avatar" class="w-14 h-14 rounded-full bg-sky border border-charcoal/10">
+                            <div>
+                                <p class="font-black uppercase text-lg leading-none font-display text-charcoal">@gym.bro</p>
+                                <p class="text-xs font-bold text-sky mt-1">Active Lifestyle</p>
+                            </div>
+                        </div>
+                        <p class="font-body text-sm leading-relaxed text-charcoal/80">
+                            "Beras kencurnya juara sih, berasa banget rimpang aslinya, bukan kaleng-kaleng. Pegel abis workout langsung minggat. Mantap bro!"
+                        </p>
                     </div>
-                    <div class="glass-panel p-10 rounded-[2.5rem] hover:-translate-y-3 transition-transform duration-300 lg:mt-20">
-                        <div class="w-16 h-16 bg-sky/30 text-sky-700 rounded-2xl flex items-center justify-center text-3xl mb-8 border border-sky/50"><i class="fa-solid fa-shield-halved"></i></div>
-                        <h4 class="text-2xl font-black uppercase mb-4 font-display text-charcoal tracking-tight">Daily Buff</h4>
-                        <p class="text-charcoal/60 font-body text-sm leading-relaxed">Bukan cuma minuman nongkrong. Ini fungsional. Tentang naikin imun dan stamina lo buat hadepin *hustle culture* tiap hari.</p>
+
+                    <!-- Testimoni 3 -->
+                    <div class="bg-paper p-8 rounded-[2rem] shadow-lg border border-paper hover:-translate-y-2 transition-transform duration-300 md:mt-16">
+                        <div class="flex items-center gap-4 mb-6">
+                            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Anya" alt="Avatar" class="w-14 h-14 rounded-full bg-sage border border-charcoal/10">
+                            <div>
+                                <p class="font-black uppercase text-lg leading-none font-display text-charcoal">@aesthetic.girl</p>
+                                <p class="text-xs font-bold text-sage mt-1">Verified Buyer</p>
+                            </div>
+                        </div>
+                        <p class="font-body text-sm leading-relaxed text-charcoal/80">
+                            "Packagingnya aesthetic parah, rasanya juga legit! Wedang uwuhnya cocok banget buat nemenin nugas sambil dengerin lofi. 🌿"
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CTA FINAL (Out of the box Banner) -->
-        <section class="py-32 relative overflow-hidden border-t border-sage/20">
-            <div class="absolute inset-0 bg-butter/30 z-0"></div>
-            <!-- Giant floating leaf bg -->
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40rem] opacity-10 z-0 pointer-events-none filter blur-sm">🌿</div>
+        <!-- QNA SECTION (Butter Yellow Background) -->
+        <section class="py-24 relative overflow-hidden bg-butter">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center mb-16">
+                    <h2 class="text-charcoal/50 font-display text-sm font-bold uppercase tracking-[0.3em] mb-3">> sys.faq</h2>
+                    <h3 class="text-4xl md:text-5xl font-black text-charcoal uppercase font-display tracking-tighter">Curhat Session.</h3>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="glass-panel bg-paper/80 rounded-3xl p-6 hover:-translate-y-1 transition-transform duration-300 group">
+                        <h4 class="font-display font-black text-lg text-charcoal mb-2 flex items-center gap-3">
+                            <span class="text-sage text-2xl">🤔</span> Ini rasanya kayak jamu pait gitu ga sih?
+                        </h4>
+                        <p class="font-body text-sm text-charcoal/70 leading-relaxed pl-10">
+                            Gak dong! Sedjahe pake 100% rimpang asli + Gula Aren murni. Manisnya pas, legit, dan gak bikin eneg. Sangat *beginner friendly* buat lo yang baru mau coba.
+                        </p>
+                    </div>
+
+                    <div class="glass-panel bg-paper/80 rounded-3xl p-6 hover:-translate-y-1 transition-transform duration-300 group">
+                        <h4 class="font-display font-black text-lg text-charcoal mb-2 flex items-center gap-3">
+                            <span class="text-sky text-2xl">📦</span> Tahan berapa lama kalau dikirim ke luar kota?
+                        </h4>
+                        <p class="font-body text-sm text-charcoal/70 leading-relaxed pl-10">
+                            Buat serbuk instan aman banget dikirim se-Nusantara! Kemasan *ziplock* alumunium foil kita bikin awet sampai berbulan-bulan asalkan ditutup rapat lagi.
+                        </p>
+                    </div>
+
+                    <div class="glass-panel bg-paper/80 rounded-3xl p-6 hover:-translate-y-1 transition-transform duration-300 group">
+                        <h4 class="font-display font-black text-lg text-charcoal mb-2 flex items-center gap-3">
+                            <span class="text-sage text-2xl">🌿</span> Aman buat lambung nggak nih?
+                        </h4>
+                        <p class="font-body text-sm text-charcoal/70 leading-relaxed pl-10">
+                            Super aman. Justru jahe merah dan kencur itu secara medis bagus banget buat nenangin pencernaan, usir perut kembung, dan ngatasin mual-mual masuk angin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA FINAL (Clean Banner) -->
+        <section class="py-32 relative overflow-hidden bg-paper">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40rem] opacity-5 z-0 pointer-events-none filter blur-sm">🌿</div>
             
-            <div class="max-w-4xl mx-auto px-4 text-center relative z-10 glass-panel p-16 rounded-[3rem]">
-                <div class="inline-block bg-charcoal text-butter font-black font-body px-5 py-2 mb-8 uppercase tracking-widest text-sm rounded-full animate-bounce">
+            <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+                <div class="inline-block bg-sky/30 text-charcoal font-black font-body px-5 py-2 mb-8 uppercase tracking-widest text-sm rounded-full">
                     SYSTEM_READY ✨
                 </div>
                 <h2 class="text-5xl md:text-7xl font-black uppercase mb-6 leading-none font-display text-charcoal tracking-tighter">
@@ -448,14 +501,14 @@
 
     </main>
 
-    <!-- Footer Solarpunk Minimalist -->
-    <footer class="bg-charcoal text-paper/80 pt-20 pb-10 border-t border-sage">
+    <!-- Footer Minimalist -->
+    <footer class="bg-charcoal text-paper/80 pt-20 pb-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16 border-b border-white/10 pb-16">
                 <!-- Branding -->
                 <div class="col-span-1 md:col-span-5">
                     <h2 class="text-5xl font-black uppercase tracking-tighter mb-4 text-paper font-display">SEDJAHE<span class="text-sage">.</span></h2>
-                    <p class="font-body text-sm leading-relaxed mb-8 max-w-sm text-paper/60">Jamu 2.0. Minuman herbal tradisional dengan attitude masa depan. 100% lokal, 100% natural potion.</p>
+                    <p class="font-body text-sm leading-relaxed mb-8 max-w-sm text-paper/60">Minuman herbal tradisional dengan attitude masa depan. 100% lokal, 100% natural potion.</p>
                     <div class="flex gap-4">
                         <a href="https://www.instagram.com/sedjahe_1/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-xl border border-white/10 bg-white/5 flex items-center justify-center hover:bg-butter hover:border-butter hover:text-charcoal transition-all text-xl"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.tiktok.com/@sedjahe" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-xl border border-white/10 bg-white/5 flex items-center justify-center hover:bg-sky hover:border-sky hover:text-charcoal transition-all text-xl"><i class="fa-brands fa-tiktok"></i></a>
@@ -493,7 +546,7 @@
             </div>
             
             <div class="flex flex-col md:flex-row justify-between items-center gap-4 font-display font-bold tracking-widest text-[10px] text-white/40">
-                <p>&copy; 2026 SEDJAHE APOTHECARY. ALL SYSTEMS SECURED.</p>
+                <p>&copy; 2026 SEDJAHE. ALL SYSTEMS SECURED.</p>
                 <p>CRAFTED WITH <i class="fa-solid fa-leaf text-sage mx-1"></i> IN INDONESIA</p>
             </div>
         </div>
@@ -509,7 +562,7 @@
         });
 
         // ----------------------------------------------------
-        // THICK LEAF CURSOR & MAGIC UI PARALLAX (Eco-Futurism)
+        // THICK LEAF CURSOR & MAGIC UI PARALLAX
         // ----------------------------------------------------
         document.addEventListener('DOMContentLoaded', () => {
             const cursor = document.getElementById('eco-cursor');
