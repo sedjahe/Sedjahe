@@ -102,6 +102,7 @@
             background-size: 32px 32px;
             overflow-x: hidden;
             color: #4a3b32; /* Choco text */
+            scroll-behavior: smooth;
         }
         
         /* Hilangkan kursor bawaan (Hanya aktif di desktop/laptop) */
@@ -199,9 +200,10 @@
                 </a>
                 
                 <!-- Desktop Menu -->
-                <nav class="hidden md:flex space-x-8 font-black text-lg uppercase tracking-wide font-sans">
+                <nav class="hidden md:flex space-x-6 lg:space-x-8 font-black text-sm lg:text-base uppercase tracking-wide font-sans">
                     <a href="/" class="border-b-4 border-choco pb-1">Beranda</a>
                     <a href="produk.html" class="hover:text-white hover:-translate-y-1 transition-transform">Katalog</a>
+                    <a href="#cara-order" class="hover:text-white hover:-translate-y-1 transition-transform">Cara Order</a>
                     <a href="tentang.html" class="hover:text-white hover:-translate-y-1 transition-transform">Our Story</a>
                     <a href="blog.html" class="hover:text-white hover:-translate-y-1 transition-transform">Journal</a>
                 </nav>
@@ -227,6 +229,7 @@
             <div class="p-6 flex flex-col space-y-4 font-black text-xl uppercase font-sans">
                 <a href="/" class="bg-sakura neo-border neo-shadow p-3 text-center">Beranda</a>
                 <a href="produk.html" class="bg-white neo-border p-3 text-center hover:bg-sakura">Katalog</a>
+                <a href="#cara-order" class="bg-white neo-border p-3 text-center hover:bg-sakura">Cara Order</a>
                 <a href="tentang.html" class="bg-white neo-border p-3 text-center hover:bg-sakura">Our Story</a>
                 <a href="blog.html" class="bg-white neo-border p-3 text-center hover:bg-sakura">Journal</a>
             </div>
@@ -354,8 +357,65 @@
             </div>
         </section>
 
+        <!-- SEKSI BARU: CARA PEMESANAN (ORDER FLOW) -->
+        <section id="cara-order" class="py-24 bg-matcha overflow-hidden relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-black uppercase mb-4 bg-white inline-block px-6 py-2 neo-border transform rotate-1 font-sans text-choco">Cara Order Nya~ 🛒</h2>
+                    <p class="text-xl font-black mt-4 text-choco bg-cream px-4 py-1 inline-block neo-border">Step-by-step adopsi Sedjahe ke rumah lo.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Steps Content (Kiri) -->
+                    <div class="lg:col-span-6 space-y-6">
+                        <!-- Step 1 -->
+                        <div class="bg-cream p-5 neo-border neo-shadow flex gap-5 items-center hover:-translate-y-1 transition-transform">
+                            <div class="w-14 h-14 bg-white neo-border rounded-full flex items-center justify-center font-black text-2xl shrink-0 text-choco">1</div>
+                            <div>
+                                <h4 class="font-black uppercase text-xl font-sans mb-1">Pilih Potion 🧪</h4>
+                                <p class="font-bold text-choco text-sm">Buka website dan hunting ramuan favorit lo di <strong>Katalog Produk</strong>.</p>
+                            </div>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="bg-cream p-5 neo-border neo-shadow flex gap-5 items-center hover:-translate-y-1 transition-transform">
+                            <div class="w-14 h-14 bg-sakura neo-border rounded-full flex items-center justify-center font-black text-2xl shrink-0 text-choco">2</div>
+                            <div>
+                                <h4 class="font-black uppercase text-xl font-sans mb-1">Chat Mimin 💬</h4>
+                                <p class="font-bold text-choco text-sm">Klik tombol <strong>Order Meow / WhatsApp</strong>. Lo bakal langsung terhubung ke chat Mimin kita yang super ramah.</p>
+                            </div>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="bg-cream p-5 neo-border neo-shadow flex gap-5 items-center hover:-translate-y-1 transition-transform">
+                            <div class="w-14 h-14 bg-melon neo-border rounded-full flex items-center justify-center font-black text-2xl shrink-0 text-choco">3</div>
+                            <div>
+                                <h4 class="font-black uppercase text-xl font-sans mb-1">Isi Data & Bayar 💸</h4>
+                                <p class="font-bold text-choco text-sm">Mimin bakal ngecek ketersediaan produk. Kalau *ready*, tinggal isi alamat rumah lo dan selesaikan pembayaran.</p>
+                            </div>
+                        </div>
+                        <!-- Step 4 -->
+                        <div class="bg-cream p-5 neo-border neo-shadow flex gap-5 items-center hover:-translate-y-1 transition-transform">
+                            <div class="w-14 h-14 bg-taro neo-border rounded-full flex items-center justify-center font-black text-2xl shrink-0 text-choco">4</div>
+                            <div>
+                                <h4 class="font-black uppercase text-xl font-sans mb-1">Healing Time! 🌸</h4>
+                                <p class="font-bold text-choco text-sm">Pesanan dikonfirmasi dan langsung meluncur ke depan pintu lo. Siap-siap *body upgrade*!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Diagram Image (Kanan) -->
+                    <div class="lg:col-span-6 flex justify-center relative">
+                        <div class="absolute -inset-4 bg-white/50 rounded-[3rem] blur-xl z-0"></div>
+                        <!-- PASTIKAN NAMA FILE DIAGRAM INI BENAR: actv-diagram.png (Ganti spasi dengan strip di file asli komputer Anda) -->
+                        <img src="assets/actv-diagram.png" alt="Activity Diagram Flow Pemesanan" class="relative z-10 w-full max-w-lg bg-white neo-border neo-shadow-static rounded-[2rem] p-3 transform -rotate-2 hover:rotate-0 transition-transform duration-300">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
         <!-- WHY US / VIBE CHECK -->
-        <section class="py-24 bg-cream overflow-hidden relative">
+        <section class="py-24 bg-cream overflow-hidden relative border-t-4 border-choco">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="text-center mb-16">
                     <h2 class="text-4xl md:text-5xl font-black uppercase mb-4 bg-sakura inline-block px-6 py-2 neo-border transform rotate-2 font-sans">Vibe Check 🌸</h2>
@@ -461,7 +521,7 @@
         </section>
 
         <!-- SEKSI BARU: Q&A (CURHAT SESSION) -->
-        <section class="py-24 bg-melon overflow-hidden">
+        <section class="py-24 bg-melon overflow-hidden border-b-4 border-choco">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="text-4xl md:text-5xl font-black uppercase mb-4 bg-white inline-block px-6 py-2 neo-border transform -rotate-1 font-sans">Curhat Session 🐱💬</h2>
@@ -506,7 +566,7 @@
         </section>
 
         <!-- SOCIAL PROOF MARQUEE -->
-        <section class="bg-choco py-6 border-y-4 border-choco flex flex-col gap-4 overflow-hidden">
+        <section class="bg-choco py-6 flex flex-col gap-4 overflow-hidden">
             <div class="flex whitespace-nowrap animate-marquee">
                 <div class="flex gap-4 font-black uppercase text-xl text-choco font-sans mx-4">
                     <span class="bg-white neo-border px-6 py-2 rounded-full">"ASLI GAK BIKIN ENEG"</span>
@@ -523,7 +583,7 @@
         </section>
 
         <!-- CTA FINAL -->
-        <section class="py-24 bg-cream relative">
+        <section class="py-24 bg-cream relative border-t-4 border-choco">
             <div class="max-w-4xl mx-auto px-4 text-center">
                 <div class="bg-white neo-border neo-shadow-static p-12 relative overflow-hidden">
                     <!-- Polkadot bg for CTA -->
@@ -562,6 +622,7 @@
                     <ul class="space-y-4 font-bold text-lg">
                         <li><a href="/" class="hover:text-sakura transition-colors">🌸 Beranda</a></li>
                         <li><a href="produk.html" class="hover:text-sakura transition-colors">🍡 Katalog Produk</a></li>
+                        <li><a href="#cara-order" class="hover:text-sakura transition-colors">🛒 Cara Order</a></li>
                         <li><a href="tentang.html" class="hover:text-sakura transition-colors">🐱 Our Story</a></li>
                         <li><a href="blog.html" class="hover:text-sakura transition-colors">📓 Journal</a></li>
                     </ul>
@@ -630,7 +691,6 @@
                 animateTrail();
 
                 // Animasi saat kursor menyorot tombol (Hover State)
-                // Mengubah icon kucing jadi cakar kucing saat di-hover
                 const interactables = document.querySelectorAll('a, button, .parallax-wrapper, .group');
                 interactables.forEach(el => {
                     el.addEventListener('mouseenter', () => {
