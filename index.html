@@ -291,6 +291,8 @@
     <!-- 2. CUSTOM CURSOR                                   -->
     <!-- ================================================== -->
     <div id="custom-cursor">🌿</div>
+    <div id="trail-1" class="trail-dot hidden md:block"></div>
+    <div id="trail-2" class="trail-dot hidden md:block" style="width: 5px; height: 5px; opacity: 0.4; background-color: #BBE0EF;"></div>
 
     <!-- ================================================== -->
     <!-- 3. NAVIGATION HEADER (Glassmorphism & Magnetic)    -->
@@ -829,6 +831,44 @@
             const loaderBar = document.getElementById('loader-bar');
             let progress = 0;
 
+            // Variabel untuk kata-kata mesin ketik agar inisialisasinya global
+            const typeWords = ["Penyelamat Lo.", "Temen Lembur.", "Anti Tumbang.", "Sedjahe."];
+            let wordIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            const textElement = document.getElementById("typewriter");
+
+            function typeWriter() {
+                if (!textElement) return; // Guard clause biar aman
+                
+                const currentWord = typeWords[wordIndex];
+                
+                if (isDeleting) {
+                    textElement.innerText = currentWord.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    textElement.innerText = currentWord.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+
+                // Kecepatan ngetik dinamis
+                let typeSpeed = isDeleting ? 50 : 100;
+
+                if (!isDeleting && charIndex === currentWord.length) {
+                    // Berhenti bentar pas kata udah utuh
+                    typeSpeed = 2000; 
+                    // Stop ngetik kalau udah di kata terakhir
+                    if (wordIndex === typeWords.length - 1) return;
+                    isDeleting = true;
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    wordIndex++;
+                    typeSpeed = 500; // Jeda sebelum ngetik kata baru
+                }
+
+                setTimeout(typeWriter, typeSpeed);
+            }
+
             // Fake loading progress
             const interval = setInterval(() => {
                 progress += Math.floor(Math.random() * 15) + 5;
@@ -871,8 +911,18 @@
             if (window.matchMedia("(pointer: fine)").matches) {
                 const root = document.documentElement;
                 const cursor = document.getElementById('custom-cursor');
-                const trail1 = document.getElementById('trail-1');
-                const trail2 = document.getElementById('trail-2');
+                // Definisikan trail1 dan trail2 secara spesifik biar nggak ada yg missing
+                const trail1 = document.createElement('div');
+                trail1.className = 'trail-dot hidden md:block';
+                document.body.appendChild(trail1);
+                
+                const trail2 = document.createElement('div');
+                trail2.className = 'trail-dot hidden md:block';
+                trail2.style.width = '5px';
+                trail2.style.height = '5px';
+                trail2.style.opacity = '0.4';
+                trail2.style.backgroundColor = '#BBE0EF';
+                document.body.appendChild(trail2);
                 
                 let mx = window.innerWidth/2, my = window.innerHeight/2;
                 let t1x = mx, t1y = my, t2x = mx, t2y = my;
@@ -889,13 +939,17 @@
                 function animateTrails() {
                     t1x += (mx - t1x) * 0.15;
                     t1y += (my - t1y) * 0.15;
-                    trail1.style.left = `${t1x}px`;
-                    trail1.style.top = `${t1y}px`;
+                    if(trail1) {
+                        trail1.style.left = `${t1x}px`;
+                        trail1.style.top = `${t1y}px`;
+                    }
 
                     t2x += (t1x - t2x) * 0.1;
                     t2y += (t1y - t2y) * 0.1;
-                    trail2.style.left = `${t2x}px`;
-                    trail2.style.top = `${t2y}px`;
+                    if(trail2) {
+                        trail2.style.left = `${t2x}px`;
+                        trail2.style.top = `${t2y}px`;
+                    }
                     
                     requestAnimationFrame(animateTrails);
                 }
@@ -959,44 +1013,6 @@
             });
 
 
-            /* --- 5. TYPEWRITER WITH BACKSPACE --- */
-            const textElement = document.getElementById("typewriter");
-            // Kata-kata gaul yang bakal diketik
-            const words = ["Penyelamat Lo.", "Temen Lembur.", "Anti Tumbang.", "Sedjahe."];
-            let wordIndex = 0;
-            let charIndex = 0;
-            let isDeleting = false;
-
-            function typeWriter() {
-                const currentWord = words[wordIndex];
-                
-                if (isDeleting) {
-                    textElement.innerText = currentWord.substring(0, charIndex - 1);
-                    charIndex--;
-                } else {
-                    textElement.innerText = currentWord.substring(0, charIndex + 1);
-                    charIndex++;
-                }
-
-                // Kecepatan ngetik dinamis
-                let typeSpeed = isDeleting ? 50 : 100;
-
-                if (!isDeleting && charIndex === currentWord.length) {
-                    // Berhenti bentar pas kata udah utuh
-                    typeSpeed = 2000; 
-                    // Stop ngetik kalau udah di kata terakhir
-                    if (wordIndex === words.length - 1) return;
-                    isDeleting = true;
-                } else if (isDeleting && charIndex === 0) {
-                    isDeleting = false;
-                    wordIndex++;
-                    typeSpeed = 500; // Jeda sebelum ngetik kata baru
-                }
-
-                setTimeout(typeWriter, typeSpeed);
-            }
-
-
             /* --- 6. SCROLL REVEAL OBSERVER --- */
             const observerOptions = {
                 root: null,
@@ -1056,7 +1072,9 @@
             
             // Tutup menu kalau link diklik
             overlay.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => menuBtn.click());
+                link.addEventListener('click', () => {
+                    if(menuOpen) menuBtn.click();
+                });
             });
 
         });
