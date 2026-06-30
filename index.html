@@ -1,99 +1,1493 @@
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sedjahe | Minuman Herbal Modern dari Jahe Merah dan Rempah Alami</title>
-  <meta name="description" content="Sedjahe adalah minuman herbal modern dari jahe merah pilihan, gula aren alami, dan rempah premium. Praktis diseduh, 100% natural, tanpa pengawet.">
-  <meta name="keywords" content="sedjahe, minuman herbal modern, jahe merah, beras kencur, wedang uwuh, jamu modern, minuman sehat, herbal alami">
-  <meta name="author" content="Sedjahe">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://sedjahe.vercel.app/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedjahe | Minuman Herbal Modern dari Jahe Merah & Gula Aren Asli</title>
 
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="id_ID">
-  <meta property="og:site_name" content="Sedjahe">
-  <meta property="og:title" content="Sedjahe | Sehat Gak Harus Pahit">
-  <meta property="og:description" content="Minuman herbal modern dari jahe merah, gula aren alami, dan rempah premium. Praktis tinggal diseduh.">
-  <meta property="og:url" content="https://sedjahe.vercel.app/">
-  <meta property="og:image" content="https://sedjahe.vercel.app/assets/sedjahe-hero.png">
+    <!-- ===================== SEO META ===================== -->
+    <meta name="description" content="Sedjahe, minuman herbal modern dari jahe merah pilihan, gula aren asli, dan rempah premium. 100% natural, tanpa pengawet, praktis tinggal diseduh. Sehat gak harus pahit.">
+    <meta name="keywords" content="sedjahe, minuman herbal modern, jahe merah, jamu modern, beras kencur, wedang uwuh, minuman herbal alami, gula aren asli, jamu tanpa pengawet">
+    <meta name="author" content="Sedjahe">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sedjahe.vercel.app/">
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sedjahe | Minuman Herbal Modern">
-  <meta name="twitter:description" content="Sehat gak harus pahit. Sedjahe praktis diseduh, 100% natural, tanpa pengawet.">
-  <meta name="twitter:image" content="https://sedjahe.vercel.app/assets/sedjahe-hero.png">
+    <!-- ===================== OPEN GRAPH ===================== -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Sedjahe">
+    <meta property="og:title" content="Sedjahe | Minuman Herbal Modern dari Jahe Merah & Gula Aren Asli">
+    <meta property="og:description" content="Sehat gak harus pahit. Sedjahe dibuat dari jahe merah pilihan, gula aren alami, dan rempah premium yang praktis tinggal diseduh. 100% Natural, Tanpa Pengawet.">
+    <meta property="og:url" content="https://sedjahe.vercel.app/">
+    <meta property="og:image" content="https://sedjahe.vercel.app/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="id_ID">
 
-  <link rel="icon" type="image/png" href="assets/sedjahe-hero.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            display: ["Syne", "sans-serif"],
-            body: ["Plus Jakarta Sans", "sans-serif"]
-          },
-          colors: {
-            primary: "#7BA05B",
-            cream: "#FDF8F2",
-            dark: "#1F2937",
-            accent: "#F7B731",
-            success: "#4CAF50"
-          },
-          boxShadow: {
-            soft: "0 24px 80px rgba(31,41,55,.12)",
-            lift: "0 18px 45px rgba(31,41,55,.14)"
-          }
+    <!-- ===================== TWITTER CARD ===================== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sedjahe | Minuman Herbal Modern dari Jahe Merah & Gula Aren Asli">
+    <meta name="twitter:description" content="Sehat gak harus pahit. Jahe merah pilihan, gula aren alami, rempah premium, tinggal diseduh. 100% Natural, Tanpa Pengawet.">
+    <meta name="twitter:image" content="https://sedjahe.vercel.app/assets/og-image.jpg">
+
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <!-- ===================== SCHEMA: ORGANIZATION ===================== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Sedjahe",
+        "url": "https://sedjahe.vercel.app/",
+        "logo": "https://sedjahe.vercel.app/assets/logo.png",
+        "description": "Sedjahe adalah brand minuman herbal modern yang menyajikan jahe merah, beras kencur, dan wedang uwuh dari bahan 100% alami tanpa pengawet.",
+        "sameAs": [
+            "https://www.instagram.com/sedjahe_1/",
+            "https://www.tiktok.com/@sedjahe"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+62-895-3831-56946",
+            "contactType": "customer service",
+            "areaServed": "ID",
+            "availableLanguage": ["Indonesian"]
         }
-      }
-    };
-  </script>
-  <style>
-    :root {
-      --cream: #FDF8F2;
-      --primary: #7BA05B;
-      --dark: #1F2937;
-      --accent: #F7B731;
-      --success: #4CAF50;
     }
+    </script>
 
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      background: var(--cream);
-      color: var(--dark);
-      font-family: "Plus Jakarta Sans", sans-serif;
-      overflow-x: hidden;
+    <!-- ===================== SCHEMA: PRODUCT (ItemList) ===================== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+            {
+                "@type": "Product",
+                "position": 1,
+                "name": "Sedjahe Jahe Merah",
+                "image": "https://sedjahe.vercel.app/assets/jahe-merah.png",
+                "description": "Minuman herbal jahe merah pilihan untuk menghangatkan tubuh dan meredakan masuk angin.",
+                "brand": { "@type": "Brand", "name": "Sedjahe" },
+                "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "IDR",
+                    "price": "25000",
+                    "availability": "https://schema.org/InStock"
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "500"
+                }
+            },
+            {
+                "@type": "Product",
+                "position": 2,
+                "name": "Sedjahe Beras Kencur",
+                "image": "https://sedjahe.vercel.app/assets/beras-kencur.png",
+                "description": "Minuman herbal beras kencur untuk menambah stamina dan meredakan pegal linu.",
+                "brand": { "@type": "Brand", "name": "Sedjahe" },
+                "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "IDR",
+                    "price": "20000",
+                    "availability": "https://schema.org/InStock"
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "500"
+                }
+            },
+            {
+                "@type": "Product",
+                "position": 3,
+                "name": "Sedjahe Wedang Uwuh",
+                "image": "https://sedjahe.vercel.app/assets/wedang-uwuh.png",
+                "description": "Ramuan rempah tradisional Sedjahe untuk menjaga daya tahan tubuh dan imun.",
+                "brand": { "@type": "Brand", "name": "Sedjahe" },
+                "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "IDR",
+                    "price": "25000",
+                    "availability": "https://schema.org/InStock"
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "500"
+                }
+            }
+        ]
     }
+    </script>
 
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      z-index: -2;
-      background:
-        radial-gradient(circle at 18% 12%, rgba(247,183,49,.18), transparent 28%),
-        radial-gradient(circle at 85% 2%, rgba(123,160,91,.18), transparent 24%),
-        linear-gradient(180deg, #fffaf4 0%, #fdf8f2 42%, #f6f0e8 100%);
+    <!-- ===================== SCHEMA: BREADCRUMB ===================== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Beranda",
+                "item": "https://sedjahe.vercel.app/"
+            }
+        ]
     }
+    </script>
 
-    ::selection { background: rgba(247,183,49,.35); }
-
-    .section-pad { padding: 96px 0; }
-
-    .container-x {
-      width: min(1120px, calc(100% - 32px));
-      margin-inline: auto;
+    <!-- ===================== SCHEMA: FAQ ===================== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Apakah Sedjahe aman dikonsumsi?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sedjahe dibuat dari 100% rimpang alami tanpa pengawet kimia sintetis sehingga aman dikonsumsi secara umum. Untuk kondisi khusus seperti kehamilan, disarankan konsultasi dengan dokter terlebih dahulu."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apakah Sedjahe sudah memiliki izin BPOM?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sedjahe diproduksi dengan standar higienis dan dalam proses pengurusan legalitas resmi termasuk izin edar. Informasi terbaru dapat ditanyakan langsung melalui WhatsApp Admin."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apakah Sedjahe bisa COD?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Untuk area tertentu di Jabodetabek, Sedjahe melayani COD. Silakan konfirmasi ketersediaan COD di area Anda melalui WhatsApp Admin."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Berapa lama pengiriman Sedjahe?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pengiriman dalam kota umumnya 1-2 hari, sedangkan luar kota 2-5 hari kerja tergantung jasa ekspedisi yang dipilih."
+                }
+            }
+        ]
     }
+    </script>
 
-    .eyebrow {
-      letter-spacing: .18em;
-      text-transform: uppercase;
-      font-size: .74rem;
-      font-weight: 800;
-      color: var(--primary);
-    }
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Konfigurasi Tailwind Kustom -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Syne', 'sans-serif'],
+                        body: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['Space Mono', 'monospace']
+                    },
+                    colors: {
+                        sage: '#A5AF79',
+                        charcoal: '#454040',
+                        sky: '#BBE0EF',
+                        butter: '#FFEF9F',
+                        paper: '#fcfcfc',
+                        primary: '#7BA05B',
+                        cream: '#FDF8F2',
+                        dark: '#1F2937',
+                        accent: '#F7B731',
+                        success: '#4CAF50',
+                    },
+                    animation: {
+                        'spin-slow': 'spin 20s linear infinite',
+                        'blob': 'blob 10s infinite ease-in-out',
+                        'marquee': 'marquee 30s linear infinite',
+                        'marquee-reverse': 'marquee-reverse 30s linear infinite',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1) rotate(0deg)' },
+                            '33%': { transform: 'translate(50px, -50px) scale(1.2) rotate(120deg)' },
+                            '66%': { transform: 'translate(-40px, 40px) scale(0.8) rotate(240deg)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1) rotate(360deg)' },
+                        },
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-50%)' }
+                        },
+                        'marquee-reverse': {
+                            '0%': { transform: 'translateX(-50%)' },
+                            '100%': { transform: 'translateX(0%)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- MASTERCLASS CSS STYLE -->
+    <style>
+        :root {
+            --cursor-x: 50vw;
+            --cursor-y: 50vh;
+        }
+
+        body {
+            background-color: #fcfcfc;
+            color: #454040;
+            overflow-x: hidden;
+            background-image: radial-gradient(rgba(69, 64, 64, 0.08) 1.5px, transparent 1.5px);
+            background-size: 40px 40px;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #fcfcfc; }
+        ::-webkit-scrollbar-thumb { background: #A5AF79; border-radius: 10px; }
+
+        @media (pointer: fine) { * { cursor: none !important; } }
+
+        /* PRELOADER */
+        #preloader {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: 999999;
+            display: flex; align-items: center; justify-content: center; flex-direction: column;
+            background-color: #fcfcfc;
+            transition: transform 1.2s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+        #preloader.hide-up { transform: translateY(-100%); }
+        .loader-text { font-family: 'Syne', sans-serif; font-size: 5rem; font-weight: 800; color: #454040; overflow: hidden; }
+        .loader-percentage { font-family: 'Space Mono', monospace; font-size: 1.5rem; font-weight: bold; color: #A5AF79; margin-top: 1rem; }
+
+        /* CUSTOM CURSOR */
+        #custom-cursor {
+            position: fixed; top: 0; left: 0; width: 40px; height: 40px; pointer-events: none; z-index: 99999;
+            display: flex; align-items: center; justify-content: center; font-size: 2rem;
+            filter: drop-shadow(0 4px 8px rgba(165,175,121,0.5));
+            transform: translate(calc(var(--cursor-x) - 50%), calc(var(--cursor-y) - 50%));
+            transition: width 0.3s, height 0.3s, font-size 0.3s, transform 0.1s ease-out;
+            will-change: transform;
+        }
+        .cursor-hover {
+            width: 80px !important; height: 80px !important; font-size: 3.5rem !important;
+            filter: drop-shadow(0 10px 20px rgba(255,239,159,0.9)) !important;
+            transform: translate(calc(var(--cursor-x) - 50%), calc(var(--cursor-y) - 50%)) rotate(20deg) !important;
+        }
+        .cursor-click { transform: translate(calc(var(--cursor-x) - 50%), calc(var(--cursor-y) - 50%)) scale(0.6) !important; }
+
+        .trail-dot {
+            position: fixed; top: 0; left: 0; width: 10px; height: 10px; border-radius: 50%;
+            background-color: #A5AF79; opacity: 0.6; pointer-events: none; z-index: 99998;
+            transform: translate(-50%, -50%);
+        }
+
+        /* MAGNETIC BUTTONS */
+        .magnetic-btn { display: inline-block; transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); will-change: transform; }
+        .magnetic-btn-inner { display: flex; align-items: center; justify-content: center; transition: transform 0.3s ease-out; pointer-events: none; }
+
+        /* 3D TILT */
+        .tilt-container { perspective: 1200px; transform-style: preserve-3d; }
+        .tilt-card { transform-style: preserve-3d; transition: transform 0.15s ease-out, box-shadow 0.15s ease-out; will-change: transform; }
+        .tilt-content { transform: translateZ(60px); transition: transform 0.3s ease-out; }
+        .tilt-card:hover .tilt-content { transform: translateZ(90px); }
+
+        /* GLASSMORPHISM & GOOEY */
+        .glass-panel {
+            background: rgba(252, 252, 252, 0.5);
+            backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 10px 40px -10px rgba(69, 64, 64, 0.05);
+        }
+        .gooey-filter { filter: url('#gooey'); }
+
+        /* STICKY STACKING CARDS */
+        .stack-container { position: relative; padding-bottom: 100vh; }
+        .stack-card { position: sticky; top: 15vh; transform-origin: top center; transition: all 0.5s ease-out; }
+
+        /* TYPING CURSOR */
+        .typing-cursor { display: inline-block; width: 4px; height: 1em; background-color: #454040; animation: blink 1s step-end infinite; vertical-align: middle; margin-left: 4px; }
+        @keyframes blink { 50% { opacity: 0; } }
+
+        /* REVEAL ANIMATIONS */
+        .reveal-up { opacity: 0; transform: translateY(50px) scale(0.95); transition: all 0.8s cubic-bezier(0.5, 0, 0, 1); }
+        .reveal-up.active { opacity: 1; transform: translateY(0) scale(1); }
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+        .delay-400 { transition-delay: 400ms; }
+        .delay-500 { transition-delay: 500ms; }
+
+        .text-sage-gradient {
+            background: linear-gradient(135deg, #A5AF79 0%, #BBE0EF 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+        .text-outline { color: transparent; -webkit-text-stroke: 2px #454040; }
+
+        /* ===================== NEW: STICKY CTA BAR ===================== */
+        #sticky-cta {
+            position: fixed; bottom: 0; left: 0; width: 100%; z-index: 9990;
+            transform: translateY(100%); transition: transform 0.4s cubic-bezier(0.5,0,0,1);
+        }
+        #sticky-cta.show { transform: translateY(0); }
+
+        /* ===================== NEW: FLOATING WHATSAPP ===================== */
+        #floating-wa { position: fixed; bottom: 24px; right: 24px; z-index: 9991; }
+        @keyframes wa-pulse {
+            0% { box-shadow: 0 0 0 0 rgba(76,175,80,0.5); }
+            70% { box-shadow: 0 0 0 16px rgba(76,175,80,0); }
+            100% { box-shadow: 0 0 0 0 rgba(76,175,80,0); }
+        }
+        .wa-pulse { animation: wa-pulse 2.2s infinite; }
+        #wa-tooltip {
+            opacity: 0; transform: translateX(10px) scale(0.9); pointer-events: none;
+            transition: all 0.3s ease;
+        }
+        #floating-wa:hover #wa-tooltip, #floating-wa.show-tooltip #wa-tooltip {
+            opacity: 1; transform: translateX(0) scale(1); pointer-events: auto;
+        }
+
+        /* ===================== NEW: TESTIMONI CAROUSEL ===================== */
+        .testi-track { display: flex; transition: transform 0.6s cubic-bezier(0.65,0,0.35,1); }
+        .testi-slide { flex: 0 0 100%; }
+        @media (min-width: 768px) { .testi-slide { flex: 0 0 33.3333%; } }
+        .testi-dot { width: 8px; height: 8px; border-radius: 999px; background: rgba(69,64,64,0.2); transition: all 0.3s ease; }
+        .testi-dot.active { width: 28px; background: #A5AF79; }
+
+        /* ===================== NEW: COMPARISON TABLE ===================== */
+        .compare-check { color: #4CAF50; }
+        .compare-cross { color: #d1453b; }
+
+        /* ===================== NEW: BEFORE-AFTER SLIDER ===================== */
+        .ba-wrapper { position: relative; overflow: hidden; user-select: none; }
+        .ba-after { position: absolute; top: 0; left: 0; height: 100%; overflow: hidden; }
+        .ba-handle {
+            position: absolute; top: 0; bottom: 0; width: 4px; background: #fff;
+            transform: translateX(-50%); cursor: ew-resize; box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+        .ba-handle-btn {
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+            width: 48px; height: 48px; border-radius: 50%; background: #fff;
+            display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+        }
+
+        /* ===================== NEW: BADGE SHIMMER ===================== */
+        @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+        .badge-shimmer {
+            background: linear-gradient(110deg, #F7B731 35%, #fff 50%, #F7B731 65%);
+            background-size: 200% 100%;
+            animation: shimmer 2.5s infinite;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-butter selection:text-charcoal relative">
+
+    <!-- SVG FILTERS -->
+    <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+        <defs>
+            <filter id="gooey">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="blur" />
+                <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 25 -10" result="gooey" />
+                <feComposite in="SourceGraphic" in2="gooey" operator="atop"/>
+            </filter>
+            <filter id="noise">
+                <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+            </filter>
+        </defs>
+    </svg>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader-text scramble-target" data-text="SEDJAHE.">S.......</div>
+        <div id="loader-perc" class="loader-percentage">0%</div>
+        <div class="w-64 h-1 bg-charcoal/10 mt-8 rounded-full overflow-hidden">
+            <div id="loader-bar" class="h-full bg-sage w-0 transition-all duration-75"></div>
+        </div>
+    </div>
+
+    <!-- CUSTOM CURSOR -->
+    <div id="custom-cursor">🌿</div>
+
+    <!-- ============================================================ -->
+    <!-- NAVIGATION HEADER -->
+    <!-- ============================================================ -->
+    <header id="main-header" class="fixed top-0 w-full z-50 transition-all duration-500 transform translate-y-0">
+        <div class="bg-charcoal text-paper py-2 overflow-hidden relative border-b border-paper/10">
+            <div class="animate-marquee font-mono text-[10px] tracking-[0.3em] font-bold uppercase flex items-center whitespace-nowrap">
+                <span class="mx-6 text-butter">🔥 BEST SELLER MINGGU INI</span>
+                <span class="mx-6 text-sky">⚡ 100% NATURAL</span>
+                <span class="mx-6 text-sage">🌿 TANPA PENGAWET</span>
+                <span class="mx-6 text-butter">🔥 BEST SELLER MINGGU INI</span>
+                <span class="mx-6 text-sky">⚡ 100% NATURAL</span>
+                <span class="mx-6 text-sage">🌿 TANPA PENGAWET</span>
+                <span class="mx-6 text-butter">🔥 BEST SELLER MINGGU INI</span>
+                <span class="mx-6 text-sky">⚡ 100% NATURAL</span>
+                <span class="mx-6 text-sage">🌿 TANPA PENGAWET</span>
+            </div>
+        </div>
+
+        <div class="glass-panel mx-4 mt-4 rounded-full px-6 py-3 flex justify-between items-center shadow-lg">
+            <a href="/" class="flex items-center gap-3 magnetic-btn group">
+                <div class="magnetic-btn-inner flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-paper flex items-center justify-center border border-charcoal/10 overflow-hidden shadow-sm group-hover:scale-110 transition-transform">
+                        <img src="assets/logo.png" alt="Logo Sedjahe Minuman Herbal Modern" class="w-full h-full object-cover mix-blend-multiply p-1">
+                    </div>
+                    <span class="font-display font-black text-xl uppercase tracking-tighter text-charcoal">Sedjahe<span class="text-sage">.</span></span>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-8 font-display font-bold text-xs tracking-[0.2em] uppercase">
+                <a href="#produk" class="text-charcoal/60 hover:text-charcoal transition-colors relative group">Produk
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-charcoal transition-all group-hover:w-full"></span>
+                </a>
+                <a href="#cara-seduh" class="text-charcoal/60 hover:text-charcoal transition-colors relative group">Cara Seduh
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-charcoal transition-all group-hover:w-full"></span>
+                </a>
+                <a href="#testimoni" class="text-charcoal/60 hover:text-charcoal transition-colors relative group">Testimoni
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-charcoal transition-all group-hover:w-full"></span>
+                </a>
+                <a href="#faq" class="text-charcoal/60 hover:text-charcoal transition-colors relative group">FAQ
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-charcoal transition-all group-hover:w-full"></span>
+                </a>
+            </nav>
+
+            <div class="hidden lg:block">
+                <a href="https://wa.me/62895383156946?text=Halo%20Sedjahe%2C%20saya%20mau%20order" target="_blank" rel="noopener" class="magnetic-btn bg-charcoal text-paper px-8 py-3 rounded-full font-display font-bold text-xs uppercase tracking-widest hover:bg-sage hover:text-charcoal transition-colors shadow-lg hover:shadow-sage/50">
+                    <span class="magnetic-btn-inner">Beli Sekarang <i class="fa-solid fa-cart-shopping ml-2"></i></span>
+                </a>
+            </div>
+
+            <button id="mobile-menu-btn" class="lg:hidden w-10 h-10 rounded-full border border-charcoal/10 flex flex-col items-center justify-center gap-1.5 z-50 relative">
+                <span class="w-5 h-0.5 bg-charcoal transition-all duration-300 transform" id="burger-1"></span>
+                <span class="w-5 h-0.5 bg-charcoal transition-all duration-300" id="burger-2"></span>
+                <span class="w-5 h-0.5 bg-charcoal transition-all duration-300 transform" id="burger-3"></span>
+            </button>
+        </div>
+
+        <div id="mobile-overlay" class="fixed inset-0 bg-paper/95 backdrop-blur-3xl z-40 transform translate-x-full transition-transform duration-500 flex flex-col justify-center items-center">
+            <div class="flex flex-col items-center gap-8 font-display font-black text-3xl uppercase tracking-tighter">
+                <a href="#produk" class="text-charcoal hover:scale-110 transition-transform hover:text-sage">Produk</a>
+                <a href="#cara-seduh" class="text-charcoal hover:scale-110 transition-transform hover:text-sage">Cara Seduh</a>
+                <a href="#testimoni" class="text-charcoal hover:scale-110 transition-transform hover:text-sage">Testimoni</a>
+                <a href="#faq" class="text-charcoal hover:scale-110 transition-transform hover:text-sage">FAQ</a>
+                <a href="https://wa.me/62895383156946?text=Halo%20Sedjahe%2C%20saya%20mau%20order" target="_blank" rel="noopener" class="mt-8 bg-sage text-paper px-8 py-4 rounded-full text-xl hover:bg-charcoal transition-colors">Beli Sekarang</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="w-full">
+
+    <!-- ============================================================ -->
+    <!-- HERO SECTION (Attention) -->
+    <!-- ============================================================ -->
+    <section class="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
+
+        <div class="absolute inset-0 z-0 gooey-filter pointer-events-none opacity-60">
+            <div class="absolute top-1/4 left-1/4 w-[400px] h-[400px] bg-sky rounded-full mix-blend-multiply animate-blob"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-butter rounded-full mix-blend-multiply animate-blob" style="animation-delay: 2s;"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-sage rounded-full mix-blend-multiply animate-blob" style="animation-delay: 4s;"></div>
+        </div>
+
+        <div class="absolute inset-0 z-0 opacity-20 pointer-events-none" style="background-image: linear-gradient(#454040 1px, transparent 1px), linear-gradient(90deg, #454040 1px, transparent 1px); background-size: 100px 100px;"></div>
+
+        <div class="max-w-5xl mx-auto px-4 relative z-10 text-center flex flex-col items-center">
+
+            <!-- Badges Trust -->
+            <div class="reveal-up flex flex-wrap justify-center gap-3 mb-6">
+                <span class="badge-shimmer text-charcoal font-display font-black text-[10px] uppercase tracking-widest px-4 py-2 rounded-full shadow-md flex items-center gap-1.5">
+                    <i class="fa-solid fa-crown"></i> Best Seller
+                </span>
+                <span class="bg-success/90 text-white font-display font-black text-[10px] uppercase tracking-widest px-4 py-2 rounded-full shadow-md flex items-center gap-1.5">
+                    <i class="fa-solid fa-leaf"></i> 100% Natural
+                </span>
+                <span class="bg-charcoal text-paper font-display font-black text-[10px] uppercase tracking-widest px-4 py-2 rounded-full shadow-md flex items-center gap-1.5">
+                    <i class="fa-solid fa-shield-halved"></i> Tanpa Pengawet
+                </span>
+            </div>
+
+            <div class="reveal-up delay-100 bg-white/80 backdrop-blur border border-charcoal/10 px-6 py-2.5 rounded-full font-body font-bold text-xs uppercase tracking-[0.3em] flex items-center gap-3 shadow-sm mb-8">
+                <span class="text-sage text-lg"><i class="fa-solid fa-mug-hot"></i></span>
+                <span class="scramble-target" data-text="Minuman Herbal Modern">Minuman Herbal Modern</span>
+            </div>
+
+            <h1 class="reveal-up delay-200 text-[10vw] md:text-6xl lg:text-[5.5rem] font-black uppercase leading-[0.9] tracking-tighter font-display text-charcoal mb-6">
+                Sehat Gak Harus <br>
+                <span class="text-sage-gradient">Pahit.</span>
+            </h1>
+
+            <p class="reveal-up delay-300 max-w-xl mx-auto text-charcoal/80 font-body text-base md:text-lg leading-relaxed mb-4 p-6 glass-panel rounded-3xl">
+                Sedjahe dibuat dari <strong>jahe merah pilihan</strong>, <strong>gula aren alami</strong>, dan rempah premium yang praktis tinggal diseduh. Rasanya enak, khasiatnya nendang, gak ribet.
+            </p>
+
+            <div class="reveal-up delay-300 flex items-center gap-2 mb-10 font-display font-bold text-charcoal">
+                <span class="text-accent text-lg tracking-tight">★★★★★</span>
+                <span class="text-sm">4.9/5 dari 500+ pelanggan</span>
+            </div>
+
+            <div class="reveal-up delay-400 flex flex-wrap justify-center gap-6 mb-16">
+                <a href="https://wa.me/62895383156946?text=Halo%20Sedjahe%2C%20saya%20mau%20order" target="_blank" rel="noopener" class="magnetic-btn bg-charcoal text-paper px-10 py-5 rounded-full font-display font-black uppercase tracking-widest text-sm shadow-[0_10px_30px_rgba(69,64,64,0.3)] hover:bg-sage transition-colors">
+                    <span class="magnetic-btn-inner">Beli Sekarang <i class="fa-solid fa-arrow-right ml-3"></i></span>
+                </a>
+                <a href="#produk" class="magnetic-btn bg-transparent border-2 border-charcoal text-charcoal px-10 py-5 rounded-full font-display font-black uppercase tracking-widest text-sm hover:bg-charcoal hover:text-paper transition-colors">
+                    <span class="magnetic-btn-inner"><i class="fa-solid fa-eye mr-3"></i> Lihat Produk</span>
+                </a>
+            </div>
+
+            <!-- SOCIAL PROOF STRIP -->
+            <div class="reveal-up delay-500 w-full grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-0 md:divide-x divide-charcoal/10 glass-panel rounded-3xl px-6 py-8">
+                <div class="text-center px-2">
+                    <p class="font-display font-black text-3xl md:text-4xl text-charcoal counter" data-target="500" data-suffix="+">0</p>
+                    <p class="font-mono text-[10px] uppercase tracking-widest text-charcoal/60 mt-1">Produk Terjual</p>
+                </div>
+                <div class="text-center px-2">
+                    <p class="font-display font-black text-3xl md:text-4xl text-charcoal counter" data-target="98" data-suffix="%">0</p>
+                    <p class="font-mono text-[10px] uppercase tracking-widest text-charcoal/60 mt-1">Repeat Customer</p>
+                </div>
+                <div class="text-center px-2">
+                    <p class="font-display font-black text-3xl md:text-4xl text-charcoal counter" data-target="100" data-suffix="%">0</p>
+                    <p class="font-mono text-[10px] uppercase tracking-widest text-charcoal/60 mt-1">Natural Ingredient</p>
+                </div>
+                <div class="text-center px-2">
+                    <p class="font-display font-black text-3xl md:text-4xl text-charcoal">4.9★</p>
+                    <p class="font-mono text-[10px] uppercase tracking-widest text-charcoal/60 mt-1">Customer Rating</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50 animate-bounce">
+            <span class="font-mono text-[10px] tracking-widest uppercase font-bold">Scroll Down</span>
+            <div class="w-px h-12 bg-charcoal"></div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SOCIAL PROOF MARQUEE -->
+    <!-- ============================================================ -->
+    <section class="py-8 bg-sage overflow-hidden border-y border-charcoal/10">
+        <div class="flex whitespace-nowrap animate-marquee">
+            <div class="flex items-center gap-8 font-display font-black uppercase text-2xl md:text-3xl text-paper opacity-90 mx-4">
+                <span>⭐ 4.9/5 RATING</span> <span class="text-charcoal">✦</span>
+                <span>500+ TERJUAL</span> <span class="text-charcoal">✦</span>
+                <span>98% REPEAT ORDER</span> <span class="text-charcoal">✦</span>
+                <span>100% NATURAL</span> <span class="text-charcoal">✦</span>
+                <span>⭐ 4.9/5 RATING</span> <span class="text-charcoal">✦</span>
+                <span>500+ TERJUAL</span> <span class="text-charcoal">✦</span>
+                <span>98% REPEAT ORDER</span> <span class="text-charcoal">✦</span>
+                <span>100% NATURAL</span> <span class="text-charcoal">✦</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- MASALAH SECTION (Interest - bagian masalah/pain point) -->
+    <!-- ============================================================ -->
+    <section class="py-28 bg-paper relative z-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-sage font-mono text-sm font-bold uppercase tracking-[0.3em] mb-4 reveal-up">> kenali_masalahnya</h2>
+            <h3 class="text-4xl md:text-6xl font-black uppercase font-display tracking-tighter text-charcoal mb-6 reveal-up delay-100">
+                Sering Ngalamin <br> Ini Gak?
+            </h3>
+            <p class="reveal-up delay-200 max-w-xl mx-auto text-charcoal/70 mb-16">
+                Aktivitas padat bikin badan gampang drop. Kalau salah satu ini sering kamu rasain, mungkin udah saatnya badan kamu di-upgrade.
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+                <div class="reveal-up delay-100 bg-white rounded-3xl p-6 border border-charcoal/10 shadow-sm hover:-translate-y-2 hover:shadow-lg transition-all">
+                    <div class="text-5xl mb-4">🤒</div>
+                    <p class="font-display font-bold text-charcoal text-sm uppercase">Masuk Angin</p>
+                </div>
+                <div class="reveal-up delay-200 bg-white rounded-3xl p-6 border border-charcoal/10 shadow-sm hover:-translate-y-2 hover:shadow-lg transition-all">
+                    <div class="text-5xl mb-4">😩</div>
+                    <p class="font-display font-bold text-charcoal text-sm uppercase">Badan Pegal</p>
+                </div>
+                <div class="reveal-up delay-300 bg-white rounded-3xl p-6 border border-charcoal/10 shadow-sm hover:-translate-y-2 hover:shadow-lg transition-all">
+                    <div class="text-5xl mb-4">🥶</div>
+                    <p class="font-display font-bold text-charcoal text-sm uppercase">Mudah Capek</p>
+                </div>
+                <div class="reveal-up delay-400 bg-white rounded-3xl p-6 border border-charcoal/10 shadow-sm hover:-translate-y-2 hover:shadow-lg transition-all">
+                    <div class="text-5xl mb-4">🤧</div>
+                    <p class="font-display font-bold text-charcoal text-sm uppercase">Imun Turun</p>
+                </div>
+            </div>
+
+            <p class="reveal-up delay-400 mt-12 font-display font-bold text-xl md:text-2xl text-charcoal">
+                Tenang, Sedjahe punya solusinya <span class="text-sage">↓</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- KENAPA SEDJAHE - 3D TILT CARDS (Desire) -->
+    <!-- ============================================================ -->
+    <section class="py-32 bg-charcoal text-paper relative overflow-hidden">
+        <div class="absolute -top-32 -left-32 w-96 h-96 bg-sage/20 rounded-full blur-[100px] z-0"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8 reveal-up">
+                <div>
+                    <h2 class="text-sage font-mono text-sm font-bold uppercase tracking-[0.3em] mb-4">> kenapa_sedjahe</h2>
+                    <h3 class="text-5xl md:text-6xl font-black uppercase font-display tracking-tighter">Kenapa Pilih <br> Sedjahe.</h3>
+                </div>
+                <p class="max-w-md font-body text-paper/70 leading-relaxed text-sm">
+                    Bukan ekstrak bubuk kimia buatan pabrik. Semuanya bahan asli dari alam, diolah dengan cara modern biar khasiatnya tetap maksimal di badan kamu.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 tilt-container">
+
+                <div class="tilt-card bg-paper/5 backdrop-blur-xl border border-white/10 rounded-[2.5rem] p-8 shadow-2xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-butter/20 rounded-bl-[100px] z-0 transition-transform group-hover:scale-150"></div>
+                    <div class="tilt-content flex flex-col h-full relative z-10">
+                        <div class="w-16 h-16 rounded-2xl bg-butter/20 flex items-center justify-center text-4xl mb-8 border border-butter/30 shadow-inner">🫚</div>
+                        <h4 class="text-3xl font-display font-black uppercase mb-4 text-butter">Rimpang <br> Premium</h4>
+                        <p class="font-body text-sm text-paper/70 leading-relaxed flex-grow">
+                            Jahe merah dan kencur pilihan dari petani lokal. Dicuci bersih, diolah alami tanpa ampas yang mengganggu di tenggorokan.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tilt-card bg-paper/5 backdrop-blur-xl border border-white/10 rounded-[2.5rem] p-8 shadow-2xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-sky/20 rounded-bl-[100px] z-0 transition-transform group-hover:scale-150"></div>
+                    <div class="tilt-content flex flex-col h-full relative z-10">
+                        <div class="w-16 h-16 rounded-2xl bg-sky/20 flex items-center justify-center text-4xl mb-8 border border-sky/30 shadow-inner">🍯</div>
+                        <h4 class="text-3xl font-display font-black uppercase mb-4 text-sky">Gula Aren <br> Murni</h4>
+                        <p class="font-body text-sm text-paper/70 leading-relaxed flex-grow">
+                            Tanpa gula putih. Kita pakai gula aren dengan Indeks Glikemik rendah, manisnya pas dan lebih aman untuk dikonsumsi rutin.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tilt-card bg-paper/5 backdrop-blur-xl border border-white/10 rounded-[2.5rem] p-8 shadow-2xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-sage/20 rounded-bl-[100px] z-0 transition-transform group-hover:scale-150"></div>
+                    <div class="tilt-content flex flex-col h-full relative z-10">
+                        <div class="w-16 h-16 rounded-2xl bg-sage/20 flex items-center justify-center text-4xl mb-8 border border-sage/30 shadow-inner">🌿</div>
+                        <h4 class="text-3xl font-display font-black uppercase mb-4 text-sage">Rempah <br> Utuh</h4>
+                        <p class="font-body text-sm text-paper/70 leading-relaxed flex-grow">
+                            Kayu secang, daun pala, cengkeh, dan kapulaga asli — bukan perisa instan — bikin aroma wedang uwuh kita autentik.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- PRODUK TERLARIS - STICKY STACKING CARDS -->
+    <!-- ============================================================ -->
+    <section id="produk" class="bg-paper relative z-20 pt-32 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-10 reveal-up">
+            <h2 class="text-sage font-mono text-sm font-bold uppercase tracking-[0.3em] mb-4">> produk_terlaris</h2>
+            <h3 class="text-5xl md:text-7xl font-black uppercase font-display tracking-tighter text-charcoal">Pilihan Favorit.</h3>
+        </div>
+
+        <div class="stack-container max-w-5xl mx-auto px-4">
+
+            <div class="stack-card h-[70vh] flex items-center justify-center z-10" style="top: 15vh;">
+                <div class="w-full h-full glass-panel bg-white/80 rounded-[3rem] p-8 md:p-12 shadow-2xl flex flex-col md:flex-row gap-10 items-center border border-charcoal/10 relative overflow-hidden">
+                    <div class="absolute -bottom-20 -right-20 w-64 h-64 bg-butter/40 rounded-full blur-[50px]"></div>
+                    <div class="w-full md:w-1/2 h-64 md:h-full bg-butter/20 rounded-[2rem] p-6 flex items-center justify-center relative">
+                        <img src="assets/jahe-merah.png" alt="Sedjahe Jahe Merah - minuman herbal menghangatkan tubuh" class="max-w-full max-h-full object-contain mix-blend-multiply drop-shadow-xl hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 badge-shimmer text-charcoal px-4 py-1.5 rounded-full font-display font-black text-xs uppercase tracking-widest">Best Seller 🔥</span>
+                    </div>
+                    <div class="w-full md:w-1/2 flex flex-col justify-center relative z-10">
+                        <div class="flex items-center gap-1 text-accent mb-3 text-sm">★★★★★</div>
+                        <h4 class="text-5xl font-black uppercase font-display text-charcoal mb-2 tracking-tight">Jahe Merah</h4>
+                        <p class="font-mono text-2xl font-bold text-sage mb-6">Rp 25.000</p>
+                        <p class="font-body text-charcoal/70 mb-8 leading-relaxed">
+                            Menghangatkan tubuh seketika. Senjata utama buat meredakan masuk angin dan badan yang gampang capek.
+                        </p>
+                        <a href="https://wa.me/62895383156946?text=Halo%20Sedjahe%2C%20saya%20mau%20order%20Jahe%20Merah" target="_blank" rel="noopener" class="magnetic-btn w-fit bg-charcoal text-paper px-8 py-4 rounded-2xl font-display font-black uppercase tracking-widest text-sm hover:bg-butter hover:text-charcoal transition-colors">
+                            <span class="magnetic-btn-inner">Beli Sekarang 🛒</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stack-card h-[70vh] flex items-center justify-center z-20" style="top: 20vh;">
+                <div class="w-full h-full glass-panel bg-paper rounded-[3rem] p-8 md:p-12 shadow-2xl flex flex-col md:flex-row gap-10 items-center border border-charcoal/10 relative overflow-hidden shadow-[0_-10px_30px_rgba(0,0,0,0.1)]">
+                    <div class="absolute -bottom-20 -right-20 w-64 h-64 bg-sky/40 rounded-full blur-[50px]"></div>
+                    <div class="w-full md:w-1/2 h-64 md:h-full bg-sky/20 rounded-[2rem] p-6 flex items-center justify-center relative">
+                        <img src="assets/beras-kencur.png" alt="Sedjahe Beras Kencur - minuman herbal penambah stamina" class="max-w-full max-h-full object-contain mix-blend-multiply drop-shadow-xl hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-charcoal text-sky px-4 py-1.5 rounded-full font-display font-black text-xs uppercase tracking-widest">Energy ⚡</span>
+                    </div>
+                    <div class="w-full md:w-1/2 flex flex-col justify-center relative z-10">
+                        <div class="flex items-center gap-1 text-accent mb-3 text-sm">★★★★★</div>
+                        <h4 class="text-5xl font-black uppercase font-display text-charcoal mb-2 tracking-tight">Beras Kencur</h4>
+                        <p class="font-mono text-2xl font-bold text-sky mb-6">Rp 20.000</p>
+                        <p class="font-body text-charcoal/70 mb-8 leading-relaxed">
+                            Menambah stamina harian. Ampuh meredakan pegal linu setelah aktivitas padat seharian.
+                        </p>
+                        <a href="https://wa.me/62895383156946?text=Halo%20Sedjahe%2C%20saya%20mau%20order%20Beras%20Kencur" target="_blank" rel="noopener" class="magnetic-btn w-fit bg-charcoal text-paper px-8 py-4 rounded-2xl font-display font-black uppercase tracking-widest text-sm hover:bg-sky hover:text-charcoal transition-colors">
+                            <span class="magnetic-btn-inner">Beli Sekarang 🛒</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stack-card h-[70vh] flex items-center justify-center z-30" style="top: 25vh;">
+                <div class="w-full h-full glass-panel bg-white rounded-[3rem] p-8 md:p-12 shadow-2xl flex flex-col md:flex-row gap-10 items-center border border-charcoal/10 relative overflow-hidden shadow-[0_-10px_30px_rgba(0,0,0,0.15)]">
+                    <div class="absolute -bottom-20 -right-20 w-64 h-64 bg-sage/40 rounded-full blur-[50px]"></div>
+                    <div class="w-full md:w-1/2 h-64 md:h-full bg-sage/20 rounded-[2rem] p-6 flex items-center justify-center relative">
+                        <img src="assets/wedang-uwuh.png" alt="Sedjahe Wedang Uwuh - minuman herbal menjaga imun" class="max-w-full max-h-full object-contain mix-blend-multiply drop-shadow-xl hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-charcoal text-sage px-4 py-1.5 rounded-full font-display font-black text-xs uppercase tracking-widest">Imun 🌿</span>
+                    </div>
+                    <div class="w-full md:w-1/2 flex flex-col justify-center relative z-10">
+                        <div class="flex items-center gap-1 text-accent mb-3 text-sm">★★★★★</div>
+                        <h4 class="text-5xl font-black uppercase font-display text-charcoal mb-2 tracking-tight">Wedang Uwuh</h4>
+                        <p class="font-mono text-2xl font-bold text-sage mb-6">Rp 25.000</p>
+                        <p class="font-body text-charcoal/70 mb-8 leading-relaxed">
+                            Menjaga daya tahan tubuh. Ramuan rempah utuh asli Nusantara, ampuh usir flu dan menghangatkan badan total.
+                        </p>
+                        <a href="https://wa.me/62895383156946?text=Halo%20Sedjahe%2C%20saya%20mau%20order%20Wedang%20Uwuh" target="_blank" rel="noopener" class="magnetic-btn w-fit bg-charcoal text-paper px-8 py-4 rounded-2xl font-display font-black uppercase tracking-widest text-sm hover:bg-sage hover:text-paper transition-colors">
+                            <span class="magnetic-btn-inner">Beli Sekarang 🛒</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- PRODUCT COMPARISON -->
+    <!-- ============================================================ -->
+    <section class="py-28 bg-cream relative z-20 border-t border-charcoal/10">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal-up">
+                <h2 class="text-sage font-mono text-sm font-bold uppercase tracking-[0.3em] mb-4">> bandingkan</h2>
+                <h3 class="text-4xl md:text-6xl font-black uppercase font-display tracking-tighter text-charcoal">Sedjahe vs <br> Jamu Biasa.</h3>
+            </div>
+
+            <div class="reveal-up delay-100 overflow-x-auto rounded-[2rem] shadow-xl border border-charcoal/10">
+                <table class="w-full bg-white min-w-[600px]">
+                    <thead>
+                        <tr class="bg-charcoal text-paper">
+                            <th class="text-left font-display uppercase text-sm tracking-wider p-5">Kriteria</th>
+                            <th class="text-center font-display uppercase text-sm tracking-wider p-5 bg-sage">Sedjahe</th>
+                            <th class="text-center font-display uppercase text-sm tracking-wider p-5">Jamu Biasa</th>
+                        </tr>
+                    </thead>
+                    <tbody class="font-body text-sm md:text-base">
+                        <tr class="border-b border-charcoal/10">
+                            <td class="p-5 font-semibold text-charcoal">Rasa</td>
+                            <td class="p-5 text-center bg-sage/10"><i class="fa-solid fa-circle-check compare-check"></i> Enak, gak pahit</td>
+                            <td class="p-5 text-center text-charcoal/60"><i class="fa-solid fa-circle-xmark compare-cross"></i> Pahit & langu</td>
+                        </tr>
+                        <tr class="border-b border-charcoal/10">
+                            <td class="p-5 font-semibold text-charcoal">Pemanis</td>
+                            <td class="p-5 text-center bg-sage/10"><i class="fa-solid fa-circle-check compare-check"></i> Gula aren asli</td>
+                            <td class="p-5 text-center text-charcoal/60"><i class="fa-solid fa-circle-xmark compare-cross"></i> Gula putih/pemanis buatan</td>
+                        </tr>
+                        <tr class="border-b border-charcoal/10">
+                            <td class="p-5 font-semibold text-charcoal">Pengawet</td>
+                            <td class="p-5 text-center bg-sage/10"><i class="fa-solid fa-circle-check compare-check"></i> 100% tanpa pengawet</td>
+                            <td class="p-5 text-center text-charcoal/60"><i class="fa-solid fa-circle-xmark compare-cross"></i> Sering pakai pengawet</td>
+                        </tr>
+                        <tr class="border-b border-charcoal/10">
+                            <td class="p-5 font-semibold text-charcoal">Kepraktisan</td>
+                            <td class="p-5 text-center bg-sage/10"><i class="fa-solid fa-circle-check compare-check"></i> Tinggal diseduh</td>
+                            <td class="p-5 text-center text-charcoal/60"><i class="fa-solid fa-circle-xmark compare-cross"></i> Perlu direbus lama</td>
+                        </tr>
+                        <tr>
+                            <td class="p-5 font-semibold text-charcoal">Kemasan</td>
+                            <td class="p-5 text-center bg-sage/10"><i class="fa-solid fa-circle-check compare-check"></i> Higienis & rapi</td>
+                            <td class="p-5 text-center text-charcoal/60"><i class="fa-solid fa-circle-xmark compare-cross"></i> Variatif, tidak konsisten</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- BEFORE AFTER SECTION -->
+    <!-- ============================================================ -->
+    <section class="py-28 bg-paper relative z-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-sage font-mono text-sm font-bold uppercase tracking-[0.3em] mb-4 reveal-up">> rasain_bedanya</h2>
+            <h3 class="text-4xl md:text-6xl font-black uppercase font-display tracking-tighter text-charcoal mb-12 reveal-up delay-100">
+                Sebelum vs <br> Sesudah Sedjahe.
+            </h3>
+
+            <div class="reveal-up delay-200 grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                <div class="bg-white rounded-[2rem] p-8 border-2 border-charcoal/10 shadow-sm">
+                    <p class="font-display font-black text-xs uppercase tracking-widest text-charcoal/40 mb-6">Sebelum 😔</p>
+                    <ul class="space-y-4 font-body text-charcoal/70">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-xmark compare-cross mt-1"></i> Badan gampang capek di siang hari</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-xmark compare-cross mt-1"></i> Sering masuk angin saat cuaca berubah</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-xmark compare-cross mt-1"></i> Daya tahan tubuh gampang drop</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-xmark compare-cross mt-1"></i> Males minum jamu karena pahit</li>
+                    </ul>
+                </div>
+                <div class="bg-sage/10 rounded-[2rem] p-8 border-2 border-sage shadow-lg">
+                    <p class="font-display font-black text-xs uppercase tracking-widest text-sage mb-6">Sesudah 🌿</p>
+                    <ul class="space-y-4 font-body text-charcoal">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check compare-check mt-1"></i> Tubuh lebih hangat & berenergi</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check compare-check mt-1"></i> Masuk angin lebih jarang menyerang</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check compare-check mt-1"></i> Imun tubuh terasa lebih kuat</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check compare-check mt-1"></i> Minum herbal jadi hal yang dinikmati</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- BENEFIT GRID 2x3 -->
+    <!-- ============================================================ -->
+    <section class="py-28 bg-charcoal text-paper relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-butter/10 rounded-full blur-[120px] z-0"></div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16 reveal-up">
+                <h2 class="text-sage font-mono text-sm font-bold uppercase tracking-[0.3em] mb-4">> benefit</h2>
+                <h3 class="text-4xl md:text-6xl font-black uppercase font-display tracking-tighter">Apa Yang Kamu Dapat.</h3>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="reveal-up delay-100 bg-paper/5 border border-white/10 rounded-3xl p-8 hover:bg-paper/10 hover:-translate-y-2 transition-all">
+                    <div class="text-4xl mb-4">🌿</div>
+                    <p class="font-display font-bold uppercase text-sm">100% Natural</p>
+                </div>
+                <div class="reveal-up delay-150 bg-paper/5 border border-white/10 rounded-3xl p-8 hover:bg-paper/10 hover:-translate-y-2 transition-all">
+                    <div class="text-4xl mb-4">🍯</div>
+                    <p class="font-display font-bold uppercase text-sm">Gula Aren Asli</p>
+                </div>
+                <div class="reveal-up delay-200 bg-paper/5 border border-white/10 rounded-3xl p-8 hover:bg-paper/10 hover:-translate-y-2 transition-all">
+                    <div class="text-4xl mb-4">🚫</div>
+                    <p class="font-display font-bold uppercase text-sm">Tanpa Pengawet</p>
+                </div>
+                <div class="reveal-up delay-250 bg-paper/5 border border-white/10 rounded-3xl p-8 hover:bg-paper/10 hover:-translate-y-2 transition-all">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <p class="font-display font-bold uppercase text-sm">Praktis Diseduh</p>
+                </div>
+                <div class="reveal-up delay-300 bg-paper/5 border border-white/10 rounded-3xl p-8 hover:bg-paper/10 hover:-translate-y-2 transition-all">
+                    <div class="text-4xl mb-4">🇮🇩</div>
+                    <p class="font-display font-bold uppercase text-sm">Produk Lokal</p>
+                </div>
+                <div class="reveal-up delay-400 bg-paper/5 border border-white/10 rounded-3xl p-8 hover:bg-paper/10 hover:-translate-y-2 transition-all">
+                    <div class="text-4xl mb-4">🔥</div>
+                    <p class="font-display font-bold uppercase text-sm">Menghangatkan Tubuh</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- CARA SEDUH -->
+    <!-- ============================================================ -->
+    <section id="cara-seduh" class="py-32 bg-sky text-charcoal relative overflow-hidden z-40 shadow-[0_-20px_50px_rgba(0,0,0,0.1)]">
+        <svg class="absolute inset-0 w-full h-full opacity-10 pointer-events-none" preserveAspectRatio="none">
+            <path d="M0,50 Q200,200 400,50 T800,50 T1200,50" fill="none" stroke="#454040" stroke-width="2" stroke-dasharray="10, 10" />
+            <path d="M0,150 Q300,300 600,150 T1200,150" fill="none" stroke="#454040" stroke-width="4" />
+        </svg>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-24 reveal-up">
+                <h2 class="font-mono text-sm font-bold uppercase tracking-[0.3em] mb-4 bg-paper px-4 py-1 inline-block rounded-full border border-charcoal/20">> cara_seduh</h2>
+                <h3 class="text-5xl md:text-7xl font-black uppercase font-display tracking-tighter">Gini Cara Seduhnya.</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="bg-paper/40 backdrop-blur-md rounded-[2.5rem] p-8 border border-charcoal/10 hover:-translate-y-4 transition-transform duration-500 reveal-up delay-100 relative overflow-hidden">
+                    <div class="text-6xl mb-6">🥄</div>
+                    <h4 class="text-2xl font-display font-black uppercase mb-3">01. Tuang <br> Bubuk</h4>
+                    <p class="font-body text-sm text-charcoal/80 leading-relaxed">Tuang 1 sachet Sedjahe ke dalam gelas atau cangkir favorit kamu.</p>
+                    <div class="absolute -bottom-6 -right-6 text-[8rem] font-display font-black text-charcoal/5">1</div>
+                </div>
+
+                <div class="bg-paper/40 backdrop-blur-md rounded-[2.5rem] p-8 border border-charcoal/10 hover:-translate-y-4 transition-transform duration-500 reveal-up delay-200 relative overflow-hidden md:mt-10">
+                    <div class="text-6xl mb-6">♨️</div>
+                    <h4 class="text-2xl font-display font-black uppercase mb-3">02. Seduh <br> Air Panas</h4>
+                    <p class="font-body text-sm text-charcoal/80 leading-relaxed">Tambahkan air panas ±150-200ml, sesuaikan dengan selera kekentalan kamu.</p>
+                    <div class="absolute -bottom-6 -right-6 text-[8rem] font-display font-black text-charcoal/5">2</div>
+                </div>
+
+                <div class="bg-paper/40 backdrop-blur-md rounded-[2.5rem] p-8 border border-charcoal/10 hover:-translate-y-4 transition-transform duration-500 reveal-up delay-300 relative overflow-hidden md:mt-20">
+                    <div class="text-6xl mb-6">🥄</div>
+                    <h4 class="text-2xl font-display font-black uppercase mb-3">03. Aduk <br> Rata</h4>
+                    <p class="font-body text-sm text-charcoal/80 leading-relaxed">Aduk hingga bubuk larut sempurna dan aroma rempahnya mulai tercium.</p>
+                    <div class="absolute -bottom-6 -right-6 text-[8rem] font-display font-black text-charcoal/5">3</div>
+                </div>
+
+                <div class="bg-charcoal text-paper backdrop-blur-md rounded-[2.5rem] p-8 hover:-translate-y-4 transition-transform duration-500 reveal-up delay-400 relative overflow-hidden md:mt-32 shadow-2xl shadow-charcoal/30">
+                    <div class="text-6xl mb-6">🍵</div>
+                    <h4 class="text-2xl font-display font-black uppercase mb-3 text-butter">04. Sajikan <br> & Nikmati</h4>
+                    <p class="font-body text-sm text-paper/80 leading-relaxed">Sedjahe siap dinikmati hangat. Bisa juga disajikan dingin dengan es batu.</p>
+                    <div class="absolute -bottom-6 -right-6 text-[8rem] font-display font-black text-paper/5">4</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- TESTIMONI CAROUSEL -->
+    <!-- ============================================================ -->
+    <section id="testimoni" class="py-32 bg-paper relative z-30">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16 reveal-up">
+                <h2 class="text-sage font-mono text-sm font-bold uppercase tracking-[0.3em] mb-4">> testimoni</h2>
+                <h3 class="text-4xl md:text-6xl font-black uppercase font-display tracking-tighter text-charcoal">Kata Mereka.</h3>
+            </div>
+
+            <div class="reveal-up delay-100 relative overflow-hidden">
+                <div id="testi-track" class="testi-track">
+                    <div class="testi-slide px-3">
+                        <div class="bg-white border border-charcoal/10 rounded-[2rem] p-8 h-full shadow-sm flex flex-col">
+                            <div class="text-accent text-lg mb-4">★★★★★</div>
+                            <p class="font-body text-charcoal/80 italic leading-relaxed mb-6 flex-grow">"Rasanya enak, beda sama jamu biasa."</p>
+                            <p class="font-display font-bold text-charcoal">- Alya</p>
+                        </div>
+                    </div>
+                    <div class="testi-slide px-3">
+                        <div class="bg-white border border-charcoal/10 rounded-[2rem] p-8 h-full shadow-sm flex flex-col">
+                            <div class="text-accent text-lg mb-4">★★★★★</div>
+                            <p class="font-body text-charcoal/80 italic leading-relaxed mb-6 flex-grow">"Masuk angin langsung mendingan."</p>
+                            <p class="font-display font-bold text-charcoal">- Rizky</p>
+                        </div>
+                    </div>
+                    <div class="testi-slide px-3">
+                        <div class="bg-white border border-charcoal/10 rounded-[2rem] p-8 h-full shadow-sm flex flex-col">
+                            <div class="text-accent text-lg mb-4">★★★★★</div>
+                            <p class="font-body text-charcoal/80 italic leading-relaxed mb-6 flex-grow">"Udah repeat order 5x."</p>
+                            <p class="font-display font-bold text-charcoal">- Dina</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="testi-dots" class="flex justify-center gap-2 mt-8"></div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- PROMO COUNTDOWN -->
+    <!-- ============================================================ -->
+    <section class="py-28 bg-gradient-to-br from-sage to-success relative overflow-hidden z-20">
+        <div class="absolute inset-0 z-0 opacity-10" style="background-image: linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px); background-size: 60px 60px;"></div>
+
+        <div class="max-w-3xl mx-auto px-4 text-center relative z-10 reveal-up">
+            <span class="bg-white text-charcoal font-display font-black text-xs uppercase tracking-widest px-5 py-2 rounded-full inline-flex items-center gap-2 mb-6 shadow-md">
+                🔥 Promo Hari Ini
+            </span>
+            <h2 class="text-5xl md:text-7xl font-black uppercase font-display tracking-tighter text-white mb-4 leading-[0.9]">
+                Buy 2 <br> Gratis 1
+            </h2>
+            <p class="text-white/90 font-body mb-10">Berlaku untuk semua varian Sedjahe. Buruan sebelum promo hari ini habis!</p>
+
+            <!-- Countdown -->
+            <div id="countdown" class="flex justify-center gap-3 md:gap-5 mb-10">
+                <div class="bg-white rounded-2xl px-5 py-4 min-w-[70px] shadow-lg">
+                    <p id="cd-hours" class="font-display font-black text-3xl md:text-4xl text-charcoal">00</p>
+                    <p class="font-mono text-[10px] uppercase tracking-widest text-charcoal/50">Jam</p>
+                </div>
+                <div class="bg-white rounded-2xl px-5 py-4 min-w-[70px] shadow-lg">
+                    <p id="cd-minutes" class="font-display font-black text-3xl md:text-4xl text-charcoal">00</p>
+                    <p class="font-mono text-[10px] uppercase tracking-widest text-charcoal/50">Menit</p>
+                </div>
+                <div class="bg-white rounded-2xl px-5 py-4 min-w-[70px] shadow-lg">
+                    <p id="cd-seconds" class="font-display font-black text-3xl md:text-4xl text-charcoal">00</p>
+                    <p class="font-mono text-[10px] uppercase tracking-widest text-charcoal/50">Detik</p>
+                </div>
+            </div>
+
+            <a href="https://wa.me/62895383156946?text=Halo%20Sedjahe%2C%20saya%20mau%20ambil%20promo%20Buy%202%20Gratis%201" target="_blank" rel="noopener" class="magnetic-btn bg-charcoal text-paper px-10 py-5 rounded-full font-display font-black uppercase tracking-widest text-sm shadow-xl hover:bg-white hover:text-charcoal transition-colors inline-block">
+                <span class="magnetic-btn-inner">Beli Sekarang <i class="fa-solid fa-bolt ml-2"></i></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- FAQ -->
+    <!-- ============================================================ -->
+    <section id="faq" class="py-32 bg-paper relative z-30 border-b border-charcoal/10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-20 reveal-up">
+                <h2 class="text-sage font-mono text-sm font-bold uppercase tracking-[0.3em] mb-4">> faq</h2>
+                <h3 class="text-5xl md:text-7xl font-black uppercase font-display tracking-tighter text-charcoal">Pertanyaan<br>Umum.</h3>
+            </div>
+
+            <style>
+                .faq-item input:checked ~ .faq-content { max-height: 500px; opacity: 1; margin-top: 1rem; }
+                .faq-item input:checked ~ label .faq-icon { transform: rotate(45deg); color: #A5AF79; }
+                .faq-content { max-height: 0; opacity: 0; overflow: hidden; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+            </style>
+
+            <div class="space-y-6 reveal-up delay-200">
+
+                <div class="faq-item glass-panel bg-white p-6 rounded-3xl cursor-pointer">
+                    <input type="checkbox" id="faq1" class="hidden">
+                    <label for="faq1" class="flex justify-between items-center cursor-pointer font-display font-black text-lg md:text-xl text-charcoal gap-4">
+                        <span class="flex items-center gap-4"><span class="text-3xl">🤔</span> Apakah Sedjahe aman dikonsumsi?</span>
+                        <i class="fa-solid fa-plus text-2xl faq-icon transition-transform duration-300 shrink-0"></i>
+                    </label>
+                    <div class="faq-content">
+                        <p class="font-body text-charcoal/70 leading-relaxed pl-12 border-l-2 border-sage ml-4">
+                            <strong>Aman.</strong> Sedjahe dibuat dari 100% rimpang alami tanpa pengawet kimia sintetis. Untuk kondisi khusus seperti hamil atau menyusui, sebaiknya konsultasi dulu ke dokter.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass-panel bg-white p-6 rounded-3xl cursor-pointer">
+                    <input type="checkbox" id="faq2" class="hidden">
+                    <label for="faq2" class="flex justify-between items-center cursor-pointer font-display font-black text-lg md:text-xl text-charcoal gap-4">
+                        <span class="flex items-center gap-4"><span class="text-3xl">📋</span> Apakah ada BPOM?</span>
+                        <i class="fa-solid fa-plus text-2xl faq-icon transition-transform duration-300 shrink-0"></i>
+                    </label>
+                    <div class="faq-content">
+                        <p class="font-body text-charcoal/70 leading-relaxed pl-12 border-l-2 border-sky ml-4">
+                            Sedjahe diproduksi dengan standar higienis dan sedang dalam proses pengurusan legalitas resmi. Info terbaru bisa kamu tanyakan langsung lewat WhatsApp Admin.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass-panel bg-white p-6 rounded-3xl cursor-pointer">
+                    <input type="checkbox" id="faq3" class="hidden">
+                    <label for="faq3" class="flex justify-between items-center cursor-pointer font-display font-black text-lg md:text-xl text-charcoal gap-4">
+                        <span class="flex items-center gap-4"><span class="text-3xl">📦</span> Bisa COD?</span>
+                        <i class="fa-solid fa-plus text-2xl faq-icon transition-transform duration-300 shrink-0"></i>
+                    </label>
+                    <div class="faq-content">
+                        <p class="font-body text-charcoal/70 leading-relaxed pl-12 border-l-2 border-butter ml-4">
+                            Bisa, untuk area tertentu di Jabodetabek. Silakan konfirmasi ketersediaan COD di area kamu melalui WhatsApp Admin sebelum order.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass-panel bg-white p-6 rounded-3xl cursor-pointer">
+                    <input type="checkbox" id="faq4" class="hidden">
+                    <label for="faq4" class="flex justify-between items-center cursor-pointer font-display font-black text-lg md:text-xl text-charcoal gap-4">
+                        <span class="flex items-center gap-4"><span class="text-3xl">🚚</span> Pengiriman berapa hari?</span>
+                        <i class="fa-solid fa-plus text-2xl faq-icon transition-transform duration-300 shrink-0"></i>
+                    </label>
+                    <div class="faq-content">
+                        <p class="font-body text-charcoal/70 leading-relaxed pl-12 border-l-2 border-sage ml-4">
+                            Dalam kota biasanya 1-2 hari, luar kota sekitar 2-5 hari kerja tergantung jasa ekspedisi yang dipilih.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- CTA BESAR (Action + Retention) -->
+    <!-- ============================================================ -->
+    <section class="relative py-40 overflow-hidden bg-charcoal">
+        <div class="absolute inset-0 z-0 bg-charcoal">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-butter rounded-full filter blur-[150px] animate-blob opacity-50"></div>
+            <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-sky rounded-full filter blur-[150px] animate-blob opacity-50" style="animation-delay: 2s;"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 text-center reveal-up">
+            <h2 class="text-[3rem] md:text-[6rem] font-display font-black uppercase leading-[0.9] tracking-tighter text-transparent" style="-webkit-text-stroke: 2px rgba(252, 252, 252, 0.9);">
+                Siap Beralih <br>
+                <span class="text-paper" style="-webkit-text-stroke: 0;">ke Minuman Herbal Modern?</span>
+            </h2>
+
+            <p class="font-body text-lg md:text-2xl mt-8 mb-12 text-paper/80 max-w-2xl mx-auto">
+                Gabung sama 500+ orang yang udah upgrade kebiasaan minum herbalnya bareng Sedjahe.
+            </p>
+
+            <a href="https://wa.me/62895383156946?text=Halo%20Sedjahe%2C%20saya%20mau%20order" target="_blank" rel="noopener" class="magnetic-btn bg-sage text-charcoal px-12 py-6 rounded-full font-display font-black uppercase tracking-widest text-lg hover:bg-butter transition-colors shadow-[0_0_40px_rgba(165,175,121,0.4)]">
+                <span class="magnetic-btn-inner">Beli via WhatsApp <i class="fa-brands fa-whatsapp ml-3"></i></span>
+            </a>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- ============================================================ -->
+    <!-- FOOTER -->
+    <!-- ============================================================ -->
+    <footer class="bg-paper text-charcoal pt-24 pb-32 lg:pb-10 border-t border-charcoal/10 relative z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-16 mb-16">
+                <div class="col-span-1 md:col-span-6">
+                    <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-6 font-display">SEDJAHE<span class="text-sage">.</span></h2>
+                    <p class="font-body text-base leading-relaxed mb-10 max-w-md text-charcoal/70">
+                        Minuman herbal modern dari jahe merah pilihan, gula aren alami, dan rempah premium. 100% natural, tanpa pengawet.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/sedjahe_1/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Sedjahe" class="magnetic-btn w-14 h-14 rounded-2xl border-2 border-charcoal/10 bg-white flex items-center justify-center hover:bg-charcoal hover:border-charcoal hover:text-paper transition-all text-2xl shadow-sm">
+                            <span class="magnetic-btn-inner"><i class="fa-brands fa-instagram"></i></span>
+                        </a>
+                        <a href="https://www.tiktok.com/@sedjahe" target="_blank" rel="noopener noreferrer" aria-label="TikTok Sedjahe" class="magnetic-btn w-14 h-14 rounded-2xl border-2 border-charcoal/10 bg-white flex items-center justify-center hover:bg-charcoal hover:border-charcoal hover:text-paper transition-all text-2xl shadow-sm">
+                            <span class="magnetic-btn-inner"><i class="fa-brands fa-tiktok"></i></span>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Shopee Sedjahe" class="magnetic-btn w-14 h-14 rounded-2xl border-2 border-charcoal/10 bg-white flex items-center justify-center hover:bg-charcoal hover:border-charcoal hover:text-paper transition-all text-2xl shadow-sm">
+                            <span class="magnetic-btn-inner"><i class="fa-solid fa-bag-shopping"></i></span>
+                        </a>
+                        <a href="https://wa.me/62895383156946" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Sedjahe" class="magnetic-btn w-14 h-14 rounded-2xl border-2 border-charcoal/10 bg-white flex items-center justify-center hover:bg-charcoal hover:border-charcoal hover:text-paper transition-all text-2xl shadow-sm">
+                            <span class="magnetic-btn-inner"><i class="fa-brands fa-whatsapp"></i></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-span-1 md:col-span-3">
+                    <h4 class="font-mono font-bold text-xs uppercase tracking-[0.3em] text-sage mb-8">> Navigasi</h4>
+                    <ul class="space-y-5 font-display font-bold text-lg uppercase tracking-wide">
+                        <li><a href="#produk" class="hover:text-sage transition-colors flex items-center gap-2 group"><span class="w-0 h-0.5 bg-sage transition-all group-hover:w-4"></span> Produk</a></li>
+                        <li><a href="#cara-seduh" class="hover:text-sage transition-colors flex items-center gap-2 group"><span class="w-0 h-0.5 bg-sage transition-all group-hover:w-4"></span> Cara Seduh</a></li>
+                        <li><a href="#testimoni" class="hover:text-sage transition-colors flex items-center gap-2 group"><span class="w-0 h-0.5 bg-sage transition-all group-hover:w-4"></span> Testimoni</a></li>
+                        <li><a href="#faq" class="hover:text-sage transition-colors flex items-center gap-2 group"><span class="w-0 h-0.5 bg-sage transition-all group-hover:w-4"></span> FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-1 md:col-span-3">
+                    <h4 class="font-mono font-bold text-xs uppercase tracking-[0.3em] text-sage mb-8">> Markas</h4>
+                    <ul class="space-y-6 font-body text-sm text-charcoal/80">
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-location-dot mt-1 text-sky text-xl"></i>
+                            <a href="https://share.google/eUjT5p9rG8vnLvs6P" target="_blank" rel="noopener noreferrer" class="hover:text-sage transition-colors leading-relaxed">
+                                <strong>Alamat:</strong><br>Jl. Kebayoran Baru, <br>Jakarta Selatan, Indonesia
+                            </a>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-brands fa-whatsapp text-butter text-xl"></i>
+                            <a href="https://wa.me/62895383156946" target="_blank" rel="noopener" class="hover:text-sage transition-colors font-bold tracking-wider text-base">+62 895-3831-56946</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-charcoal/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 font-mono font-bold tracking-[0.2em] text-[10px] text-charcoal/40 uppercase">
+                <p>&copy; <span id="footer-year">2026</span> SEDJAHE. SEMUA HAK CIPTA DILINDUNGI.</p>
+                <p>DIRACIK DENGAN <i class="fa-solid fa-leaf text-sage mx-1"></i> DI INDONESIA</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================ -->
+    <!-- STICKY CTA BAR (Mobile) -->
+    <!-- ============================================================ -->
+    <div id="sticky-cta" class="lg:hidden bg-white/95 backdrop-blur-xl border-t border-charcoal/10 shadow-[0_-8px_30px_rgba(0,0,0,0.1)] px-4 py-3 flex items-center justify-between gap-3">
+        <div class="flex flex-col">
+            <span class="font-display font-black text-sm text-charcoal leading-none">Sedjahe</span>
+            <span class="font-mono text-[10px] text-charcoal/50">Mulai Rp 20.000</span>
+        </div>
+        <a href="https://wa.me/62895383156946?text=Halo%20Sedjahe%2C%20saya%20mau%20order" target="_blank" rel="noopener" class="bg-charcoal text-paper px-6 py-3 rounded-full font-display font-black uppercase tracking-widest text-xs shadow-md flex items-center gap-2">
+            Beli Sekarang <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- FLOATING WHATSAPP -->
+    <!-- ============================================================ -->
+    <div id="floating-wa" class="group">
+        <div id="wa-tooltip" class="absolute bottom-2 right-[70px] bg-white rounded-2xl shadow-xl px-4 py-3 whitespace-nowrap border border-charcoal/10">
+            <p class="font-display font-bold text-sm text-charcoal">💬 Butuh bantuan?</p>
+            <p class="font-body text-xs text-charcoal/60">Chat Admin sekarang</p>
+        </div>
+        <a href="https://wa.me/62895383156946?text=Halo%20Sedjahe%2C%20saya%20mau%20tanya-tanya" target="_blank" rel="noopener" aria-label="Chat WhatsApp Admin Sedjahe" class="wa-pulse w-16 h-16 rounded-full bg-success flex items-center justify-center text-white text-3xl shadow-xl hover:scale-110 transition-transform">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            /* --- 1. PRELOADER & SCRAMBLE TEXT LOGIC --- */
+            const preloader = document.getElementById('preloader');
+            const percText = document.getElementById('loader-perc');
+            const loaderBar = document.getElementById('loader-bar');
+            let progress = 0;
+
+            const interval = setInterval(() => {
+                progress += Math.floor(Math.random() * 15) + 5;
+                if (progress >= 100) {
+                    progress = 100;
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        preloader.classList.add('hide-up');
+                        setTimeout(() => preloader.style.display = 'none', 1200);
+                    }, 500);
+                }
+                percText.innerText = progress + '%';
+                loaderBar.style.width = progress + '%';
+            }, 100);
+
+            // Scramble Text Effect
+            const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            document.querySelectorAll(".scramble-target").forEach(elem => {
+                let iterations = 0;
+                const originalText = elem.dataset.text;
+                const scramble = setInterval(() => {
+                    elem.innerText = originalText.split("").map((letter, index) => {
+                        if (index < iterations) return originalText[index];
+                        return letters[Math.floor(Math.random() * 36)];
+                    }).join("");
+                    if (iterations >= originalText.length) clearInterval(scramble);
+                    iterations += 1 / 3;
+                }, 30);
+            });
+
+            /* --- 2. CUSTOM CURSOR & TRAIL LOGIC --- */
+            if (window.matchMedia("(pointer: fine)").matches) {
+                const root = document.documentElement;
+                const cursor = document.getElementById('custom-cursor');
+
+                const trail1 = document.createElement('div');
+                trail1.className = 'trail-dot hidden md:block';
+                document.body.appendChild(trail1);
+
+                const trail2 = document.createElement('div');
+                trail2.className = 'trail-dot hidden md:block';
+                trail2.style.width = '5px';
+                trail2.style.height = '5px';
+                trail2.style.opacity = '0.4';
+                trail2.style.backgroundColor = '#BBE0EF';
+                document.body.appendChild(trail2);
+
+                let mx = window.innerWidth / 2, my = window.innerHeight / 2;
+                let t1x = mx, t1y = my, t2x = mx, t2y = my;
+
+                window.addEventListener('mousemove', e => {
+                    mx = e.clientX;
+                    my = e.clientY;
+                    root.style.setProperty('--cursor-x', `${mx}px`);
+                    root.style.setProperty('--cursor-y', `${my}px`);
+                });
+
+                function animateTrails() {
+                    t1x += (mx - t1x) * 0.15;
+                    t1y += (my - t1y) * 0.15;
+                    trail1.style.left = `${t1x}px`;
+                    trail1.style.top = `${t1y}px`;
+
+                    t2x += (t1x - t2x) * 0.1;
+                    t2y += (t1y - t2y) * 0.1;
+                    trail2.style.left = `${t2x}px`;
+                    trail2.style.top = `${t2y}px`;
+
+                    requestAnimationFrame(animateTrails);
+                }
+                animateTrails();
+
+                document.querySelectorAll('a, button, .tilt-card, input[type="checkbox"]').forEach(el => {
+                    el.addEventListener('mouseenter', () => cursor.classList.add('cursor-hover'));
+                    el.addEventListener('mouseleave', () => cursor.classList.remove('cursor-hover'));
+                });
+
+                window.addEventListener('mousedown', () => cursor.classList.add('cursor-click'));
+                window.addEventListener('mouseup', () => cursor.classList.remove('cursor-click'));
+            }
+
+            /* --- 3. MAGNETIC BUTTONS --- */
+            document.querySelectorAll('.magnetic-btn').forEach(btn => {
+                const inner = btn.querySelector('.magnetic-btn-inner');
+                btn.addEventListener('mousemove', (e) => {
+                    const rect = btn.getBoundingClientRect();
+                    const h = rect.width / 2;
+                    const v = rect.height / 2;
+                    const x = e.clientX - rect.left - h;
+                    const y = e.clientY - rect.top - v;
+                    btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+                    if (inner) inner.style.transform = `translate(${x * 0.1}px, ${y * 0.1}px)`;
+                });
+                btn.addEventListener('mouseleave', () => {
+                    btn.style.transform = `translate(0px, 0px)`;
+                    if (inner) inner.style.transform = `translate(0px, 0px)`;
+                });
+            });
+
+            /* --- 4. 3D TILT EFFECT --- */
+            document.querySelectorAll('.tilt-card').forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    const rotateX = ((y - centerY) / centerY) * -15;
+                    const rotateY = ((x - centerX) / centerX) * 15;
+                    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = `rotateX(0deg) rotateY(0deg)`;
+                });
+            });
+
+            /* --- 5. SCROLL REVEAL OBSERVER --- */
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { root: null, rootMargin: '0px', threshold: 0.15 });
+
+            document.querySelectorAll('.reveal-up').forEach(el => revealObserver.observe(el));
+
+            /* --- 6. COUNTER ANIMATION --- */
+            const counterObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const el = entry.target;
+                        const target = parseInt(el.dataset.target, 10);
+                        const suffix = el.dataset.suffix || '';
+                        const duration = 1500;
+                        const start = performance.now();
+
+                        function tick(now) {
+                            const progress = Math.min((now - start) / duration, 1);
+                            const eased = 1 - Math.pow(1 - progress, 3);
+                            el.innerText = Math.floor(eased * target) + suffix;
+                            if (progress < 1) requestAnimationFrame(tick);
+                            else el.innerText = target + suffix;
+                        }
+                        requestAnimationFrame(tick);
+                        observer.unobserve(el);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+
+            /* --- 7. HEADER BLUR ON SCROLL & MOBILE MENU --- */
+            const header = document.getElementById('main-header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('shadow-lg', 'bg-paper/90', 'backdrop-blur-xl');
+                } else {
+                    header.classList.remove('shadow-lg', 'bg-paper/90', 'backdrop-blur-xl');
+                }
+            });
+
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const overlay = document.getElementById('mobile-overlay');
+            const b1 = document.getElementById('burger-1');
+            const b2 = document.getElementById('burger-2');
+            const b3 = document.getElementById('burger-3');
+            let menuOpen = false;
+
+            menuBtn.addEventListener('click', () => {
+                menuOpen = !menuOpen;
+                if (menuOpen) {
+                    overlay.classList.remove('translate-x-full');
+                    b1.style.transform = 'translateY(8px) rotate(45deg)';
+                    b2.style.opacity = '0';
+                    b3.style.transform = 'translateY(-8px) rotate(-45deg)';
+                } else {
+                    overlay.classList.add('translate-x-full');
+                    b1.style.transform = 'translateY(0) rotate(0)';
+                    b2.style.opacity = '1';
+                    b3.style.transform = 'translateY(0) rotate(0)';
+                }
+            });
+
+            overlay.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (menuOpen) menuBtn.click();
+                });
+            });
+
+            /* --- 8. STICKY CTA BAR VISIBILITY --- */
+            const stickyCta = document.getElementById('sticky-cta');
+            const heroSection = document.querySelector('main > section:first-child');
+            if (stickyCta && heroSection) {
+                const stickyObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (!entry.isIntersecting && window.scrollY > 200) {
+                            stickyCta.classList.add('show');
+                        } else {
+                            stickyCta.classList.remove('show');
+                        }
+                    });
+                }, { threshold: 0 });
+                stickyObserver.observe(heroSection);
+            }
+
+            /* --- 9. FLOATING WHATSAPP TOOLTIP AUTO-SHOW --- */
+            const floatingWa = document.getElementById('floating-wa');
+            if (floatingWa) {
+                setTimeout(() => {
+                    floatingWa.classList.add('show-tooltip');
+                    setTimeout(() => floatingWa.classList.remove('show-tooltip'), 3500);
+                }, 4000);
+            }
+
+            /* --- 10. TESTIMONI CAROUSEL (Auto Slider) --- */
+            const testiTrack = document.getElementById('testi-track');
+            const testiDotsWrap = document.getElementById('testi-dots');
+            if (testiTrack) {
+                const slides = testiTrack.querySelectorAll('.testi-slide');
+                const isDesktop = () => window.innerWidth >= 768;
+                let testiIndex = 0;
+                let maxIndex = isDesktop() ? slides.length - 3 : slides.length - 1;
+                maxIndex = Math.max(maxIndex, 0);
+
+                // build dots
+                function buildDots() {
+                    testiDotsWrap.innerHTML = '';
+                    const dotCount = maxIndex + 1;
+                    for (let i = 0; i < dotCount; i++) {
+                        const dot = document.createElement('button');
+                        dot.className = 'testi-dot' + (i === testiIndex ? ' active' : '');
+                        dot.setAttribute('aria-label', 'Slide testimoni ' + (i + 1));
+                        dot.addEventListener('click', () => { testiIndex = i; updateTesti(); });
+                        testiDotsWrap.appendChild(dot);
+                    }
+                }
+
+                function updateTesti() {
+                    const slideWidth = slides[0].getBoundingClientRect().width;
+                    testiTrack.style.transform = `translateX(-${testiIndex * slideWidth}px)`;
+                    testiDotsWrap.querySelectorAll('.testi-dot').forEach((d, i) => {
+                        d.classList.toggle('active', i === testiIndex);
+                    });
+                }
+
+                buildDots();
+                updateTesti();
+
+                let autoSlide = setInterval(() => {
+                    testiIndex = (testiIndex + 1) > maxIndex ? 0 : testiIndex + 1;
+                    updateTesti();
+                }, 3500);
+
+                window.addEventListener('resize', () => {
+                    maxIndex = Math.max(isDesktop() ? slides.length - 3 : slides.length - 1, 0);
+                    if (testiIndex > maxIndex) testiIndex = 0;
+                    buildDots();
+                    updateTesti();
+                });
+            }
+
+            /* --- 11. COUNTDOWN PROMO (reset tiap jam 00:00) --- */
+            const cdHours = document.getElementById('cd-hours');
+            const cdMinutes = document.getElementById('cd-minutes');
+            const cdSeconds = document.getElementById('cd-seconds');
+
+            function updateCountdown() {
+                const now = new Date();
+                const midnight = new Date(now);
+                midnight.setHours(24, 0, 0, 0);
+                const diff = midnight - now;
+
+                const hours = Math.floor(diff / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+                if (cdHours) cdHours.innerText = String(hours).padStart(2, '0');
+                if (cdMinutes) cdMinutes.innerText = String(minutes).padStart(2, '0');
+                if (cdSeconds) cdSeconds.innerText = String(seconds).padStart(2, '0');
+            }
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+
+            /* --- 12. FOOTER YEAR --- */
+            const footerYear = document.getElementById('footer-year');
+            if (footerYear) footerYear.innerText = new Date().getFullYear();
+
+        });
+    </script>
+</body>
+</html>
